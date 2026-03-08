@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Pregnancy Lunch Ideas</title>
+  <meta name="description" content="Easy pregnancy lunch ideas that are quick, balanced, and practical for home, work, and meal prep days." />
+  <style>
+    :root{
+      --pink:#ef4b8b;
+      --pink-dark:#d93d79;
+      --teal:#0e9aa7;
+      --teal-dark:#087d87;
+      --green:#1fa866;
+      --orange:#f58c24;
+      --gold:#e8ab24;
+      --purple:#7f45d8;
+      --bg1:#f4fcff;
+      --bg2:#fff8fb;
+      --text:#24323d;
+      --muted:#5e6d78;
+      --line:#e7eef3;
+      --white:#ffffff;
+      --shadow:0 16px 36px rgba(35, 50, 61, 0.08);
+      --radius:26px;
+    }
+
+    *{
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--text);
+      line-height:1.65;
+      background:
+        radial-gradient(circle at top left, #ffe7f2 0%, transparent 28%),
+        radial-gradient(circle at top right, #ddf8fb 0%, transparent 28%),
+        linear-gradient(180deg, var(--bg1) 0%, var(--bg2) 55%, #f7fbfd 100%);
+    }
+
+    .container{
+      max-width:1180px;
+      margin:0 auto;
+      padding:28px 18px 60px;
+    }
+
+    .hero{
+      background:linear-gradient(145deg, #ffffff 0%, #fcfeff 100%);
+      border:1px solid #edf3f7;
+      border-radius:34px;
+      box-shadow:var(--shadow);
+      padding:42px 28px 30px;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .hero::before,
+    .hero::after{
+      content:"";
+      position:absolute;
+      border-radius:50%;
+      opacity:.30;
+    }
+
+    .hero::before{
+      width:250px;
+      height:250px;
+      background:radial-gradient(circle, #ffdceb 0%, transparent 70%);
+      top:-90px;
+      right:-55px;
+    }
+
+    .hero::after{
+      width:220px;
+      height:220px;
+      background:radial-gradient(circle, #d9f9f4 0%, transparent 70%);
+      bottom:-70px;
+      left:-60px;
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:1;
+      text-align:center;
+    }
+
+    .eyebrow{
+      display:inline-block;
+      background:linear-gradient(90deg, #ffd568, #f7b733);
+      color:#5a3d06;
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:.92rem;
+      font-weight:700;
+      margin-bottom:16px;
+    }
+
+    h1{
+      margin:0;
+      font-size:clamp(2.3rem, 4.8vw, 4.2rem);
+      line-height:1.03;
+      color:var(--pink);
+      letter-spacing:-0.02em;
+    }
+
+    .hero-subtitle{
+      max-width:790px;
+      margin:14px auto 0;
+      font-size:1.08rem;
+      color:var(--muted);
+    }
+
+    .hero-banner{
+      display:inline-block;
+      margin-top:18px;
+      background:linear-gradient(90deg, var(--teal), #18b7c4);
+      color:#fff;
+      padding:11px 18px;
+      border-radius:14px;
+      font-weight:700;
+      box-shadow:0 12px 24px rgba(14,154,167,.18);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+      margin-top:24px;
+      text-align:left;
+    }
+
+    .hero-box{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:22px;
+      padding:18px;
+      box-shadow:0 10px 24px rgba(35, 50, 61, 0.04);
+    }
+
+    .hero-box h3{
+      margin:0 0 10px;
+      font-size:1.05rem;
+      color:#1f3947;
+    }
+
+    .hero-box ul{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .hero-box li{
+      margin:6px 0;
+    }
+
+    .section-label{
+      text-align:center;
+      margin:30px 0 8px;
+      font-size:.84rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:.05em;
+      color:var(--teal-dark);
+    }
+
+    .section-title{
+      text-align:center;
+      margin:0;
+      font-size:2rem;
+      color:var(--text);
+    }
+
+    .section-subtitle{
+      text-align:center;
+      max-width:760px;
+      margin:8px auto 24px;
+      color:var(--muted);
+    }
+
+    .recipe-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:22px;
+    }
+
+    .card{
+      background:var(--white);
+      border:1px solid #edf2f5;
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+
+    .card-header{
+      padding:22px 20px 18px;
+      color:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .card-header::after{
+      content:"";
+      position:absolute;
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      background:rgba(255,255,255,.12);
+      top:-35px;
+      right:-25px;
+    }
+
+    .pink{
+      background:linear-gradient(135deg, #ff6ba2, var(--pink));
+    }
+
+    .orange{
+      background:linear-gradient(135deg, #ffbf61, var(--orange));
+    }
+
+    .green{
+      background:linear-gradient(135deg, #48ca8e, var(--green));
+    }
+
+    .gold{
+      background:linear-gradient(135deg, #ffd15f, var(--gold));
+    }
+
+    .card-header h2{
+      margin:0;
+      font-size:1.48rem;
+      line-height:1.15;
+      position:relative;
+      z-index:1;
+    }
+
+    .tag{
+      display:inline-block;
+      margin-top:10px;
+      background:rgba(255,255,255,.2);
+      padding:7px 11px;
+      border-radius:999px;
+      font-size:.84rem;
+      font-weight:700;
+      position:relative;
+      z-index:1;
+    }
+
+    .card-body{
+      padding:20px;
+    }
+
+    .lead{
+      margin:0 0 14px;
+      color:#42525d;
+    }
+
+    .meta{
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+    }
+
+    .pill{
+      background:#f3f8fb;
+      border:1px solid #e1eaf0;
+      color:#33424d;
+      padding:7px 10px;
+      border-radius:999px;
+      font-size:.83rem;
+      font-weight:700;
+    }
+
+    .box{
+      background:#fbfdff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:14px 15px;
+      margin-bottom:14px;
+    }
+
+    .box h3{
+      margin:0 0 8px;
+      font-size:1rem;
+      color:#223744;
+    }
+
+    .box ul,
+    .box ol{
+      margin:8px 0 0 18px;
+      padding:0;
+    }
+
+    .box li{
+      margin:6px 0;
+    }
+
+    .note{
+      border-radius:18px;
+      padding:13px 14px;
+      font-size:.95rem;
+      margin-bottom:12px;
+    }
+
+    .chef-note{
+      background:linear-gradient(90deg, #fff1f7, #fff8fb);
+      border-left:5px solid var(--pink);
+      color:#4f606a;
+    }
+
+    .preg-note{
+      background:linear-gradient(90deg, #f1fffb, #f8fffc);
+      border-left:5px solid #2aa879;
+      color:#47635b;
+    }
+
+    .extras{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:22px;
+      margin-top:34px;
+    }
+
+    .panel{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:26px;
+      box-shadow:var(--shadow);
+      padding:24px;
+    }
+
+    .panel h2{
+      margin:0 0 12px;
+      color:var(--teal);
+      font-size:1.7rem;
+    }
+
+    .panel ul{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .panel li{
+      margin:8px 0;
+    }
+
+    .tip-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+      gap:12px;
+      margin-top:14px;
+    }
+
+    .tip-card{
+      background:linear-gradient(180deg, #ffffff 0%, #f9fcff 100%);
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .tip-card strong{
+      display:block;
+      margin-bottom:6px;
+      color:#29414d;
+    }
+
+    .footer{
+      margin-top:30px;
+      text-align:center;
+      color:#6d7c87;
+      font-size:.92rem;
+    }
+
+    @media (max-width:900px){
+      .hero-grid,
+      .extras{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:640px){
+      .container{
+        padding:16px 12px 36px;
+      }
+
+      .hero{
+        padding:28px 18px 24px;
+      }
+
+      .card-body{
+        padding:16px;
+      }
+
+      .panel{
+        padding:18px;
+      }
+
+      .section-title{
+        font-size:1.65rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Pinterest Recipe Page • Lunch Edition</div>
+        <h1>Easy Pregnancy Lunch Ideas</h1>
+        <p class="hero-subtitle">
+          Lunch ideas for pregnancy that are quick, balanced, and practical for home, work, and meal prep days. These recipes are styled to match the Pinterest pin and written with chef-style instructions, serving ideas, and easy pregnancy-friendly notes.
+        </p>
+        <div class="hero-banner">Quick, Balanced &amp; Practical Lunches</div>
+
+        <div class="hero-grid">
+          <div class="hero-box">
+            <h3>Important Pregnancy Notes</h3>
+            <ul>
+              <li>Use fully cooked chicken and turkey.</li>
+              <li>Choose pasteurized cheese and dairy products.</li>
+              <li>Wash greens, cucumbers, tomatoes, and broccoli well.</li>
+              <li>Store meal-prep lunches chilled and reheat thoroughly when needed.</li>
+            </ul>
+          </div>
+
+          <div class="hero-box">
+            <h3>Why These Lunches Work</h3>
+            <ul>
+              <li>Balanced mix of protein, fiber, and healthy carbs</li>
+              <li>Easy enough for workdays and busy afternoons</li>
+              <li>Meal-prep friendly without being boring</li>
+              <li>Colorful, realistic, and Pinterest-ready</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-label">Recipe Roundup</div>
+    <h2 class="section-title">4 Easy Lunches to Match the Pin</h2>
+    <p class="section-subtitle">
+      These lunch recipes are simple to make, easy to customize, and visually styled for a clean GitHub page or blog post.
+    </p>
+
+    <section class="recipe-grid">
+
+      <article class="card">
+        <div class="card-header pink">
+          <h2>Spinach Salad with Chicken</h2>
+          <div class="tag">Fresh, filling, and protein-packed</div>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            A bright, satisfying salad with tender chicken, greens, and fresh toppings that makes lunch feel light but still substantial.
+          </p>
+
+          <div class="meta">
+            <span class="pill">Prep: 12 mins</span>
+            <span class="pill">Yield: 1 serving</span>
+            <span class="pill">Best for: Home or work lunch</span>
+          </div>
+
+          <div class="box">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>2 cups baby spinach</li>
+              <li>1 cooked chicken breast, sliced</li>
+              <li>1 hard-boiled egg, halved</li>
+              <li>1/2 cup cucumber slices</li>
+              <li>1/2 cup cherry tomatoes, halved</li>
+              <li>1/4 avocado, sliced</li>
+              <li>1 tablespoon crumbled feta or shredded cheese, optional</li>
+              <li>1 to 2 tablespoons olive oil vinaigrette</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Spread the spinach over a wide plate or shallow bowl.</li>
+              <li>Arrange the sliced chicken, egg, cucumber, tomatoes, and avocado in sections over the greens.</li>
+              <li>Sprinkle with cheese if using.</li>
+              <li>Drizzle lightly with vinaigrette just before serving so the salad stays crisp and fresh.</li>
+            </ol>
+          </div>
+
+          <div class="note chef-note">
+            <strong>Chef tip:</strong> Arrange the toppings in rows or sections instead of tossing everything together. It looks prettier and gives the salad that fresh café-style feel.
+          </div>
+
+          <div class="note preg-note">
+            <strong>Easy variation:</strong> Add strawberries, blueberries, or cooked quinoa if you want a little more texture and staying power.
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header orange">
+          <h2>Turkey &amp; Cheese Wrap</h2>
+          <div class="tag">Quick, practical, and easy to pack</div>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            This wrap is simple, balanced, and ideal for days when lunch needs to be fast, portable, and reliable.
+          </p>
+
+          <div class="meta">
+            <span class="pill">Prep: 10 mins</span>
+            <span class="pill">Yield: 1 wrap</span>
+            <span class="pill">Best for: Meal prep or office lunch</span>
+          </div>
+
+          <div class="box">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>1 whole wheat wrap or tortilla</li>
+              <li>3 to 4 slices fully cooked turkey</li>
+              <li>1 slice pasteurized cheese</li>
+              <li>Handful of spinach or lettuce</li>
+              <li>3 cucumber strips or slices</li>
+              <li>2 to 3 tomato slices</li>
+              <li>1 tablespoon hummus or cream cheese spread</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Lay the wrap flat on a board and spread hummus or cream cheese evenly over the surface.</li>
+              <li>Layer the turkey, cheese, greens, cucumber, and tomato through the center.</li>
+              <li>Fold in the sides, then roll tightly from the bottom into a neat wrap.</li>
+              <li>Slice in half and serve immediately, or wrap tightly for later.</li>
+            </ol>
+          </div>
+
+          <div class="note chef-note">
+            <strong>Chef tip:</strong> Do not overfill the wrap. A thinner layer of ingredients makes it easier to roll neatly and gives cleaner slices for a prettier presentation.
+          </div>
+
+          <div class="note preg-note">
+            <strong>Meal prep note:</strong> Pack juicy vegetables separately if making this far ahead so the wrap does not get soggy.
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header green">
+          <h2>Quinoa &amp; Beans Bowl</h2>
+          <div class="tag">Fiber-rich and pantry-friendly</div>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            A hearty grain bowl with plant protein, easy flavor, and ingredients you can keep on hand for busy days.
+          </p>
+
+          <div class="meta">
+            <span class="pill">Prep: 15 mins</span>
+            <span class="pill">Yield: 2 servings</span>
+            <span class="pill">Best for: Meal prep lunch</span>
+          </div>
+
+          <div class="box">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>1 cup cooked quinoa</li>
+              <li>1 cup black beans, drained and rinsed</li>
+              <li>1/2 cup cherry tomatoes, halved</li>
+              <li>1/4 cup corn, optional</li>
+              <li>2 tablespoons chopped parsley or cilantro</li>
+              <li>1 tablespoon olive oil</li>
+              <li>1 tablespoon lime juice</li>
+              <li>Salt and pepper to taste</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Add the cooked quinoa and black beans to a medium bowl.</li>
+              <li>Fold in the tomatoes, corn, and herbs.</li>
+              <li>Drizzle with olive oil and lime juice, then season lightly with salt and pepper.</li>
+              <li>Toss gently until everything is evenly coated and serve chilled or at room temperature.</li>
+            </ol>
+          </div>
+
+          <div class="note chef-note">
+            <strong>Chef tip:</strong> Let the quinoa cool fully before mixing so the bowl stays fluffy and not sticky.
+          </div>
+
+          <div class="note preg-note">
+            <strong>Easy add-in:</strong> Top with avocado or shredded cheese if you want to make it more filling.
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card-header gold">
+          <h2>Pasta with Broccoli &amp; Chicken</h2>
+          <div class="tag">Comforting and balanced</div>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            A cozy lunch bowl with pasta, broccoli, and chicken that feels comforting while still being practical for everyday eating.
+          </p>
+
+          <div class="meta">
+            <span class="pill">Prep: 20 mins</span>
+            <span class="pill">Yield: 2 servings</span>
+            <span class="pill">Best for: Warm lunch or leftovers</span>
+          </div>
+
+          <div class="box">
+            <h3>Ingredients</h3>
+            <ul>
+              <li>2 cups cooked pasta</li>
+              <li>1 cup cooked chicken, chopped</li>
+              <li>1 1/2 cups broccoli florets</li>
+              <li>1 tablespoon olive oil or butter</li>
+              <li>2 tablespoons grated parmesan, optional</li>
+              <li>1 small garlic clove, minced, optional</li>
+              <li>Salt and pepper to taste</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h3>Instructions</h3>
+            <ol>
+              <li>Steam or boil the broccoli until just tender, then drain well.</li>
+              <li>Warm the olive oil or butter in a skillet and add garlic if using.</li>
+              <li>Add the cooked pasta, chicken, and broccoli, then toss gently until everything is heated through.</li>
+              <li>Season with salt and pepper and finish with parmesan before serving.</li>
+            </ol>
+          </div>
+
+          <div class="note chef-note">
+            <strong>Chef tip:</strong> Cook the broccoli until just tender and still bright green so the dish looks fresher and keeps better texture.
+          </div>
+
+          <div class="note preg-note">
+            <strong>Serving idea:</strong> Add a squeeze of lemon at the end to brighten the whole dish without much extra effort.
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="extras">
+      <div class="panel">
+        <h2>Extra Chef Notes</h2>
+        <ul>
+          <li>For prettier lunch bowls, keep ingredients in sections instead of mixing too early.</li>
+          <li>Use white bowls or plates if you want the greens, tomatoes, and grains to stand out more in photos.</li>
+          <li>Lunches feel more satisfying when you combine <strong>protein + fiber + healthy carbs</strong>.</li>
+          <li>Meal prep works better when dressings and sauces are packed separately.</li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <h2>Easy Prep Tips</h2>
+        <div class="tip-grid">
+          <div class="tip-card">
+            <strong>Cook once</strong>
+            Make extra chicken and pasta so tomorrow’s lunch comes together faster.
+          </div>
+          <div class="tip-card">
+            <strong>Wash ahead</strong>
+            Rinse spinach, tomatoes, and broccoli ahead of time for easier assembly.
+          </div>
+          <div class="tip-card">
+            <strong>Keep balance</strong>
+            Add protein and fiber to help lunch feel more steady and filling.
+          </div>
+          <div class="tip-card">
+            <strong>Pack smart</strong>
+            Store wraps dry and keep dressings on the side when possible.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      Easy Pregnancy Lunch Ideas • Pinterest-style recipe page for GitHub
+    </div>
+
+  </div>
+</body>
+</html>
