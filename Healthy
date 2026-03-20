@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Pregnancy Breakfast Ideas</title>
+  <meta name="description" content="Healthy Pregnancy Breakfast Ideas with simple, nourishing options that feel realistic for real life." />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8f3ef;
+      color: #4f3427;
+      line-height: 1.6;
+    }
+
+    .pin-page {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fffaf7;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 36px 24px 20px;
+      background: linear-gradient(to bottom, #f7f1ec, #fffaf7);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: #e8f1e5;
+      color: #5d7f53;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.1;
+      margin: 0 0 12px;
+      color: #6d4330;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #6f5648;
+    }
+
+    .hero .cta {
+      display: inline-block;
+      margin-top: 22px;
+      background: #ff6f61;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .image-wrap {
+      padding: 0 24px 18px;
+    }
+
+    .image-wrap img {
+      width: 100%;
+      border-radius: 18px;
+      display: block;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .content {
+      padding: 10px 24px 40px;
+    }
+
+    .intro-box {
+      background: #fff3ea;
+      border-left: 6px solid #ff9b73;
+      padding: 18px 20px;
+      border-radius: 14px;
+      margin-bottom: 28px;
+      font-size: 17px;
+    }
+
+    .section-title {
+      font-size: 30px;
+      margin: 34px 0 16px;
+      color: #6d4330;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .recipe-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+      border: 1px solid #f1e3d9;
+    }
+
+    .recipe-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #7a4a34;
+    }
+
+    .recipe-card ul,
+    .notes ul,
+    .chef-notes ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .recipe-card li,
+    .notes li,
+    .chef-notes li {
+      margin-bottom: 8px;
+    }
+
+    .instructions {
+      margin-top: 14px;
+      background: #fcf7f3;
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .instructions h4 {
+      margin: 0 0 10px;
+      color: #6b4a39;
+    }
+
+    .notes,
+    .chef-notes {
+      margin-top: 26px;
+      background: #f7efe8;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .notes h3,
+    .chef-notes h3 {
+      margin-top: 0;
+      color: #714735;
+    }
+
+    .footer-cta {
+      margin-top: 30px;
+      text-align: center;
+      background: #fff0ea;
+      border-radius: 20px;
+      padding: 28px 20px;
+    }
+
+    .footer-cta h3 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #744937;
+    }
+
+    .footer-cta a {
+      display: inline-block;
+      margin-top: 12px;
+      background: #ff6f61;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .recipe-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .content,
+      .hero,
+      .image-wrap {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="pin-page">
+    <section class="hero">
+      <div class="eyebrow">Easy + Nourishing</div>
+      <h1>Healthy Pregnancy Breakfast Ideas</h1>
+      <p>
+        Simple, balanced breakfast ideas that feel doable in real life — perfect for busy mornings,
+        nausea days, and days when you just need something easy but filling.
+      </p>
+      <a class="cta" href="https://YOURDOMAIN.com/healthy-pregnancy-breakfast-ideas/">Read More</a>
+    </section>
+
+    <section class="image-wrap">
+      <img src="https://YOURDOMAIN.com/pinterest-images/healthy-pregnancy-breakfast-ideas-pin-1.jpg" alt="Healthy Pregnancy Breakfast Ideas Pinterest Pin" />
+    </section>
+
+    <section class="content">
+      <div class="intro-box">
+        <strong>Chef’s Note:</strong> These breakfast ideas are built around real-life needs:
+        protein, fiber, healthy fats, easy prep, and comfort. The goal is not perfection — it’s
+        finding easy meals you will actually eat.
+      </div>
+
+      <h2 class="section-title">6 Healthy Pregnancy Breakfast Ideas</h2>
+
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <h3>1. Peanut Butter Banana Oat Bowl</h3>
+          <p><strong>Why it works:</strong> Warm, soft, filling, and easy on the stomach.</p>
+          <ul>
+            <li>1 cup cooked oats</li>
+            <li>1 banana, sliced</li>
+            <li>1 tablespoon peanut butter</li>
+            <li>Handful of blueberries</li>
+            <li>Sprinkle of chopped nuts or seeds</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Cook oats according to package directions. Top with banana, blueberries, peanut butter,
+              and a sprinkle of nuts or seeds. Serve warm.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <h3>2. Avocado Toast with Egg</h3>
+          <p><strong>Why it works:</strong> Protein + healthy fats + toast for a balanced start.</p>
+          <ul>
+            <li>1 slice whole grain toast</li>
+            <li>½ avocado, mashed</li>
+            <li>1 cooked egg</li>
+            <li>Few cherry tomatoes on the side</li>
+            <li>Pinch of salt and pepper</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Toast bread. Spread mashed avocado on top. Add cooked egg and season lightly.
+              Serve with tomatoes.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <h3>3. Berry Yogurt Smoothie</h3>
+          <p><strong>Why it works:</strong> Great for mornings when chewing feels hard.</p>
+          <ul>
+            <li>1 cup Greek yogurt</li>
+            <li>1 cup frozen berries</li>
+            <li>½ banana</li>
+            <li>1 tablespoon chia seeds</li>
+            <li>½ to 1 cup milk of choice</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Blend everything until smooth. Add more milk for a thinner texture. Serve cold.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <h3>4. Yogurt Bowl with Berries & Granola</h3>
+          <p><strong>Why it works:</strong> Fast, high-protein, and no cooking needed.</p>
+          <ul>
+            <li>1 cup Greek yogurt</li>
+            <li>Fresh strawberries or raspberries</li>
+            <li>¼ cup granola</li>
+            <li>Optional drizzle of honey</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Spoon yogurt into a bowl. Add berries and granola on top. Finish with a small drizzle
+              of honey if desired.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <h3>5. Egg Muffins with Avocado</h3>
+          <p><strong>Why it works:</strong> Meal-prep friendly and easy to grab on the go.</p>
+          <ul>
+            <li>4 eggs</li>
+            <li>¼ cup chopped spinach</li>
+            <li>2 tablespoons diced peppers or carrots</li>
+            <li>Salt and pepper</li>
+            <li>Sliced avocado for serving</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Whisk eggs with veggies and seasoning. Pour into a greased muffin tin and bake at
+              350°F until set, about 18–20 minutes. Serve with avocado.
+            </p>
+          </div>
+        </article>
+
+        <article class="recipe-card">
+          <h3>6. Nut Butter Toast with Strawberries</h3>
+          <p><strong>Why it works:</strong> Simple, satisfying, and quick enough for hectic mornings.</p>
+          <ul>
+            <li>1 slice toast</li>
+            <li>1 to 2 tablespoons almond or peanut butter</li>
+            <li>Sliced strawberries</li>
+            <li>Optional sprinkle of chia or flax</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Toast bread, spread with nut butter, and top with strawberries and seeds if using.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <section class="notes">
+        <h3>Important Notes</h3>
+        <ul>
+          <li>Try to include <strong>protein</strong> in breakfast to help you stay full longer.</li>
+          <li>Adding <strong>fiber</strong> can support digestion and help with blood sugar balance.</li>
+          <li>For nausea mornings, cold foods or smoothies may feel easier than hot meals.</li>
+          <li>Keep a few <strong>low-effort options</strong> ready for days when energy is low.</li>
+          <li>You can swap ingredients based on preference, tolerance, or what sounds good that day.</li>
+        </ul>
+      </section>
+
+      <section class="chef-notes">
+        <h3>Chef Tips for Making These Better</h3>
+        <ul>
+          <li>Use ripe fruit for natural sweetness so you need less added sugar.</li>
+          <li>Prep ingredients the night before to make mornings easier.</li>
+          <li>Batch-make egg muffins and refrigerate for quick breakfasts during the week.</li>
+          <li>For extra calories and fullness, add nut butter, seeds, avocado, or full-fat yogurt.</li>
+          <li>For a prettier Pinterest-friendly presentation, use white dishes, fresh fruit, and natural light.</li>
+        </ul>
+      </section>
+
+      <section class="footer-cta">
+        <h3>Save This for Later</h3>
+        <p>
+          Keep these easy breakfast ideas on hand for busy mornings, low-energy days, and pregnancy
+          meal inspiration.
+        </p>
+        <a href="https://YOURDOMAIN.com/healthy-pregnancy-breakfast-ideas/">Get the Full Post</a>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
