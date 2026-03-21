@@ -3,332 +3,349 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>One-Handed Meals for New Moms</title>
-  <meta
-    name="description"
-    content="One-Handed Meals for New Moms with practical ideas that work in the messy, busy newborn stage."
-  />
+  <title>One-Handed Meals for New Moms (Easy & Practical)</title>
+  <meta name="description" content="One-handed meals for new moms that are practical, filling, and realistic for the messy newborn stage. These easy postpartum meals and snacks are designed to be simple to prep, easy to hold, and actually helpful during busy days." />
+  <meta name="keywords" content="one handed meals for new moms, postpartum meals, easy postpartum snacks, meals for new moms, newborn stage food" />
   <style>
+    :root {
+      --bg: #fff9f5;
+      --card: #ffffff;
+      --accent: #d97b66;
+      --accent-dark: #b85f4d;
+      --soft: #f7e4dc;
+      --text: #3b2f2a;
+      --muted: #7a6a63;
+      --green: #7b9b7a;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+      --radius: 22px;
+      --max: 1080px;
+    }
+
     * {
       box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f6f4f2;
-      color: #4a352d;
-      line-height: 1.6;
-    }
-
-    .page {
-      max-width: 980px;
-      margin: 0 auto;
-      background: #fffaf7;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      font-family: "Georgia", "Times New Roman", serif;
+      background: linear-gradient(180deg, #fff8f2 0%, #fffdfb 100%);
+      color: var(--text);
+      line-height: 1.65;
     }
 
     .hero {
+      background:
+        linear-gradient(rgba(255,248,242,0.72), rgba(255,248,242,0.88)),
+        url('https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+      padding: 80px 20px 70px;
       text-align: center;
-      padding: 42px 24px 24px;
-      background: linear-gradient(to bottom, #f5f0ea, #fffaf7);
+      border-bottom: 1px solid #f1ddd4;
+    }
+
+    .hero-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.72);
+      backdrop-filter: blur(4px);
+      border-radius: 28px;
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
     }
 
     .eyebrow {
       display: inline-block;
-      padding: 8px 14px;
+      background: var(--soft);
+      color: var(--accent-dark);
+      padding: 8px 16px;
       border-radius: 999px;
-      background: #e8f0e4;
-      color: #5a7a52;
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.8px;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      margin-bottom: 14px;
+      margin-bottom: 18px;
+      font-weight: bold;
     }
 
-    .hero h1 {
-      margin: 0 0 12px;
-      font-size: 42px;
-      line-height: 1.08;
-      color: #6e4332;
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 5vw, 3.7rem);
+      line-height: 1.1;
+      color: #4a342e;
     }
 
-    .hero p {
-      max-width: 720px;
-      margin: 0 auto;
-      font-size: 18px;
-      color: #6c564b;
+    .subhead {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 22px;
+      color: var(--muted);
     }
 
-    .hero .cta {
+    .pin-overlay {
       display: inline-block;
-      margin-top: 22px;
-      background: #ea6a46;
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 28px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 18px;
+      background: var(--accent);
+      color: white;
+      padding: 16px 22px;
+      border-radius: 18px;
+      font-size: 1.05rem;
+      font-weight: bold;
+      box-shadow: var(--shadow);
     }
 
-    .pin-wrap {
-      padding: 0 24px 18px;
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 42px 20px 70px;
     }
 
-    .pin-wrap img {
-      width: 100%;
-      display: block;
-      border-radius: 20px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
     }
 
-    .content {
-      padding: 12px 24px 42px;
+    .meta-card {
+      background: var(--card);
+      padding: 18px 18px 16px;
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      border: 1px solid #f4e5de;
     }
 
-    .intro-box {
-      background: #eef5fb;
-      border-left: 6px solid #7aa7d6;
-      padding: 18px 20px;
-      border-radius: 14px;
-      margin-bottom: 30px;
-      font-size: 17px;
+    .meta-card h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      color: var(--accent-dark);
     }
 
-    .section-title {
-      font-size: 30px;
-      margin: 34px 0 16px;
-      color: #6e4431;
+    .meta-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .intro-card,
+    .recipe-card,
+    .notes-card,
+    .cta-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 24px;
+      border: 1px solid #f4e5de;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #553c35;
+      font-size: 1.7rem;
+    }
+
+    h3 {
+      color: var(--accent-dark);
+      margin-bottom: 10px;
     }
 
     .recipe-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    .recipe-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 18px;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
-      border: 1px solid #f1e4da;
-    }
-
-    .recipe-card h3 {
-      margin: 16px 0 10px;
-      font-size: 23px;
-      color: #7a4a35;
-    }
-
-    .recipe-card p {
-      margin-top: 0;
-    }
-
-    .recipe-card ul,
-    .notes ul,
-    .chef-notes ul,
-    .tips-box ul {
-      padding-left: 20px;
-      margin-top: 10px;
-    }
-
-    .recipe-card li,
-    .notes li,
-    .chef-notes li,
-    .tips-box li {
-      margin-bottom: 8px;
-    }
-
-    .instructions {
-      margin-top: 14px;
-      background: #fcf7f3;
-      border-radius: 14px;
-      padding: 14px;
-    }
-
-    .instructions h4 {
-      margin: 0 0 10px;
-      color: #6b4a39;
-    }
-
-    .recipe-art {
-      width: 100%;
-      border-radius: 18px;
-      overflow: hidden;
-      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04);
-      background: #f8f3ee;
-    }
-
-    .notes,
-    .chef-notes,
-    .tips-box {
-      margin-top: 28px;
-      border-radius: 18px;
+    .recipe-box {
+      background: #fffaf8;
+      border: 1px solid #f2ddd5;
+      border-radius: 20px;
       padding: 22px;
     }
 
-    .tips-box {
-      background: #eef6ff;
+    .recipe-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 16px;
+      margin-bottom: 16px;
+      display: block;
+      border: 1px solid #f0ddd5;
     }
 
-    .notes {
-      background: #f7efe8;
+    .recipe-box ul,
+    .recipe-box ol {
+      padding-left: 20px;
+      margin: 10px 0 0;
     }
 
-    .chef-notes {
-      background: #fff2ea;
+    .recipe-box li {
+      margin-bottom: 8px;
     }
 
-    .notes h3,
-    .chef-notes h3,
-    .tips-box h3 {
-      margin-top: 0;
-      color: #714735;
+    .highlight {
+      background: linear-gradient(120deg, #fff1ea 0%, #fff8f4 100%);
+      border-left: 5px solid var(--accent);
+      padding: 16px 18px;
+      border-radius: 14px;
+      color: #5d4a43;
+      margin: 18px 0 0;
     }
 
-    .footer-cta {
-      margin-top: 30px;
-      text-align: center;
-      background: #fff0ea;
-      border-radius: 20px;
-      padding: 28px 20px;
+    .tips {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 18px;
     }
 
-    .footer-cta h3 {
-      margin-top: 0;
-      font-size: 28px;
-      color: #744937;
+    .tip {
+      background: #fcfbfa;
+      border: 1px solid #efe0d8;
+      border-radius: 18px;
+      padding: 18px;
     }
 
-    .footer-cta a {
+    .tip strong {
+      color: var(--green);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .keyword-box {
+      background: #fff4ef;
+      border-radius: 16px;
+      padding: 16px;
+      color: var(--muted);
+      font-size: 0.96rem;
+      border: 1px dashed #e3b6a8;
+    }
+
+    .cta-btn {
       display: inline-block;
-      margin-top: 12px;
-      background: #ea6a46;
+      margin-top: 14px;
+      background: var(--accent);
       color: #fff;
       text-decoration: none;
-      padding: 14px 28px;
+      padding: 14px 22px;
       border-radius: 999px;
-      font-weight: 700;
-      font-size: 18px;
+      font-weight: bold;
+      transition: 0.2s ease;
     }
 
-    .small-note {
-      font-size: 14px;
-      color: #7a685f;
-      margin-top: 10px;
+    .cta-btn:hover {
+      background: var(--accent-dark);
     }
 
-    @media (max-width: 760px) {
-      .hero h1 {
-        font-size: 32px;
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.92rem;
+      padding: 10px 20px 40px;
+    }
+
+    @media (max-width: 640px) {
+      .hero {
+        padding-top: 48px;
+        padding-bottom: 44px;
       }
 
-      .recipe-grid {
-        grid-template-columns: 1fr;
+      .hero-inner,
+      .intro-card,
+      .recipe-card,
+      .notes-card,
+      .cta-card {
+        padding: 22px;
       }
 
-      .hero,
-      .pin-wrap,
-      .content {
-        padding-left: 16px;
-        padding-right: 16px;
+      .pin-overlay {
+        font-size: 0.98rem;
+      }
+
+      .recipe-image {
+        height: 190px;
       }
     }
   </style>
 </head>
 <body>
-  <main class="page">
-    <section class="hero">
-      <div class="eyebrow">Postpartum Snacks & Meals</div>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Pinterest Pin 1 • Postpartum Snacks &amp; Meals</div>
       <h1>One-Handed Meals for New Moms</h1>
-      <p>
-        Practical meal ideas that work in the messy, busy newborn stage when one hand is occupied
-        and you still need something filling, comforting, and easy to eat.
+      <p class="subhead">
+        Easy, practical meals and snacks that work in the messy newborn stage. These postpartum ideas are built to be filling, simple, and actually manageable when one hand is busy.
       </p>
-      <a class="cta" href="https://YOURDOMAIN.com/one-handed-postpartum-meals/">Read More</a>
-    </section>
-
-    <section class="pin-wrap">
-      <img
-        src="https://YOURDOMAIN.com/pinterest-images/one-handed-postpartum-meals-pin-1.jpg"
-        alt="One-Handed Meals for New Moms Pinterest Pin"
-      />
-    </section>
-
-    <section class="content">
-      <div class="intro-box">
-        <strong>Chef’s Note:</strong> The best one-handed postpartum meals are soft enough to eat easily,
-        sturdy enough not to fall apart, and satisfying enough to actually hold you over. Think wraps,
-        muffins, bars, bites, and little meals that do not require a fork-and-knife moment.
+      <div class="pin-overlay">
+        One-Handed Meals for New Moms<br />
+        Practical • Filling • Easy
       </div>
+    </div>
+  </header>
 
-      <h2 class="section-title">4 Easy One-Handed Meal Ideas</h2>
+  <main class="container">
+
+    <section class="meta-grid">
+      <div class="meta-card">
+        <h3>Pin Title</h3>
+        <p>One-Handed Meals for New Moms (Easy &amp; Practical)</p>
+      </div>
+      <div class="meta-card">
+        <h3>Board</h3>
+        <p>Postpartum Snacks &amp; Meals</p>
+      </div>
+      <div class="meta-card">
+        <h3>Blog URL</h3>
+        <p>/one-handed-postpartum-meals</p>
+      </div>
+      <div class="meta-card">
+        <h3>Alt Text</h3>
+        <p>One-handed postpartum meals including breakfast muffins, wraps, snack bars, and easy handheld foods for new moms.</p>
+      </div>
+    </section>
+
+    <section class="intro-card">
+      <h2>A Chef’s Take on Better Postpartum Meals</h2>
+      <p>
+        The newborn stage is messy, exhausting, and rarely set up for slow meals at the table. The best one-handed postpartum meals are not complicated. They are sturdy, easy to hold, filling enough to matter, and realistic for days when you are multitasking through feedings, contact naps, and short windows of time.
+      </p>
+      <p>
+        This collection focuses on practical foods that are easy to prep and easy to eat, like wraps, egg muffins, oatmeal bars, and mini meatballs. Each idea is meant to feel comforting and useful while still giving you a solid mix of protein, carbs, and satisfying flavor.
+      </p>
+      <div class="highlight">
+        <strong>Description:</strong> One-Handed Meals for New Moms with practical ideas that work in the messy, busy newborn stage. These easy postpartum meals and snacks are simple to prep, filling, and realistic for everyday life. Save this pin for later and click through for the full recipes.
+      </div>
+    </section>
+
+    <section class="recipe-card">
+      <h2>4 Easy One-Handed Postpartum Meal Ideas</h2>
 
       <div class="recipe-grid">
-        <article class="recipe-card">
-          <div class="recipe-art">
-            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Turkey avocado sandwich illustration">
-              <rect width="600" height="420" fill="#eef3f8"/>
-              <circle cx="540" cy="70" r="42" fill="#ffffff" opacity="0.55"/>
-              <rect x="90" y="125" rx="60" ry="60" width="420" height="150" fill="#d8a96f"/>
-              <rect x="95" y="145" rx="60" ry="60" width="410" height="32" fill="#f4d39b"/>
-              <rect x="120" y="195" rx="20" ry="20" width="360" height="22" fill="#8bc56f"/>
-              <rect x="130" y="220" rx="18" ry="18" width="340" height="26" fill="#ffd75f"/>
-              <rect x="120" y="252" rx="18" ry="18" width="360" height="24" fill="#d98b62"/>
-              <rect x="110" y="282" rx="50" ry="50" width="380" height="56" fill="#f1c98c"/>
-              <circle cx="160" cy="150" r="5" fill="#c28b52"/>
-              <circle cx="220" cy="140" r="4" fill="#c28b52"/>
-              <circle cx="300" cy="156" r="5" fill="#c28b52"/>
-              <circle cx="370" cy="145" r="4" fill="#c28b52"/>
-              <circle cx="430" cy="152" r="5" fill="#c28b52"/>
-            </svg>
-          </div>
-          <h3>1. Turkey Avocado Sandwich</h3>
-          <p><strong>Why it works:</strong> Easy to hold, filling, and fast when you need real food quickly.</p>
+
+        <article class="recipe-box">
+          <img class="recipe-image" src="https://images.unsplash.com/photo-1553909489-cd47e0907980?auto=format&fit=crop&w=900&q=80" alt="Turkey avocado sandwich on soft bread" />
+          <h3>1) Turkey Avocado Sandwich</h3>
+          <p><strong>Why it works:</strong> Soft, filling, easy to hold, and quick enough for chaotic afternoons.</p>
           <ul>
             <li>1 sandwich bun or soft roll</li>
             <li>Sliced turkey</li>
-            <li>1 cheese slice</li>
+            <li>1 slice cheese</li>
             <li>Avocado slices</li>
             <li>Lettuce</li>
             <li>Optional mayo or mustard</li>
           </ul>
-          <div class="instructions">
-            <h4>Instructions</h4>
-            <p>
-              Slice the roll and layer turkey, cheese, avocado, and lettuce inside. Wrap the bottom in
-              parchment if you want it easier to hold with one hand.
-            </p>
+          <ol>
+            <li>Slice the roll and layer turkey, cheese, avocado, and lettuce inside.</li>
+            <li>Add mayo or mustard if desired.</li>
+            <li>Wrap the bottom with parchment for an easier one-handed hold.</li>
+          </ol>
+          <div class="highlight">
+            Chef note: A soft roll works better than crusty bread here because it is easier to hold and less messy in the newborn stage.
           </div>
         </article>
 
-        <article class="recipe-card">
-          <div class="recipe-art">
-            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Oatmeal bar illustration">
-              <rect width="600" height="420" fill="#f2f3f8"/>
-              <rect x="185" y="85" rx="18" ry="18" width="230" height="250" fill="#c99156"/>
-              <rect x="200" y="100" rx="14" ry="14" width="200" height="220" fill="#d6aa72"/>
-              <circle cx="230" cy="135" r="10" fill="#5b3c2a"/>
-              <circle cx="275" cy="165" r="8" fill="#6a4932"/>
-              <circle cx="330" cy="125" r="9" fill="#5b3c2a"/>
-              <circle cx="355" cy="185" r="8" fill="#6a4932"/>
-              <circle cx="240" cy="220" r="10" fill="#5b3c2a"/>
-              <circle cx="300" cy="245" r="8" fill="#6a4932"/>
-              <circle cx="345" cy="275" r="10" fill="#5b3c2a"/>
-              <circle cx="225" cy="285" r="8" fill="#6a4932"/>
-              <circle cx="275" cy="130" r="6" fill="#f1e3be"/>
-              <circle cx="315" cy="165" r="6" fill="#f1e3be"/>
-              <circle cx="360" cy="140" r="6" fill="#f1e3be"/>
-              <circle cx="255" cy="205" r="6" fill="#f1e3be"/>
-              <circle cx="335" cy="225" r="6" fill="#f1e3be"/>
-              <circle cx="280" cy="285" r="6" fill="#f1e3be"/>
-            </svg>
-          </div>
-          <h3>2. Oatmeal Chocolate Chip Bars</h3>
-          <p><strong>Why it works:</strong> Soft, portable, and perfect for a quick bite during feeds and contact naps.</p>
+        <article class="recipe-box">
+          <img class="recipe-image" src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=80" alt="Homemade oatmeal snack bars" />
+          <h3>2) Oatmeal Chocolate Chip Bars</h3>
+          <p><strong>Why it works:</strong> Soft, portable, and perfect for quick bites between feeds.</p>
           <ul>
             <li>2 cups rolled oats</li>
             <li>2 mashed bananas</li>
@@ -336,34 +353,21 @@
             <li>1/4 cup honey</li>
             <li>1/3 cup mini chocolate chips</li>
           </ul>
-          <div class="instructions">
-            <h4>Instructions</h4>
-            <p>
-              Mix everything together, press into a lined baking dish, and bake at 350°F until set.
-              Cool fully, then cut into bars for easy grab-and-go snacks.
-            </p>
+          <ol>
+            <li>Mix all ingredients together until well combined.</li>
+            <li>Press into a lined baking dish.</li>
+            <li>Bake at 350°F until lightly set and golden.</li>
+            <li>Cool completely before slicing into bars.</li>
+          </ol>
+          <div class="highlight">
+            Chef note: Let the bars cool fully before cutting so they stay together better and feel more grab-and-go.
           </div>
         </article>
 
-        <article class="recipe-card">
-          <div class="recipe-art">
-            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Egg muffins illustration">
-              <rect width="600" height="420" fill="#eef5f5"/>
-              <circle cx="220" cy="220" r="92" fill="#e8c468"/>
-              <circle cx="380" cy="210" r="92" fill="#e2bc60"/>
-              <circle cx="220" cy="220" r="64" fill="#f6e796"/>
-              <circle cx="380" cy="210" r="64" fill="#f6e796"/>
-              <circle cx="196" cy="205" r="10" fill="#cf675f"/>
-              <circle cx="245" cy="240" r="11" fill="#7bb36a"/>
-              <circle cx="212" cy="255" r="9" fill="#cf675f"/>
-              <circle cx="394" cy="190" r="10" fill="#7bb36a"/>
-              <circle cx="360" cy="225" r="9" fill="#cf675f"/>
-              <circle cx="410" cy="240" r="11" fill="#7bb36a"/>
-              <rect x="120" y="300" rx="18" ry="18" width="360" height="18" fill="#d9dee6"/>
-            </svg>
-          </div>
-          <h3>3. Egg Muffins</h3>
-          <p><strong>Why it works:</strong> High-protein, meal-prep friendly, and easy to eat warm or cold with one hand.</p>
+        <article class="recipe-box">
+          <img class="recipe-image" src="https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=80" alt="Savory egg muffins with vegetables" />
+          <h3>3) Savory Egg Muffins</h3>
+          <p><strong>Why it works:</strong> High-protein, meal-prep friendly, and easy to eat warm or cold.</p>
           <ul>
             <li>6 eggs</li>
             <li>1/4 cup milk</li>
@@ -371,93 +375,103 @@
             <li>1/4 cup diced peppers</li>
             <li>1/3 cup shredded cheese</li>
           </ul>
-          <div class="instructions">
-            <h4>Instructions</h4>
-            <p>
-              Whisk eggs with milk, stir in veggies and cheese, then pour into a greased muffin tin.
-              Bake at 350°F for about 18 to 20 minutes until set.
-            </p>
+          <ol>
+            <li>Whisk eggs with milk until smooth.</li>
+            <li>Stir in spinach, peppers, and cheese.</li>
+            <li>Pour into a greased muffin tin.</li>
+            <li>Bake at 350°F for 18 to 20 minutes until set.</li>
+          </ol>
+          <div class="highlight">
+            Chef note: Make a double batch and refrigerate or freeze extras so you always have a real protein option ready.
           </div>
         </article>
 
-        <article class="recipe-card">
-          <div class="recipe-art">
-            <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mini meatballs illustration">
-              <rect width="600" height="420" fill="#f4f1ef"/>
-              <rect x="160" y="230" rx="24" ry="24" width="280" height="95" fill="#b44e3d"/>
-              <rect x="172" y="242" rx="18" ry="18" width="256" height="70" fill="#c55744"/>
-              <circle cx="290" cy="175" r="46" fill="#b76d3e"/>
-              <circle cx="310" cy="190" r="14" fill="#ce8b59" opacity="0.45"/>
-              <line x1="290" y1="116" x2="290" y2="230" stroke="#d6c2a1" stroke-width="7" />
-              <circle cx="240" cy="270" r="24" fill="#a85d35"/>
-              <circle cx="310" cy="280" r="24" fill="#a85d35"/>
-              <circle cx="370" cy="267" r="24" fill="#a85d35"/>
-            </svg>
-          </div>
-          <h3>4. Mini Meatballs</h3>
-          <p><strong>Why it works:</strong> Bite-sized, freezer-friendly, and easy to eat straight from a warm bowl or cup.</p>
+        <article class="recipe-box">
+          <img class="recipe-image" src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=900&q=80" alt="Mini meatballs with tomato sauce" />
+          <h3>4) Mini Meatballs with Dip</h3>
+          <p><strong>Why it works:</strong> Bite-sized, hearty, and easy to eat from a warm cup or bowl.</p>
           <ul>
-            <li>1 pound ground beef or turkey</li>
+            <li>1 pound ground turkey or beef</li>
             <li>1 egg</li>
             <li>1/3 cup breadcrumbs</li>
             <li>2 tablespoons parmesan</li>
             <li>1/2 teaspoon garlic powder</li>
-            <li>Warm marinara for serving</li>
+            <li>Warm marinara for dipping</li>
           </ul>
-          <div class="instructions">
-            <h4>Instructions</h4>
-            <p>
-              Mix everything except the marinara, roll into small meatballs, and bake at 400°F until
-              cooked through. Serve with warm marinara in a small cup for dipping.
-            </p>
+          <ol>
+            <li>Mix all ingredients except marinara until just combined.</li>
+            <li>Roll into small meatballs.</li>
+            <li>Bake at 400°F until fully cooked through.</li>
+            <li>Serve with a little warm marinara for dipping.</li>
+          </ol>
+          <div class="highlight">
+            Chef note: Smaller meatballs are better here because they are easier to eat quickly and feel more snackable.
           </div>
         </article>
+
+      </div>
+    </section>
+
+    <section class="notes-card">
+      <h2>Important Notes</h2>
+
+      <div class="tips">
+        <div class="tip">
+          <strong>Think one-hand first</strong>
+          The best postpartum food is food you can actually eat. Choose meals that stay together and do not require a fork-and-knife setup.
+        </div>
+
+        <div class="tip">
+          <strong>Make it satisfying</strong>
+          One-handed meals still need enough protein and carbs to hold you over. Tiny snacks alone usually are not enough.
+        </div>
+
+        <div class="tip">
+          <strong>Prep ahead helps</strong>
+          Egg muffins, bars, and mini meatballs all work better when made in batches and stored for easy reheating.
+        </div>
+
+        <div class="tip">
+          <strong>Keep it realistic</strong>
+          The newborn stage is not the time for overly complicated meals. Easy food is good food right now.
+        </div>
       </div>
 
-      <section class="tips-box">
-        <h3>What Makes a Good One-Handed Postpartum Meal</h3>
-        <ul>
-          <li>It should stay together well and not fall apart instantly.</li>
-          <li>It should be easy to reheat or eat cold.</li>
-          <li>It should have protein, carbs, and enough substance to actually help.</li>
-          <li>It should be simple enough to prep ahead or grab quickly.</li>
-          <li>It should work in the real newborn stage, not just look cute online.</li>
-        </ul>
-      </section>
+      <h3 style="margin-top: 26px;">Chef Tips for Better Flavor</h3>
+      <ul>
+        <li>Use soft breads and wraps because they are less messy and easier to bite.</li>
+        <li>Add cheese, avocado, or a dip to simple meals for extra richness and staying power.</li>
+        <li>Keep seasonings warm and gentle so meals feel comforting instead of fussy.</li>
+        <li>Choose foods that still taste good after reheating since that matters a lot in postpartum meal prep.</li>
+      </ul>
 
-      <section class="notes">
-        <h3>Important Notes</h3>
-        <ul>
-          <li>Wraps, muffins, bars, bites, and sandwiches are usually the best format.</li>
-          <li>Soft textures are often easier than crunchy, messy meals.</li>
-          <li>Batch prep helps a lot because newborn days can get chaotic fast.</li>
-          <li>Try to include some protein in each option so it is more satisfying.</li>
-          <li>Keep a few freezer and fridge options ready at the same time.</li>
-        </ul>
-      </section>
-
-      <section class="chef-notes">
-        <h3>Chef Tips for New Mom Meal Prep</h3>
-        <ul>
-          <li>Wrap sandwiches or burritos halfway in parchment so they are easier to hold.</li>
-          <li>Cut bars and muffins into smaller portions so they feel grab-and-go.</li>
-          <li>Freeze meatballs, burritos, and egg muffins in batches for quick reheating.</li>
-          <li>Think “easy to eat with one hand” before thinking “perfect meal.”</li>
-          <li>For a Pinterest-style page, keep the colors warm, soft, and comforting.</li>
-        </ul>
-      </section>
-
-      <section class="footer-cta">
-        <h3>Save This for Later</h3>
-        <p>
-          Keep these practical postpartum meal ideas on hand for the busy newborn stage when easy food matters most.
-        </p>
-        <a href="https://YOURDOMAIN.com/one-handed-postpartum-meals/">Get the Full Post</a>
-        <div class="small-note">
-          Replace the top pin image URL with your real image link when you publish.
-        </div>
-      </section>
+      <h3>Make-Ahead Ideas</h3>
+      <ul>
+        <li>Freeze breakfast sandwiches or wraps individually for easy reheating.</li>
+        <li>Store oatmeal bars in the fridge for quick grab-and-go snacks.</li>
+        <li>Batch-bake egg muffins and keep a few days’ worth ready at all times.</li>
+        <li>Freeze mini meatballs in portions so you can reheat only what you need.</li>
+      </ul>
     </section>
+
+    <section class="cta-card">
+      <h2>SEO &amp; Pinterest Notes</h2>
+      <div class="keyword-box">
+        <strong>Keywords:</strong> one handed meals for new moms, postpartum meals, easy postpartum snacks, meals for new moms, newborn stage food
+      </div>
+
+      <p style="margin-top: 18px;">
+        This pin works best with a bright collage showing a few clearly handheld foods like sandwiches, muffins, bars, and bite-sized meals. That visual instantly communicates “easy postpartum food” and performs well for Pinterest search.
+      </p>
+
+      <a class="cta-btn" href="/one-handed-postpartum-meals">Read the Full Post</a>
+    </section>
+
   </main>
+
+  <footer>
+    One-Handed Meals for New Moms • Pinterest-ready recipe content
+  </footer>
+
 </body>
-</html>
+</html>   
