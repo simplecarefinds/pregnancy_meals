@@ -1,227 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Freezer Meals for New Moms</title>
+  <meta
+    name="description"
+    content="Best Freezer Meals for New Moms with easy make-ahead ideas that can lighten the load after baby arrives."
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<title>Best Freezer Meals for New Moms</title>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f4f1;
+      color: #4a342b;
+      line-height: 1.6;
+    }
 
-<meta name="description" content="Best Freezer Meals for New Moms with easy make-ahead ideas that lighten the load after baby arrives.">
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #fffaf7;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
 
-<style>
+    .hero {
+      text-align: center;
+      padding: 42px 24px 24px;
+      background: linear-gradient(to bottom, #f5f0ea, #fffaf7);
+    }
 
-body{
-font-family: Arial, Helvetica, sans-serif;
-background:#f7f4f1;
-margin:0;
-color:#4a342b;
-}
+    .eyebrow {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #e6eff7;
+      color: #2b5b8b;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
 
-.container{
-max-width:900px;
-margin:auto;
-background:white;
-padding:30px;
-}
+    .hero h1 {
+      margin: 0 0 14px;
+      font-size: 42px;
+      line-height: 1.08;
+      color: #6d4330;
+    }
 
-h1{
-font-size:40px;
-text-align:center;
-color:#6d4330;
-margin-bottom:10px;
-}
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto;
+      font-size: 18px;
+      color: #6c564b;
+    }
 
-.subtitle{
-text-align:center;
-font-size:18px;
-color:#6c564b;
-margin-bottom:25px;
-}
+    .hero .cta {
+      display: inline-block;
+      margin-top: 22px;
+      background: #ef6945;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 18px;
+    }
 
-.pin-image img{
-width:100%;
-border-radius:16px;
-}
+    .image-wrap {
+      padding: 0 24px 18px;
+    }
 
-.section-title{
-font-size:28px;
-margin-top:40px;
-color:#6d4330;
-}
+    .image-wrap img {
+      width: 100%;
+      display: block;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
 
-.recipe{
-background:#faf6f2;
-padding:20px;
-border-radius:12px;
-margin-bottom:20px;
-}
+    .content {
+      padding: 12px 24px 42px;
+    }
 
-.recipe h3{
-margin-top:0;
-}
+    .intro-box {
+      background: #eef5fb;
+      border-left: 6px solid #6ea2d5;
+      padding: 18px 20px;
+      border-radius: 14px;
+      margin-bottom: 28px;
+      font-size: 17px;
+    }
 
-.cta{
-text-align:center;
-margin-top:40px;
-}
+    .section-title {
+      font-size: 30px;
+      margin: 34px 0 16px;
+      color: #6e4431;
+    }
 
-.cta a{
-background:#ef6945;
-color:white;
-padding:14px 26px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
-font-size:18px;
-}
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
 
-</style>
+    .recipe-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+      border: 1px solid #f1e4da;
+    }
 
+    .recipe-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+      color: #7a4a35;
+    }
+
+    .recipe-card p {
+      margin-top: 0;
+    }
+
+    .recipe-card ul,
+    .notes ul,
+    .chef-notes ul,
+    .prep-box ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .recipe-card li,
+    .notes li,
+    .chef-notes li,
+    .prep-box li {
+      margin-bottom: 8px;
+    }
+
+    .instructions {
+      margin-top: 14px;
+      background: #fcf7f3;
+      border-radius: 14px;
+      padding: 14px;
+    }
+
+    .instructions h4 {
+      margin: 0 0 10px;
+      color: #6b4a39;
+    }
+
+    .notes,
+    .chef-notes,
+    .prep-box {
+      margin-top: 26px;
+      background: #f7efe8;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .prep-box {
+      background: #f0f7fc;
+    }
+
+    .notes h3,
+    .chef-notes h3,
+    .prep-box h3 {
+      margin-top: 0;
+      color: #714735;
+    }
+
+    .footer-cta {
+      margin-top: 30px;
+      text-align: center;
+      background: #fff0ea;
+      border-radius: 20px;
+      padding: 28px 20px;
+    }
+
+    .footer-cta h3 {
+      margin-top: 0;
+      font-size: 28px;
+      color: #744937;
+    }
+
+    .footer-cta a {
+      display: inline-block;
+      margin-top: 12px;
+      background: #ef6945;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .small-note {
+      font-size: 14px;
+      color: #7a685f;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .recipe-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero,
+      .image-wrap,
+      .content {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">Make Ahead + Comfort Food</div>
+      <h1>Best Freezer Meals for New Moms</h1>
+      <p>
+        Easy make-ahead meals that help lighten the load after baby arrives. These are practical,
+        comforting, filling, and actually worth stocking in the freezer.
+      </p>
+      <a class="cta" href="https://YOURDOMAIN.com/freezer-meals-for-new-moms/">Read More</a>
+    </section>
 
-<div class="container">
+    <section class="image-wrap">
+      <img
+        src="https://YOURDOMAIN.com/pinterest-images/freezer-meals-for-new-moms-pin-1.jpg"
+        alt="Best Freezer Meals for New Moms Pinterest Pin"
+      />
+    </section>
 
-<h1>Best Freezer Meals for New Moms</h1>
+    <section class="content">
+      <div class="intro-box">
+        <strong>Chef’s Note:</strong> The best postpartum freezer meals are meals that reheat well,
+        feel comforting, and do not create extra work later. Focus on hearty recipes with protein,
+        carbs, and flavor so future you has something easy and satisfying ready to go.
+      </div>
 
-<p class="subtitle">
-Easy make-ahead meals that help lighten the load after baby arrives.
-</p>
+      <h2 class="section-title">6 Best Freezer Meals for New Moms</h2>
 
-<!-- YOUR PIN IMAGE -->
-<div class="pin-image">
+      <div class="recipe-grid">
+        <article class="recipe-card">
+          <h3>1. Baked Ziti</h3>
+          <p><strong>Why it works:</strong> Freezes beautifully, reheats well, and feels like real comfort food.</p>
+          <ul>
+            <li>12 ounces ziti or penne pasta</li>
+            <li>1 pound ground beef or turkey</li>
+            <li>1 jar marinara sauce</li>
+            <li>1 cup ricotta cheese</li>
+            <li>2 cups shredded mozzarella</li>
+            <li>½ cup grated parmesan</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Cook pasta just until al dente. Brown the meat and stir in marinara. Mix pasta with
+              sauce, then layer with ricotta and mozzarella in a baking dish. Top with parmesan.
+              Cool completely, wrap tightly, and freeze.
+            </p>
+          </div>
+        </article>
 
-<img src="https://drive.google.com/uc?export=view&id=1rWdGtPGZCJub7puCttY5mss3UuACuXpu" alt="Best Freezer Meals for New Moms Pinterest Pin">
+        <article class="recipe-card">
+          <h3>2. Chicken Fajita Freezer Kit</h3>
+          <p><strong>Why it works:</strong> Fast, flavorful, and easy to thaw and cook on a busy night.</p>
+          <ul>
+            <li>1½ pounds chicken breast, sliced</li>
+            <li>3 bell peppers, sliced</li>
+            <li>1 onion, sliced</li>
+            <li>2 tablespoons olive oil</li>
+            <li>1 tablespoon fajita seasoning</li>
+            <li>Tortillas for serving</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Add chicken, peppers, onion, oil, and seasoning to a freezer bag. Seal and freeze flat.
+              Thaw overnight, then cook in a skillet until chicken is fully done and veggies are tender.
+              Serve in tortillas.
+            </p>
+          </div>
+        </article>
 
-</div>
+        <article class="recipe-card">
+          <h3>3. Chicken, Rice & Broccoli Bowls</h3>
+          <p><strong>Why it works:</strong> Balanced, filling, and perfect for single-serve freezer meals.</p>
+          <ul>
+            <li>2 cups cooked rice</li>
+            <li>2 cups cooked chicken</li>
+            <li>2 cups steamed broccoli</li>
+            <li>1 to 2 tablespoons olive oil or butter</li>
+            <li>Salt, pepper, garlic powder</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Divide rice, chicken, and broccoli into meal prep containers. Season lightly and add a
+              little butter or olive oil so it reheats better. Cool completely, seal, and freeze.
+            </p>
+          </div>
+        </article>
 
+        <article class="recipe-card">
+          <h3>4. Hearty Lentil Soup</h3>
+          <p><strong>Why it works:</strong> Great for batch cooking, freezer friendly, and comforting to reheat.</p>
+          <ul>
+            <li>1 tablespoon olive oil</li>
+            <li>1 onion, diced</li>
+            <li>2 carrots, diced</li>
+            <li>2 celery stalks, diced</li>
+            <li>1½ cups lentils</li>
+            <li>1 can diced tomatoes</li>
+            <li>6 cups broth</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Sauté onion, carrots, and celery in olive oil. Add lentils, tomatoes, and broth. Simmer
+              until lentils are tender. Cool fully, portion into freezer-safe containers, and freeze.
+            </p>
+          </div>
+        </article>
 
-<h2 class="section-title">6 Best Freezer Meals for New Moms</h2>
+        <article class="recipe-card">
+          <h3>5. Breakfast Burritos</h3>
+          <p><strong>Why it works:</strong> Perfect for exhausted mornings when you need a quick hot meal.</p>
+          <ul>
+            <li>8 eggs</li>
+            <li>1 cup cooked breakfast potatoes</li>
+            <li>1 cup shredded cheese</li>
+            <li>Optional cooked sausage or turkey sausage</li>
+            <li>6 to 8 tortillas</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Scramble the eggs and let them cool slightly. Fill tortillas with eggs, potatoes, cheese,
+              and sausage if using. Roll tightly, wrap individually, and freeze.
+            </p>
+          </div>
+        </article>
 
-<div class="recipe">
+        <article class="recipe-card">
+          <h3>6. Stuffed Shells</h3>
+          <p><strong>Why it works:</strong> A classic freezer meal that feels homemade and special.</p>
+          <ul>
+            <li>20 to 24 jumbo pasta shells</li>
+            <li>1½ cups ricotta cheese</li>
+            <li>1½ cups shredded mozzarella</li>
+            <li>½ cup parmesan</li>
+            <li>1 egg</li>
+            <li>2 cups marinara sauce</li>
+          </ul>
+          <div class="instructions">
+            <h4>Instructions</h4>
+            <p>
+              Cook shells until just tender. Mix ricotta, mozzarella, parmesan, and egg. Fill shells,
+              arrange over marinara in a baking dish, then spoon extra sauce over the top. Cool, cover
+              tightly, and freeze.
+            </p>
+          </div>
+        </article>
+      </div>
 
-<h3>Baked Ziti</h3>
+      <section class="prep-box">
+        <h3>How to Freeze These the Right Way</h3>
+        <ul>
+          <li>Let cooked food cool fully before freezing.</li>
+          <li>Use freezer-safe containers, foil pans, or heavy-duty freezer bags.</li>
+          <li>Label everything with the meal name and date.</li>
+          <li>Freeze flat when possible to save space.</li>
+          <li>Portion some meals into single servings for easier reheating.</li>
+        </ul>
+      </section>
 
-<p><strong>Why it works:</strong> Comfort food that reheats beautifully.</p>
+      <section class="notes">
+        <h3>Important Notes</h3>
+        <ul>
+          <li>Choose meals that are <strong>easy to reheat and easy to eat</strong>.</li>
+          <li>A mix of dinners, soups, and breakfast items usually works best.</li>
+          <li>Comfort food matters, especially during the postpartum phase.</li>
+          <li>Adding protein helps meals feel more filling and useful.</li>
+          <li>The goal is not fancy freezer meals. The goal is fewer stressful decisions later.</li>
+        </ul>
+      </section>
 
-<ul>
-<li>12 oz pasta</li>
-<li>1 lb ground beef or turkey</li>
-<li>1 jar marinara</li>
-<li>1 cup ricotta</li>
-<li>2 cups mozzarella</li>
-</ul>
+      <section class="chef-notes">
+        <h3>Chef Tips for Better Postpartum Meal Prep</h3>
+        <ul>
+          <li>Double one or two dinners each week instead of doing one giant prep day.</li>
+          <li>Use disposable foil pans for casseroles to make cleanup easier later.</li>
+          <li>Freeze sauces, soups, and cooked proteins in smaller portions for flexibility.</li>
+          <li>Stick to meals your household already likes instead of testing brand-new recipes.</li>
+          <li>For a Pinterest-worthy look, use warm lighting, casserole dishes, and cozy comfort-food styling.</li>
+        </ul>
+      </section>
 
-<p><strong>Instructions</strong></p>
-
-<p>
-Cook pasta. Brown meat and mix with sauce. Combine pasta with sauce, layer with cheeses,
-place in baking dish and freeze tightly covered.
-</p>
-
-</div>
-
-
-<div class="recipe">
-
-<h3>Chicken Fajita Freezer Kit</h3>
-
-<p><strong>Why it works:</strong> Toss into a skillet straight from thawing.</p>
-
-<ul>
-<li>1.5 lbs chicken</li>
-<li>3 peppers</li>
-<li>1 onion</li>
-<li>fajita seasoning</li>
-</ul>
-
-<p>
-Place everything in a freezer bag. Freeze flat. Thaw overnight and cook in a skillet.
-</p>
-
-</div>
-
-
-<div class="recipe">
-
-<h3>Chicken Rice Bowls</h3>
-
-<ul>
-<li>Cooked chicken</li>
-<li>Rice</li>
-<li>Broccoli</li>
-</ul>
-
-<p>
-Portion rice, chicken, and broccoli into freezer containers. Freeze and reheat when needed.
-</p>
-
-</div>
-
-
-<div class="recipe">
-
-<h3>Hearty Lentil Soup</h3>
-
-<ul>
-<li>Lentils</li>
-<li>Carrots</li>
-<li>Celery</li>
-<li>Onion</li>
-<li>Broth</li>
-</ul>
-
-<p>
-Simmer ingredients until lentils are tender. Cool and freeze in containers.
-</p>
-
-</div>
-
-
-<div class="recipe">
-
-<h3>Breakfast Burritos</h3>
-
-<ul>
-<li>Eggs</li>
-<li>Potatoes</li>
-<li>Cheese</li>
-<li>Tortillas</li>
-</ul>
-
-<p>
-Scramble eggs, add filling, roll in tortillas, wrap individually and freeze.
-</p>
-
-</div>
-
-
-<div class="recipe">
-
-<h3>Stuffed Shells</h3>
-
-<ul>
-<li>Jumbo shells</li>
-<li>Ricotta</li>
-<li>Mozzarella</li>
-<li>Marinara</li>
-</ul>
-
-<p>
-Fill cooked shells with cheese mixture, cover with sauce and freeze before baking.
-</p>
-
-</div>
-
-
-<div class="cta">
-
-<a href="https://YOURDOMAIN.com/freezer-meals-for-new-moms/">Read the Full Post</a>
-
-</div>
-
-</div>
-
+      <section class="footer-cta">
+        <h3>Save This for Later</h3>
+        <p>
+          Keep these freezer meal ideas on hand so postpartum meals feel easier, warmer, and way less overwhelming.
+        </p>
+        <a href="https://YOURDOMAIN.com/freezer-meals-for-new-moms/">Get the Full Post</a>
+        <div class="small-note">
+          Replace the image URL and page link with your real live URLs before publishing.
+        </div>
+      </section>
+    </section>
+  </main>
 </body>
 </html>
