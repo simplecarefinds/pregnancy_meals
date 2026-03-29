@@ -2,179 +2,278 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Iron Rich Pregnancy Meals</title>
+
 <style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f7f3ef;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(183,65,14,0.85), rgba(139,46,26,0.9)),
+    url('https://images.unsplash.com/photo-1490645935967-10de6ba17061');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 18px;
+}
+
+/* BUTTONS */
+.btn-group {
+    margin-top: 20px;
+}
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 18px;
+    background: #fff;
+    color: #b7410e;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn:hover {
+    background: #ffd9c7;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 18px;
+}
+
+h2 {
+    color: #8b2e1a;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+/* NOTES */
+.notes {
+    background: #fff4ec;
+    padding: 12px;
+    border-left: 4px solid #d2691e;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+/* PRINT BUTTON */
+.print-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 14px;
+    background: #b7410e;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* PRINT STYLE */
+@media print {
     body {
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #f7f3ef;
-        margin: 0;
-        padding: 0;
-        color: #333;
+        background: white;
     }
-    .container {
-        max-width: 1100px;
-        margin: auto;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #b7410e;
-        font-size: 42px;
-    }
-    h2 {
-        color: #8b2e1a;
-        border-bottom: 2px solid #e0c4b4;
-        padding-bottom: 5px;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
+    .hero, .btn, .print-btn {
+        display: none;
     }
     .card {
-        background: white;
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        box-shadow: none;
+        page-break-inside: avoid;
     }
-    .card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .hero h1 {
+        font-size: 30px;
     }
-    .card-content {
-        padding: 15px;
-    }
-    ul {
-        padding-left: 20px;
-    }
-    .notes {
-        background: #fff4ec;
-        padding: 10px;
-        border-left: 4px solid #d2691e;
-        margin-top: 10px;
-    }
+}
 </style>
 </head>
 
 <body>
 
-<div class="container">
-<h1>Iron Rich Pregnancy Meals</h1>
+<!-- HERO -->
+<div class="hero">
+    <h1>Iron Rich Pregnancy Meals</h1>
+    <p>Easy Breakfast • Lunch • Dinner • Snacks</p>
 
+    <div class="btn-group">
+        <a href="#breakfast" class="btn">Breakfast</a>
+        <a href="#lunch" class="btn">Lunch</a>
+        <a href="#dinner" class="btn">Dinner</a>
+        <a href="#snacks" class="btn">Snacks</a>
+    </div>
+</div>
+
+<div class="container">
 <div class="grid">
 
 <!-- BREAKFAST -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" alt="Spinach Omelette">
+<div class="card" id="breakfast">
+<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
 <div class="card-content">
 <h2>Spinach & Feta Omelette</h2>
 
-<h3>Ingredients</h3>
+<strong>Ingredients</strong>
 <ul>
 <li>3 eggs</li>
-<li>1 cup fresh spinach</li>
-<li>2 tbsp feta cheese</li>
-<li>1 tbsp olive oil</li>
-<li>Salt & pepper</li>
+<li>1 cup spinach</li>
+<li>2 tbsp feta</li>
+<li>Olive oil</li>
 </ul>
 
-<h3>Instructions</h3>
+<strong>Instructions</strong>
 <ul>
-<li>Whisk eggs with salt and pepper until fluffy.</li>
-<li>Sauté spinach in olive oil until wilted.</li>
-<li>Pour eggs over spinach and cook on low heat.</li>
-<li>Add feta, fold gently, and cook until set.</li>
+<li>Whisk eggs until fluffy.</li>
+<li>Sauté spinach lightly.</li>
+<li>Add eggs and cook slowly.</li>
+<li>Fold in feta and finish.</li>
 </ul>
 
 <div class="notes">
-<strong>Chef’s Tip:</strong> Pair with vitamin C-rich fruit like oranges to boost iron absorption.
+Boost iron absorption by pairing with citrus fruits.
 </div>
+
+<a href="#" onclick="window.print()" class="print-btn">Print Recipe</a>
 </div>
 </div>
 
 <!-- LUNCH -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Steak Bowl">
+<div class="card" id="lunch">
+<img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c">
 <div class="card-content">
-<h2>Grilled Steak Power Bowl</h2>
+<h2>Grilled Steak Bowl</h2>
 
-<h3>Ingredients</h3>
+<strong>Ingredients</strong>
 <ul>
-<li>150g lean steak</li>
-<li>1 cup chickpeas</li>
-<li>Mixed greens (spinach, kale)</li>
+<li>Lean steak</li>
+<li>Chickpeas</li>
+<li>Spinach & greens</li>
 <li>Cherry tomatoes</li>
-<li>Olive oil & lemon dressing</li>
 </ul>
 
-<h3>Instructions</h3>
+<strong>Instructions</strong>
 <ul>
-<li>Season steak and grill to desired doneness.</li>
-<li>Slice thinly and set aside.</li>
-<li>Assemble greens, chickpeas, and tomatoes in a bowl.</li>
-<li>Top with steak and drizzle dressing.</li>
+<li>Grill steak to preference.</li>
+<li>Slice thinly.</li>
+<li>Assemble bowl with veggies.</li>
+<li>Add dressing and serve.</li>
 </ul>
 
 <div class="notes">
-<strong>Chef’s Tip:</strong> Red meat provides heme iron, the most easily absorbed type.
+Heme iron from steak is best absorbed by the body.
 </div>
+
+<a href="#" onclick="window.print()" class="print-btn">Print Recipe</a>
 </div>
 </div>
 
 <!-- DINNER -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1604908176997-431d7c3e9f8c" alt="Steak Dinner">
+<div class="card" id="dinner">
+<img src="https://images.unsplash.com/photo-1604908176997-431d7c3e9f8c">
 <div class="card-content">
-<h2>Iron-Rich Steak Dinner</h2>
+<h2>Steak with Spinach & Mash</h2>
 
-<h3>Ingredients</h3>
+<strong>Ingredients</strong>
 <ul>
-<li>200g beef steak</li>
-<li>2 cups sautéed spinach</li>
-<li>Mashed potatoes</li>
-<li>Garlic & butter</li>
+<li>Beef steak</li>
+<li>Spinach</li>
+<li>Potatoes</li>
+<li>Butter & garlic</li>
 </ul>
 
-<h3>Instructions</h3>
+<strong>Instructions</strong>
 <ul>
-<li>Season steak with salt, pepper, and garlic.</li>
-<li>Sear in butter until golden and cooked to preference.</li>
-<li>Sauté spinach quickly to retain nutrients.</li>
-<li>Serve alongside creamy mashed potatoes.</li>
+<li>Sear steak until golden.</li>
+<li>Prepare mashed potatoes.</li>
+<li>Sauté spinach quickly.</li>
+<li>Plate and serve warm.</li>
 </ul>
 
 <div class="notes">
-<strong>Chef’s Tip:</strong> Avoid overcooking spinach to preserve iron content.
+Avoid overcooking greens to retain nutrients.
 </div>
+
+<a href="#" onclick="window.print()" class="print-btn">Print Recipe</a>
 </div>
 </div>
 
-<!-- SNACK -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71" alt="Healthy Snacks">
+<!-- SNACKS -->
+<div class="card" id="snacks">
+<img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71">
 <div class="card-content">
-<h2>Iron Boost Snack Plate</h2>
+<h2>Iron Snack Plate</h2>
 
-<h3>Ingredients</h3>
+<strong>Ingredients</strong>
 <ul>
-<li>Mixed nuts (almonds, cashews)</li>
+<li>Mixed nuts</li>
 <li>Boiled egg</li>
-<li>Celery sticks</li>
+<li>Celery</li>
 <li>Hummus</li>
 <li>Dried apricots</li>
 </ul>
 
-<h3>Instructions</h3>
+<strong>Instructions</strong>
 <ul>
-<li>Arrange all ingredients on a serving plate.</li>
-<li>Slice boiled egg in half and season lightly.</li>
-<li>Serve with hummus for dipping.</li>
+<li>Arrange all items neatly.</li>
+<li>Slice egg and season.</li>
+<li>Serve fresh.</li>
 </ul>
 
 <div class="notes">
-<strong>Chef’s Tip:</strong> Dried fruits are small but powerful iron boosters—great for quick snacks.
+Perfect quick snack packed with iron and protein.
 </div>
+
+<a href="#" onclick="window.print()" class="print-btn">Print Recipe</a>
 </div>
 </div>
 
