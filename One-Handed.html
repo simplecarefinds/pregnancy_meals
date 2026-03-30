@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy One-Handed Postpartum Snacks</title>
+  <style>
+    :root {
+      --cream: #f8f1e8;
+      --warm-white: #fffaf6;
+      --sand: #ead9c9;
+      --peach: #e08a72;
+      --gold: #ddb55a;
+      --teal: #4c908f;
+      --teal-deep: #2f6d6d;
+      --brown: #3f2a22;
+      --brown-soft: #6b5348;
+      --shadow: 0 18px 40px rgba(63, 42, 34, 0.12);
+      --shadow-hover: 0 24px 50px rgba(63, 42, 34, 0.18);
+      --radius-xl: 26px;
+      --radius-lg: 20px;
+      --max-width: 1220px;
+      --transition: 0.3s ease;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(180deg, #fffaf6 0%, #f5efea 100%);
+      color: var(--brown);
+      line-height: 1.65;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: none; }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background:
+        linear-gradient(rgba(31, 73, 72, 0.40), rgba(31, 73, 72, 0.58)),
+        url("https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=1800&q=80") center center / cover no-repeat;
+      color: #fffaf6;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(255, 236, 221, 0.18), transparent 36%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(92%, 980px);
+      margin: 0 auto;
+      padding: 84px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 250, 246, 0.14);
+      border: 1px solid rgba(255, 250, 246, 0.22);
+      backdrop-filter: blur(6px);
+      font-size: 0.86rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      margin: 0 0 18px;
+      font-size: clamp(2.7rem, 5vw, 5.2rem);
+      line-height: 1.04;
+      font-weight: 700;
+      max-width: 920px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 0 34px;
+      font-size: clamp(1.08rem, 1.8vw, 1.3rem);
+      color: rgba(255, 248, 243, 0.94);
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .nav-btn,
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 20px;
+      border-radius: 999px;
+      font-size: 0.98rem;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition);
+      box-shadow: 0 10px 24px rgba(18, 10, 7, 0.16);
+    }
+
+    .nav-btn {
+      background: rgba(255, 248, 243, 0.96);
+      color: var(--brown);
+    }
+
+    .nav-btn:hover,
+    .nav-btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 28px rgba(18, 10, 7, 0.22);
+      background: #ffffff;
+      outline: none;
+    }
+
+    .print-btn {
+      background: transparent;
+      color: #fff8f3;
+      border: 1px solid rgba(255, 248, 243, 0.5);
+    }
+
+    .print-btn:hover,
+    .print-btn:focus-visible {
+      transform: translateY(-2px);
+      background: rgba(255, 248, 243, 0.12);
+      outline: none;
+    }
+
+    .intro {
+      padding: 72px 0 28px;
+    }
+
+    .intro-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .intro h2 {
+      margin: 0 0 16px;
+      font-size: clamp(2rem, 3vw, 2.8rem);
+      line-height: 1.15;
+      color: var(--brown);
+      letter-spacing: -0.02em;
+    }
+
+    .intro p {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--brown-soft);
+    }
+
+    .recipes {
+      padding: 26px 0 84px;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .recipe-card {
+      background: rgba(255, 250, 246, 0.94);
+      border: 1px solid rgba(143, 75, 47, 0.08);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .recipe-image {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #e8ddd2;
+    }
+
+    .recipe-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .recipe-card:hover .recipe-image img {
+      transform: scale(1.04);
+    }
+
+    .recipe-content {
+      padding: 28px 26px 26px;
+    }
+
+    .recipe-anchor {
+      position: relative;
+      top: -90px;
+    }
+
+    .recipe-title {
+      margin: 0 0 12px;
+      font-size: 1.7rem;
+      line-height: 1.18;
+      color: var(--brown);
+    }
+
+    .recipe-desc {
+      margin: 0 0 20px;
+      color: var(--brown-soft);
+      font-size: 1rem;
+    }
+
+    .recipe-meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .block {
+      background: linear-gradient(180deg, rgba(248, 241, 232, 0.92), rgba(255, 250, 246, 0.98));
+      border-radius: var(--radius-lg);
+      padding: 18px 18px 16px;
+    }
+
+    .block h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      color: var(--teal-deep);
+    }
+
+    .ingredients-list,
+    .steps-list {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--brown);
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      margin: 0;
+      color: var(--brown-soft);
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 22px;
+    }
+
+    .card-print {
+      background: var(--brown);
+      color: #fffaf5;
+      padding: 12px 18px;
+      border-radius: 999px;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .card-print:hover,
+    .card-print:focus-visible {
+      background: var(--teal-deep);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    footer {
+      padding: 0 0 60px;
+    }
+
+    .footer-note {
+      text-align: center;
+      color: var(--brown-soft);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 980px) {
+      .recipe-grid { grid-template-columns: 1fr; }
+      .hero { min-height: 78vh; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-inner { padding: 72px 0 64px; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .nav-btn, .print-btn, .card-print { width: 100%; }
+      .recipe-content { padding: 22px 20px 22px; }
+      .intro { padding-top: 54px; }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      .hero,
+      .hero-actions,
+      .footer-note,
+      .card-footer {
+        display: none !important;
+      }
+
+      .intro { padding: 10px 0 20px; }
+      .recipes { padding: 0 0 12px; }
+      .recipe-grid { display: block; }
+
+      .recipe-card {
+        box-shadow: none;
+        border: 1px solid #d9d0c8;
+        margin-bottom: 24px;
+        page-break-inside: avoid;
+      }
+
+      .recipe-image { max-height: 260px; }
+
+      .block {
+        background: #ffffff;
+        border: 1px solid #ece3da;
+      }
+
+      .recipe-anchor { top: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Easy grab-and-go bites</div>
+      <h1>Easy One-Handed Postpartum Snacks</h1>
+      <p>
+        Practical, satisfying snacks you can prep ahead and eat with one hand when the baby is in the other—simple, nourishing, and ready whenever hunger sneaks in.
+      </p>
+      <div class="hero-actions">
+        <a class="nav-btn" href="#recipe-1">Fruit &amp; Nuts</a>
+        <a class="nav-btn" href="#recipe-2">Protein Bars</a>
+        <a class="nav-btn" href="#recipe-3">Veggie Wraps</a>
+        <a class="nav-btn" href="#recipe-4">Cheese &amp; Eggs</a>
+        <button class="print-btn" onclick="window.print()">Print Recipes</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="container intro-wrap">
+        <h2>Snacks that are easy to prep now and genuinely helpful later</h2>
+        <p>
+          These four postpartum snack ideas are quick to assemble, easy to keep ready in the fridge or pantry, and built for those long, busy stretches when sitting down for a full meal just is not happening yet.
+        </p>
+      </div>
+    </section>
+
+    <section class="recipes">
+      <div class="container">
+        <div class="recipe-grid">
+          <article class="recipe-card" id="recipe-1">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80" alt="A small bowl filled with mixed nuts and dried fruit" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Fruit &amp; Nuts Snack Cups</h2>
+              <p class="recipe-desc">
+                Sweet dried fruit, crunchy nuts, and a little balance from seeds make these snack cups easy to stash in containers and perfect for grabbing quickly with one hand.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>1 cup roasted almonds or cashews</li>
+                    <li>1/2 cup walnuts or pecans</li>
+                    <li>1/2 cup raisins, dried cherries, or cranberries</li>
+                    <li>1/4 cup pumpkin seeds or sunflower seeds</li>
+                    <li>Pinch of cinnamon, optional</li>
+                    <li>Small lidded cups or jars for storage</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Add the nuts, dried fruit, seeds, and cinnamon to a large bowl.</li>
+                    <li>Toss until everything is evenly mixed.</li>
+                    <li>Divide into small snack-size containers or jars.</li>
+                    <li>Keep at room temperature for quick pantry access or store in a cool cupboard.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Chef Tip</h3>
+                  <p class="note">
+                    Pre-portioning keeps this from turning into a messy handful snack. Add a few dark chocolate chips if you want a little something extra without much effort.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="recipe-2">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1571748982800-fa51082c2224?auto=format&fit=crop&w=1200&q=80" alt="A homemade oat and nut butter protein bar being held in one hand" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Soft Oat Protein Bars</h2>
+              <p class="recipe-desc">
+                Tender bars made with oats, nut butter, and seeds hold together beautifully, travel well, and are easy to eat one-handed during the busiest part of the day.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>2 cups rolled oats</li>
+                    <li>1/2 cup peanut or almond butter</li>
+                    <li>1/3 cup honey</li>
+                    <li>1/4 cup ground flaxseed</li>
+                    <li>1/4 cup chopped nuts</li>
+                    <li>1/4 cup mini chocolate chips or raisins</li>
+                    <li>1/2 teaspoon cinnamon</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Line a small square pan or loaf pan with parchment paper.</li>
+                    <li>Warm the nut butter and honey together just enough to make them easy to stir.</li>
+                    <li>Mix in the oats, flaxseed, nuts, chocolate chips or raisins, and cinnamon until evenly combined.</li>
+                    <li>Press the mixture firmly into the pan.</li>
+                    <li>Chill until set, then cut into bars and keep refrigerated.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Nutrition Note</h3>
+                  <p class="note">
+                    These hold up well for a grab-and-go snack and feel more substantial than loose trail mix. Wrapping each bar individually makes them even easier later.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="recipe-3">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1623428187969-5da2dcea5ebf?auto=format&fit=crop&w=1200&q=80" alt="A fresh veggie wrap cut open and held in one hand" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Hummus Veggie Wraps</h2>
+              <p class="recipe-desc">
+                Soft wraps layered with hummus, greens, and crisp vegetables make a fresh one-handed snack that feels light, colorful, and easy to keep ready in the fridge.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>4 medium tortillas or wraps</li>
+                    <li>1/2 cup hummus</li>
+                    <li>1 cup baby spinach or greens</li>
+                    <li>1 small cucumber, sliced thin</li>
+                    <li>1 carrot, shredded</li>
+                    <li>1/2 bell pepper, diced or sliced thin</li>
+                    <li>Crumbled feta, optional</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Lay the wraps out flat and spread each with a generous layer of hummus.</li>
+                    <li>Top with spinach, cucumber, carrot, bell pepper, and feta if using.</li>
+                    <li>Roll tightly into wraps and cut in half if you prefer smaller pieces.</li>
+                    <li>Wrap individually and store in the fridge until ready to eat.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Chef Tip</h3>
+                  <p class="note">
+                    Keep the fillings on the drier side so the wraps stay fresh longer. These are especially nice chilled and easy to eat while holding the baby.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="recipe-4">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?auto=format&fit=crop&w=1200&q=80" alt="Soft boiled eggs and cheese cubes on a small plate" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Cheese Cubes &amp; Jammy Eggs</h2>
+              <p class="recipe-desc">
+                A simple little plate of soft eggs and cheese feels surprisingly satisfying, travels well in containers, and takes almost no effort once prepped ahead.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>6 eggs</li>
+                    <li>1 block cheddar, Monterey Jack, or mozzarella</li>
+                    <li>Salt and black pepper</li>
+                    <li>Paprika or everything seasoning, optional</li>
+                    <li>Small containers for storing</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Bring a small pot of water to a gentle boil.</li>
+                    <li>Add the eggs and cook to your preferred doneness, then cool in ice water and peel.</li>
+                    <li>Cut the cheese into bite-size cubes.</li>
+                    <li>Portion the eggs and cheese into small containers.</li>
+                    <li>Season lightly with salt, pepper, or paprika right before serving.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Chef Tip</h3>
+                  <p class="note">
+                    Peeling the eggs ahead makes this snack much more helpful in real life. Add a few crackers or grapes if you want to round it out without extra prep.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-note">Easy snacks for the long stretches between meals.</p>
+    </div>
+  </footer>
+</body>
+</html>
