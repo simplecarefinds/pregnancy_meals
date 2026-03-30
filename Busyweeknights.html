@@ -245,4 +245,361 @@
       padding: 18px 18px 16px;
     }
 
-    .block h
+    .block h3 {
+      margin: 0 0 10px;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      color: var(--rust-deep);
+    }
+
+    .ingredients-list,
+    .steps-list {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--brown);
+    }
+
+    .ingredients-list li,
+    .steps-list li {
+      margin-bottom: 8px;
+    }
+
+    .note {
+      margin: 0;
+      color: var(--brown-soft);
+    }
+
+    .card-footer {
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 22px;
+    }
+
+    .card-print {
+      background: var(--brown);
+      color: #fffaf5;
+      padding: 12px 18px;
+      border-radius: 999px;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .card-print:hover,
+    .card-print:focus-visible {
+      background: var(--rust-deep);
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    footer {
+      padding: 0 0 60px;
+    }
+
+    .footer-note {
+      text-align: center;
+      color: var(--brown-soft);
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 980px) {
+      .recipe-grid { grid-template-columns: 1fr; }
+      .hero { min-height: 78vh; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-inner { padding: 72px 0 64px; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .nav-btn, .print-btn, .card-print { width: 100%; }
+      .recipe-content { padding: 22px 20px 22px; }
+      .intro { padding-top: 54px; }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #000000;
+      }
+
+      .hero,
+      .hero-actions,
+      .footer-note,
+      .card-footer {
+        display: none !important;
+      }
+
+      .intro { padding: 10px 0 20px; }
+      .recipes { padding: 0 0 12px; }
+      .recipe-grid { display: block; }
+
+      .recipe-card {
+        box-shadow: none;
+        border: 1px solid #d9d0c8;
+        margin-bottom: 24px;
+        page-break-inside: avoid;
+      }
+
+      .recipe-image { max-height: 260px; }
+
+      .block {
+        background: #ffffff;
+        border: 1px solid #ece3da;
+      }
+
+      .recipe-anchor { top: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Comforting dinners</div>
+      <h1>Easy Pregnancy Dinners for Busy Weeknights</h1>
+      <p>
+        Cozy, practical dinners with simple ingredients, gentle flavors, and enough comfort to make the whole table happy after a long day.
+      </p>
+      <div class="hero-actions">
+        <a class="nav-btn" href="#recipe-1">Lemon Herb Chicken</a>
+        <a class="nav-btn" href="#recipe-2">Turkey Veggie Stir-Fry</a>
+        <a class="nav-btn" href="#recipe-3">Baked Salmon</a>
+        <a class="nav-btn" href="#recipe-4">Cheesy Pasta Bake</a>
+        <button class="print-btn" onclick="window.print()">Print Recipes</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="container intro-wrap">
+        <h2>Dinners that feel easy without feeling plain</h2>
+        <p>
+          When evenings get busy, dinner should still feel warm, satisfying, and worth sitting down for. These four recipes are family-friendly, straightforward to make, and balanced with protein, comforting textures, and everyday ingredients that fit real weeknights.
+        </p>
+      </div>
+    </section>
+
+    <section class="recipes">
+      <div class="container">
+        <div class="recipe-grid">
+          <article class="recipe-card" id="recipe-1">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=1200&q=80" alt="Lemon herb chicken served with rice and green beans" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Lemon Herb Chicken with Rice &amp; Green Beans</h2>
+              <p class="recipe-desc">
+                Bright lemon, tender chicken, and a simple plate of rice and green beans make this one of those easy dinners that tastes fresh, comforting, and beautifully complete.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>2 boneless skinless chicken breasts</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>1 teaspoon garlic powder</li>
+                    <li>1 teaspoon dried parsley</li>
+                    <li>1/2 teaspoon paprika</li>
+                    <li>Salt and black pepper</li>
+                    <li>2 cups cooked rice</li>
+                    <li>2 cups green beans</li>
+                    <li>Lemon slices for serving</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Pat the chicken dry and season with olive oil, lemon juice, garlic powder, parsley, paprika, salt, and pepper.</li>
+                    <li>Heat a skillet over medium heat and cook the chicken for 5 to 6 minutes per side, or until fully cooked through.</li>
+                    <li>While the chicken cooks, steam or sauté the green beans until crisp-tender.</li>
+                    <li>Warm the rice and spoon it onto plates.</li>
+                    <li>Slice the chicken and serve over the rice with green beans and fresh lemon slices on the side.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Chef Tip</h3>
+                  <p class="note">
+                    Let the chicken rest for a few minutes before slicing so it stays juicy. A spoonful of plain yogurt mixed with lemon and herbs also makes a quick, creamy sauce.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="recipe-2">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1200&q=80" alt="Ground turkey and vegetables stir-fry in a skillet" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Turkey &amp; Veggie Stir-Fry</h2>
+              <p class="recipe-desc">
+                A quick skillet dinner with ground turkey, tender vegetables, and a savory glaze that comes together fast and works beautifully over rice or noodles.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>1 pound ground turkey</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>2 cups broccoli florets</li>
+                    <li>1 red bell pepper, diced</li>
+                    <li>1 carrot, sliced thin</li>
+                    <li>2 cloves garlic, minced</li>
+                    <li>2 tablespoons low-sodium soy sauce</li>
+                    <li>1 tablespoon honey</li>
+                    <li>1 teaspoon sesame oil</li>
+                    <li>Cooked rice for serving</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Heat olive oil in a large skillet over medium heat.</li>
+                    <li>Add the ground turkey and cook until browned, breaking it up with a spoon as it cooks.</li>
+                    <li>Stir in the broccoli, bell pepper, carrot, and garlic, then cook for 4 to 5 minutes until the vegetables are tender but still bright.</li>
+                    <li>Whisk together the soy sauce, honey, and sesame oil, then pour the sauce into the skillet.</li>
+                    <li>Toss everything together and cook for another 1 to 2 minutes until glossy and well coated.</li>
+                    <li>Serve warm over rice.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Nutrition Note</h3>
+                  <p class="note">
+                    This dinner gives you protein, colorful vegetables, and an easy base you can switch up through the week. Use frozen stir-fry vegetables when you want to cut prep down even more.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="recipe-3">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=1200&q=80" alt="Baked salmon with lemon and roasted potatoes on a plate" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Baked Salmon with Baby Potatoes</h2>
+              <p class="recipe-desc">
+                Flaky salmon, roasted potatoes, and fresh lemon come together in a dinner that feels wholesome and comforting without asking too much of you at the end of the day.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>2 salmon fillets</li>
+                    <li>12 baby potatoes, halved</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>1 teaspoon dried dill or parsley</li>
+                    <li>1/2 teaspoon garlic powder</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>Salt and black pepper</li>
+                    <li>Lemon slices</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Heat the oven to 400°F.</li>
+                    <li>Toss the halved potatoes with half the olive oil, a pinch of salt, and black pepper, then spread them on a sheet pan.</li>
+                    <li>Roast the potatoes for 20 minutes.</li>
+                    <li>Place the salmon on the same pan and drizzle with the remaining olive oil, lemon juice, dill, garlic powder, salt, and pepper.</li>
+                    <li>Top with lemon slices and return the pan to the oven for 12 to 15 minutes, until the salmon flakes easily and the potatoes are golden.</li>
+                    <li>Serve warm with an extra squeeze of lemon.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Chef Tip</h3>
+                  <p class="note">
+                    Starting the potatoes first keeps everything done at the same time. Add asparagus or green beans to the pan for the last 10 minutes if you want an easy extra side.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="recipe-4">
+            <div class="recipe-anchor"></div>
+            <div class="recipe-image">
+              <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=1200&q=80" alt="Cheesy baked pasta in a skillet topped with herbs" />
+            </div>
+            <div class="recipe-content">
+              <h2 class="recipe-title">Cheesy Pasta Bake</h2>
+              <p class="recipe-desc">
+                Rich tomato sauce, tender pasta, and bubbling cheese make this the kind of easy weeknight dinner everyone actually gets excited about.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="block">
+                  <h3>Ingredients</h3>
+                  <ul class="ingredients-list">
+                    <li>8 ounces rigatoni or penne</li>
+                    <li>1 tablespoon olive oil</li>
+                    <li>1/2 pound lean ground turkey or beef, optional</li>
+                    <li>2 cups marinara sauce</li>
+                    <li>1/2 cup ricotta</li>
+                    <li>1 1/2 cups shredded mozzarella</li>
+                    <li>1/4 cup grated Parmesan</li>
+                    <li>1 teaspoon Italian seasoning</li>
+                    <li>Salt and black pepper</li>
+                    <li>Fresh parsley for serving</li>
+                  </ul>
+                </div>
+
+                <div class="block">
+                  <h3>Instructions</h3>
+                  <ol class="steps-list">
+                    <li>Heat the oven to 375°F and cook the pasta until just shy of al dente.</li>
+                    <li>If using meat, cook it in a skillet with olive oil until browned, then season lightly with salt, pepper, and Italian seasoning.</li>
+                    <li>Stir the pasta with marinara sauce, ricotta, and the cooked meat if using.</li>
+                    <li>Transfer to a baking dish or oven-safe skillet and top with mozzarella and Parmesan.</li>
+                    <li>Bake for 18 to 22 minutes, until hot and bubbly with golden spots on top.</li>
+                    <li>Finish with parsley and let it rest for 5 minutes before serving.</li>
+                  </ol>
+                </div>
+
+                <div class="block">
+                  <h3>Chef Tip</h3>
+                  <p class="note">
+                    For an even easier version, skip the meat and stir in baby spinach right before baking. It melts into the sauce and adds extra color with almost no extra effort.
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <button class="card-print" onclick="window.print()">Print This Recipe</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p class="footer-note">Simple, cozy dinners for busy evenings.</p>
+    </div>
+  </footer>
+</body>
+</html>
