@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Pregnancy Breakfasts for Busy Mornings</title>
+  <style>
+    :root {
+      --cream: #f8f2ea;
+      --warm-white: #fffdf9;
+      --sand: #eadfce;
+      --taupe: #c9b7a4;
+      --rust: #b96a4a;
+      --deep-brown: #4a3228;
+      --soft-brown: #765347;
+      --text: #3e2c25;
+      --muted: #7a6257;
+      --card-shadow: 0 16px 40px rgba(74, 50, 40, 0.12);
+      --card-shadow-hover: 0 22px 55px rgba(74, 50, 40, 0.18);
+      --radius-xl: 24px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --max-width: 1240px;
+      --transition: 220ms ease;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(255,255,255,0.75), transparent 30%),
+        linear-gradient(180deg, #fbf6f0 0%, #f6efe6 100%);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .page-shell {
+      width: min(100% - 32px, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 48px 0;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(42, 25, 19, 0.52), rgba(42, 25, 19, 0.52)),
+        url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1800&q=80") center center / cover no-repeat;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(20, 10, 6, 0.05) 0%, rgba(20, 10, 6, 0.35) 100%);
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      width: min(100%, 900px);
+      color: #fff9f3;
+      padding: 40px 0;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 248, 239, 0.14);
+      border: 1px solid rgba(255, 248, 239, 0.22);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+      max-width: 10ch;
+      text-wrap: balance;
+    }
+
+    .hero-subtitle {
+      max-width: 650px;
+      margin: 22px 0 32px;
+      font-size: clamp(1.05rem, 1.8vw, 1.28rem);
+      color: rgba(255, 249, 243, 0.92);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.75;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .pill-link,
+    .print-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 247, 239, 0.34);
+      background: rgba(255, 250, 244, 0.14);
+      color: #fffaf5;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+      transition: transform var(--transition), background var(--transition), border-color var(--transition);
+      backdrop-filter: blur(8px);
+      cursor: pointer;
+    }
+
+    .pill-link:hover,
+    .print-btn:hover {
+      transform: translateY(-2px);
+      background: rgba(255, 250, 244, 0.22);
+      border-color: rgba(255, 247, 239, 0.48);
+    }
+
+    .pill-link.primary,
+    .print-btn.primary {
+      background: rgba(185, 106, 74, 0.88);
+      border-color: rgba(185, 106, 74, 0.88);
+    }
+
+    .pill-link.primary:hover,
+    .print-btn.primary:hover {
+      background: rgba(185, 106, 74, 1);
+      border-color: rgba(185, 106, 74, 1);
+    }
+
+    .intro {
+      padding: 72px 0 28px;
+    }
+
+    .intro-inner {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .intro-copy {
+      background: rgba(255, 253, 249, 0.86);
+      border: 1px solid rgba(118, 83, 71, 0.08);
+      box-shadow: var(--card-shadow);
+      border-radius: var(--radius-xl);
+      padding: 34px 32px;
+      backdrop-filter: blur(6px);
+    }
+
+    .intro-copy p {
+      margin: 0;
+      font-size: 1.08rem;
+      color: var(--soft-brown);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.85;
+    }
+
+    .intro-accent {
+      border-radius: var(--radius-xl);
+      min-height: 220px;
+      background:
+        linear-gradient(rgba(62, 44, 37, 0.18), rgba(62, 44, 37, 0.18)),
+        url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80") center center / cover no-repeat;
+      box-shadow: var(--card-shadow);
+    }
+
+    .recipes {
+      padding: 24px 0 80px;
+    }
+
+    .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .recipe-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,249,243,0.98) 100%);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--card-shadow);
+      transition: transform var(--transition), box-shadow var(--transition);
+      border: 1px solid rgba(118, 83, 71, 0.08);
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--card-shadow-hover);
+    }
+
+    .recipe-image-wrap {
+      position: relative;
+      aspect-ratio: 16 / 10;
+      overflow: hidden;
+      background: #efe4d8;
+    }
+
+    .recipe-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 500ms ease;
+    }
+
+    .recipe-card:hover .recipe-image {
+      transform: scale(1.04);
+    }
+
+    .recipe-body {
+      padding: 26px 24px 24px;
+    }
+
+    .recipe-title-row {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .recipe-title {
+      margin: 0;
+      font-size: clamp(1.45rem, 2vw, 1.9rem);
+      line-height: 1.2;
+      color: var(--deep-brown);
+    }
+
+    .mini-print {
+      flex-shrink: 0;
+      background: #fff7f1;
+      color: var(--rust);
+      border: 1px solid rgba(185, 106, 74, 0.22);
+      border-radius: 999px;
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .mini-print:hover {
+      background: #fdf0e7;
+      transform: translateY(-1px);
+    }
+
+    .recipe-description {
+      margin: 0 0 20px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .recipe-meta {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .content-block {
+      background: rgba(255, 252, 247, 0.78);
+      border-radius: var(--radius-lg);
+      padding: 18px 18px 16px;
+      border: 1px solid rgba(118, 83, 71, 0.08);
+    }
+
+    .content-block h3 {
+      margin: 0 0 12px;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--rust);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .content-block ul,
+    .content-block ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .content-block li {
+      margin-bottom: 8px;
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .note {
+      margin-top: 18px;
+      padding: 16px 18px;
+      border-left: 4px solid var(--rust);
+      background: #fff4eb;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--soft-brown);
+      line-height: 1.75;
+    }
+
+    .note strong {
+      color: var(--deep-brown);
+    }
+
+    .footer-space {
+      height: 24px;
+    }
+
+    @media (max-width: 980px) {
+      .intro-inner,
+      .recipes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 72vh;
+      }
+
+      .intro-accent {
+        min-height: 180px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .page-shell {
+        width: min(100% - 20px, var(--max-width));
+      }
+
+      .hero {
+        padding: 28px 0;
+      }
+
+      .hero-content {
+        padding: 24px 0;
+      }
+
+      .intro {
+        padding-top: 46px;
+      }
+
+      .intro-copy {
+        padding: 24px 20px;
+      }
+
+      .recipe-body {
+        padding: 20px 18px 18px;
+      }
+
+      .recipe-title-row {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .hero-actions {
+        gap: 10px;
+      }
+
+      .pill-link,
+      .print-btn {
+        width: 100%;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .hero,
+      .hero-actions,
+      .intro-accent,
+      .mini-print,
+      .print-btn {
+        display: none !important;
+      }
+
+      .intro,
+      .recipes {
+        padding: 0;
+      }
+
+      .intro-copy,
+      .recipe-card,
+      .content-block {
+        box-shadow: none !important;
+        border: 1px solid #d8cec5 !important;
+        background: #ffffff !important;
+      }
+
+      .recipes-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .recipe-card {
+        break-inside: avoid;
+        margin-bottom: 18px;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .page-shell {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="page-shell">
+      <div class="hero-content">
+        <div class="eyebrow">Nourishing mornings</div>
+        <h1>Easy Pregnancy Breakfasts for Busy Mornings</h1>
+        <p class="hero-subtitle">
+          Gentle, satisfying breakfasts to make rushed mornings feel a little softer—simple to prep, comforting to eat, and full of ingredients that help you start the day well.
+        </p>
+        <div class="hero-actions" aria-label="Recipe navigation">
+          <a class="pill-link" href="#spinach-toast">Spinach &amp; Cheese Egg Toast</a>
+          <a class="pill-link" href="#berry-parfait">Berry Yogurt Parfait</a>
+          <a class="pill-link" href="#pb-oatmeal">Peanut Butter Banana Oatmeal</a>
+          <a class="pill-link" href="#avocado-plate">Avocado Egg Breakfast Plate</a>
+          <button class="print-btn primary" onclick="window.print()">Print Page</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="page-shell">
+        <div class="intro-inner">
+          <div class="intro-copy">
+            <p>
+              When mornings feel full before the day even begins, breakfast should be one less thing to overthink. These four easy ideas bring together protein, fiber, healthy fats, and fresh flavor in a way that feels comforting without being heavy. Whether you need something quick between appointments or a calm breakfast at home, each recipe is designed to be practical, beautiful, and worth looking forward to.
+            </p>
+          </div>
+          <div class="intro-accent" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recipes">
+      <div class="page-shell">
+        <div class="recipes-grid">
+
+          <article class="recipe-card" id="spinach-toast">
+            <div class="recipe-image-wrap">
+              <img
+                class="recipe-image"
+                src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80"
+                alt="Spinach and cheese egg toast served on a ceramic plate in warm natural light"
+              />
+            </div>
+            <div class="recipe-body">
+              <div class="recipe-title-row">
+                <h2 class="recipe-title">Spinach &amp; Cheese Egg Toast</h2>
+                <button class="mini-print" onclick="window.print()">Print</button>
+              </div>
+              <p class="recipe-description">
+                Crisp toast topped with creamy eggs, wilted spinach, and melted cheese for a warm, savory breakfast that feels hearty without taking much time.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="content-block">
+                  <h3>Ingredients</h3>
+                  <ul>
+                    <li>2 slices sourdough or whole grain bread</li>
+                    <li>2 eggs</li>
+                    <li>1 cup fresh spinach</li>
+                    <li>2 tablespoons shredded mozzarella or cheddar</li>
+                    <li>1 teaspoon butter or olive oil</li>
+                    <li>Pinch of salt and black pepper</li>
+                    <li>Optional: red pepper flakes</li>
+                  </ul>
+                </div>
+
+                <div class="content-block">
+                  <h3>Instructions</h3>
+                  <ol>
+                    <li>Toast the bread until golden and crisp.</li>
+                    <li>Warm butter or olive oil in a skillet over medium heat.</li>
+                    <li>Add the spinach and cook for 30 to 60 seconds, just until wilted.</li>
+                    <li>Crack in the eggs and scramble gently with the spinach until softly set.</li>
+                    <li>Season with salt and pepper, then sprinkle in the cheese and let it melt.</li>
+                    <li>Spoon the egg mixture over the toast and serve warm.</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="note">
+                <strong>Chef tip:</strong> Use a sturdy bread with a little chew so it holds the topping well. A handful of spinach cooks down quickly, making it an easy way to add color and extra nutrients to the plate.
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="berry-parfait">
+            <div class="recipe-image-wrap">
+              <img
+                class="recipe-image"
+                src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80"
+                alt="Berry yogurt parfait layered with fresh berries and granola in a glass jar"
+              />
+            </div>
+            <div class="recipe-body">
+              <div class="recipe-title-row">
+                <h2 class="recipe-title">Berry Yogurt Parfait</h2>
+                <button class="mini-print" onclick="window.print()">Print</button>
+              </div>
+              <p class="recipe-description">
+                Cool, creamy, and lightly sweet, this parfait layers yogurt, berries, and granola into a breakfast that feels fresh and effortless.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="content-block">
+                  <h3>Ingredients</h3>
+                  <ul>
+                    <li>1 cup plain or vanilla Greek yogurt</li>
+                    <li>1/2 cup strawberries, sliced</li>
+                    <li>1/2 cup blueberries</li>
+                    <li>1/3 cup granola</li>
+                    <li>1 teaspoon chia seeds</li>
+                    <li>1 teaspoon honey or maple syrup, optional</li>
+                  </ul>
+                </div>
+
+                <div class="content-block">
+                  <h3>Instructions</h3>
+                  <ol>
+                    <li>Spoon a few tablespoons of yogurt into a glass or bowl.</li>
+                    <li>Add a layer of strawberries, blueberries, and granola.</li>
+                    <li>Repeat the layers until all ingredients are used.</li>
+                    <li>Finish with chia seeds and a light drizzle of honey if desired.</li>
+                    <li>Serve immediately for crunch, or chill for a few minutes before eating.</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="note">
+                <strong>Nutrition note:</strong> Greek yogurt brings protein, while berries add freshness and fiber. Keep a jar of washed berries in the fridge to make this one especially quick on busy weekdays.
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="pb-oatmeal">
+            <div class="recipe-image-wrap">
+              <img
+                class="recipe-image"
+                src="https://images.unsplash.com/photo-1517673400267-0251440c45dc?auto=format&fit=crop&w=1200&q=80"
+                alt="Creamy peanut butter banana oatmeal topped with sliced banana in a cozy bowl"
+              />
+            </div>
+            <div class="recipe-body">
+              <div class="recipe-title-row">
+                <h2 class="recipe-title">Peanut Butter Banana Oatmeal</h2>
+                <button class="mini-print" onclick="window.print()">Print</button>
+              </div>
+              <p class="recipe-description">
+                Silky oats stirred with peanut butter and finished with banana make for a comforting bowl that feels cozy, filling, and easy to love.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="content-block">
+                  <h3>Ingredients</h3>
+                  <ul>
+                    <li>1/2 cup rolled oats</li>
+                    <li>1 cup milk of choice</li>
+                    <li>1 tablespoon peanut butter</li>
+                    <li>1 ripe banana, sliced</li>
+                    <li>1/2 teaspoon cinnamon</li>
+                    <li>1 teaspoon flaxseed, optional</li>
+                    <li>Small pinch of salt</li>
+                  </ul>
+                </div>
+
+                <div class="content-block">
+                  <h3>Instructions</h3>
+                  <ol>
+                    <li>Combine oats, milk, cinnamon, and salt in a small saucepan.</li>
+                    <li>Cook over medium-low heat, stirring often, until the oats are tender and creamy.</li>
+                    <li>Stir in the peanut butter until fully melted into the oatmeal.</li>
+                    <li>Top with sliced banana and flaxseed, if using.</li>
+                    <li>Serve warm right away.</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="note">
+                <strong>Chef tip:</strong> For extra creaminess, mash half the banana directly into the oats while they cook, then use the rest on top for texture and a naturally sweeter finish.
+              </div>
+            </div>
+          </article>
+
+          <article class="recipe-card" id="avocado-plate">
+            <div class="recipe-image-wrap">
+              <img
+                class="recipe-image"
+                src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=1200&q=80"
+                alt="Avocado egg breakfast plate with sliced avocado eggs toast and fresh tomatoes"
+              />
+            </div>
+            <div class="recipe-body">
+              <div class="recipe-title-row">
+                <h2 class="recipe-title">Avocado Egg Breakfast Plate</h2>
+                <button class="mini-print" onclick="window.print()">Print</button>
+              </div>
+              <p class="recipe-description">
+                A simple breakfast plate with avocado, eggs, and fresh vegetables that feels balanced, bright, and satisfying from the first bite.
+              </p>
+
+              <div class="recipe-meta">
+                <div class="content-block">
+                  <h3>Ingredients</h3>
+                  <ul>
+                    <li>2 eggs, boiled or fried to preference</li>
+                    <li>1/2 ripe avocado, sliced</li>
+                    <li>1 slice toasted whole grain bread</li>
+                    <li>1/2 cup cherry tomatoes or cucumber slices</li>
+                    <li>1 teaspoon olive oil</li>
+                    <li>Pinch of salt and black pepper</li>
+                    <li>Optional: squeeze of lemon</li>
+                  </ul>
+                </div>
+
+                <div class="content-block">
+                  <h3>Instructions</h3>
+                  <ol>
+                    <li>Cook the eggs the way you like them.</li>
+                    <li>Arrange the eggs, avocado, toast, and vegetables on a plate.</li>
+                    <li>Drizzle the avocado lightly with olive oil and a squeeze of lemon if desired.</li>
+                    <li>Season everything with salt and pepper.</li>
+                    <li>Serve immediately while the eggs are still warm.</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div class="note">
+                <strong>Nutrition note:</strong> This plate combines protein and healthy fats in a very simple format. Add a few extra tomato slices or fruit on the side when you want something fresh without extra prep.
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="footer-space" aria-hidden="true"></div>
+</body>
+</html>
