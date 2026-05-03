@@ -6,21 +6,20 @@
   <title>Easy Pregnancy Breakfast Ideas for Busy Moms</title>
   <style>
     :root {
-      --cream: #fff7ef;
-      --warm-cream: #f8eadc;
-      --latte: #d8b99a;
+      --cream: #fff8f0;
+      --paper: #fffdf8;
+      --blush: #ef8895;
+      --coral: #de5d69;
+      --navy: #122943;
+      --green: #315c3d;
+      --sage: #eef3e9;
+      --oat: #f4dfc8;
       --cocoa: #5a3828;
-      --terracotta: #b66a4a;
-      --rose: #d9907c;
-      --sage: #8c9b78;
-      --olive: #69745c;
-      --navy: #13283f;
-      --ink: #33231c;
-      --muted: #7b6254;
+      --muted: #766154;
       --white: #ffffff;
-      --shadow: 0 24px 60px rgba(70, 42, 28, 0.13);
-      --soft-shadow: 0 14px 35px rgba(70, 42, 28, 0.10);
-      --radius-xl: 28px;
+      --shadow: 0 24px 60px rgba(35, 25, 20, 0.13);
+      --soft-shadow: 0 14px 35px rgba(35, 25, 20, 0.10);
+      --radius-xl: 30px;
       --radius-lg: 20px;
     }
 
@@ -28,8 +27,8 @@
 
     body {
       font-family: Georgia, "Times New Roman", serif;
-      background: linear-gradient(180deg, var(--cream) 0%, #fffdf9 45%, var(--warm-cream) 100%);
-      color: var(--ink);
+      background: linear-gradient(180deg, var(--cream) 0%, #fffdf9 55%, #f8eadc 100%);
+      color: var(--cocoa);
       line-height: 1.7;
     }
 
@@ -43,27 +42,25 @@
 
     .hero {
       min-height: 600px;
-      border-radius: 36px;
+      border-radius: 38px;
       overflow: hidden;
       position: relative;
       box-shadow: var(--shadow);
       background:
-        linear-gradient(135deg, rgba(19, 40, 63, 0.74), rgba(182, 106, 74, 0.36)),
+        linear-gradient(135deg, rgba(18, 41, 67, 0.82), rgba(222, 93, 105, 0.38)),
         url("https://images.unsplash.com/photo-1494597564530-871f2b93ac55?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
       display: flex;
       align-items: flex-end;
       padding: 58px;
-      margin-bottom: 46px;
+      margin-bottom: 44px;
     }
 
-    .hero-content { max-width: 760px; color: var(--white); }
+    .hero-content { max-width: 780px; color: var(--white); }
 
     .eyebrow {
       display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      background: rgba(255, 247, 239, 0.18);
-      border: 1px solid rgba(255, 255, 255, 0.35);
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.34);
       backdrop-filter: blur(12px);
       padding: 9px 15px;
       border-radius: 999px;
@@ -83,7 +80,7 @@
 
     .hero p {
       font-family: Arial, sans-serif;
-      max-width: 650px;
+      max-width: 660px;
       font-size: 18px;
       line-height: 1.7;
       color: rgba(255, 255, 255, 0.92);
@@ -91,14 +88,14 @@
 
     .intro-grid {
       display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
+      grid-template-columns: 1.25fr 0.75fr;
       gap: 24px;
       margin-bottom: 38px;
     }
 
     .intro-card, .quick-box, .note-box, .recipe-card {
-      background: rgba(255, 255, 255, 0.78);
-      border: 1px solid rgba(182, 106, 74, 0.16);
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid rgba(222, 93, 105, 0.15);
       box-shadow: var(--soft-shadow);
       border-radius: var(--radius-xl);
     }
@@ -110,7 +107,7 @@
       line-height: 1.05;
       letter-spacing: -0.035em;
       margin-bottom: 16px;
-      color: var(--cocoa);
+      color: var(--navy);
     }
 
     .intro-card p, .quick-box p, .note-box p, .recipe-card p, li {
@@ -127,7 +124,7 @@
     .quick-box h3 {
       font-size: 26px;
       line-height: 1.1;
-      color: var(--cocoa);
+      color: var(--navy);
       margin-bottom: 16px;
     }
 
@@ -141,11 +138,11 @@
       font-size: 14px;
     }
 
-    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--terracotta); flex: 0 0 auto; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--coral); flex: 0 0 auto; }
 
     .section-heading {
       text-align: center;
-      max-width: 780px;
+      max-width: 800px;
       margin: 0 auto 34px;
     }
 
@@ -158,9 +155,9 @@
     }
 
     .recipe-card { overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; }
-    .recipe-card:hover { transform: translateY(-4px); box-shadow: 0 28px 65px rgba(70, 42, 28, 0.16); }
+    .recipe-card:hover { transform: translateY(-4px); box-shadow: 0 28px 65px rgba(35, 25, 20, 0.16); }
 
-    .recipe-image { position: relative; height: 310px; overflow: hidden; background: var(--warm-cream); }
+    .recipe-image { position: relative; height: 315px; overflow: hidden; background: var(--oat); }
     .recipe-image img { height: 100%; object-fit: cover; transition: transform 0.45s ease; }
     .recipe-card:hover .recipe-image img { transform: scale(1.045); }
 
@@ -168,7 +165,7 @@
       position: absolute;
       top: 18px;
       left: 18px;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.92);
       color: var(--navy);
       border-radius: 999px;
       padding: 8px 13px;
@@ -184,7 +181,7 @@
     .recipe-number {
       font-family: Arial, sans-serif;
       font-size: 12px;
-      color: var(--terracotta);
+      color: var(--coral);
       letter-spacing: 0.16em;
       font-weight: 700;
       text-transform: uppercase;
@@ -195,7 +192,7 @@
       font-size: 30px;
       line-height: 1.08;
       letter-spacing: -0.025em;
-      color: var(--cocoa);
+      color: var(--navy);
       margin-bottom: 12px;
     }
 
@@ -204,9 +201,9 @@
     .pill {
       font-family: Arial, sans-serif;
       font-size: 12px;
-      background: #f7eadf;
-      color: var(--cocoa);
-      border: 1px solid rgba(90, 56, 40, 0.08);
+      background: #f9e4e6;
+      color: var(--navy);
+      border: 1px solid rgba(18, 41, 67, 0.08);
       padding: 7px 10px;
       border-radius: 999px;
     }
@@ -220,7 +217,7 @@
 
     .recipe-columns h4, .chef-note h4 {
       font-family: Arial, sans-serif;
-      color: var(--cocoa);
+      color: var(--green);
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
@@ -233,7 +230,7 @@
     .chef-note {
       margin-top: 18px;
       background: #fff8f1;
-      border-left: 4px solid var(--rose);
+      border-left: 4px solid var(--blush);
       padding: 16px 18px;
       border-radius: 16px;
     }
@@ -241,10 +238,10 @@
     .note-box {
       margin-top: 36px;
       padding: 32px;
-      background: linear-gradient(135deg, #fffaf4, #eef1e7);
+      background: linear-gradient(135deg, #fffaf4, var(--sage));
     }
 
-    .note-box h2 { font-size: 34px; line-height: 1.1; color: var(--cocoa); margin-bottom: 12px; }
+    .note-box h2 { font-size: 34px; line-height: 1.1; color: var(--navy); margin-bottom: 12px; }
 
     .note-grid {
       display: grid;
@@ -254,15 +251,15 @@
     }
 
     .note-item {
-      background: rgba(255, 255, 255, 0.74);
+      background: rgba(255, 255, 255, 0.78);
       border-radius: 18px;
       padding: 18px;
-      border: 1px solid rgba(105, 116, 92, 0.15);
+      border: 1px solid rgba(49, 92, 61, 0.15);
     }
 
     .note-item strong {
       display: block;
-      color: var(--olive);
+      color: var(--green);
       margin-bottom: 5px;
       font-family: Arial, sans-serif;
       font-size: 14px;
@@ -297,46 +294,42 @@
       <div class="hero-content">
         <div class="eyebrow">Cozy Family Kitchen • Pregnancy Breakfast</div>
         <h1>Easy Pregnancy Breakfast Ideas for Busy Moms</h1>
-        <p>Simple, satisfying breakfast recipes made with protein, fiber, and nourishing ingredients for pregnancy and postpartum mornings.</p>
+        <p>Simple breakfast recipes inspired by the pin image: oatmeal bowls, egg toast, smoothies, parfaits, egg muffins, breakfast bowls, pancakes, and warm apple oats.</p>
       </div>
     </section>
 
     <section class="intro-grid">
       <div class="intro-card">
-        <h2>Breakfasts you can actually make on a busy morning.</h2>
-        <p>These recipes are built for real life: quick prep, simple ingredients, and enough protein to help keep you full. They are gentle, colorful, and easy to repeat during pregnancy or postpartum when mornings feel rushed.</p>
+        <h2>Real breakfast ideas that match the image.</h2>
+        <p>This page is built around the actual foods shown in the pin: creamy oats, avocado egg toast, a pink smoothie, yogurt parfaits, mini egg muffins, cottage cheese bowls, savory egg bowls, pancakes, and apple cinnamon oatmeal. Each one is easy, filling, and designed for pregnancy or postpartum mornings.</p>
       </div>
       <aside class="quick-box">
-        <h3>The busy-mom breakfast formula</h3>
-        <p>Start with protein, add fiber, then finish with something creamy or satisfying so breakfast keeps you going longer.</p>
+        <h3>Chef’s busy-morning rule</h3>
+        <p>Make breakfast easier by pairing protein with fiber and a little healthy fat. That simple combo makes these meals more satisfying without making them complicated.</p>
         <div class="mini-list">
-          <span><i class="dot"></i> Protein: eggs, Greek yogurt, cottage cheese, beans, tofu, salmon</span>
-          <span><i class="dot"></i> Fiber: oats, berries, chia, whole grain toast, vegetables</span>
-          <span><i class="dot"></i> Healthy fats: avocado, nut butter, olive oil, seeds</span>
+          <span><i class="dot"></i> Protein: eggs, Greek yogurt, cottage cheese, milk, beans</span>
+          <span><i class="dot"></i> Fiber: oats, berries, apples, whole grain toast, vegetables</span>
+          <span><i class="dot"></i> Healthy fat: avocado, peanut butter, chia, almonds</span>
         </div>
       </aside>
     </section>
 
     <section class="section-heading">
-      <h2>Easy Breakfast Recipes</h2>
-      <p>Each recipe below matches the food image shown, with simple ingredients, quick instructions, and chef notes to make the recipe easier and prettier.</p>
+      <h2>Recipe Ideas from the Pin</h2>
+      <p>Every image below is matched to the recipe title and ingredients, so the page feels cohesive and visually intentional.</p>
     </section>
 
     <section class="recipe-grid">
       <article class="recipe-card">
         <div class="recipe-image">
-          <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1100&q=85" alt="Creamy oatmeal bowl with banana slices, blueberries, chia seeds, and peanut butter" />
-          <span class="tag">Warm & filling</span>
+          <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1100&q=85" alt="Oatmeal bowl with banana, blueberries, chia seeds, and peanut butter" />
+          <span class="tag">Oatmeal bowl</span>
         </div>
         <div class="recipe-body">
-          <div class="recipe-number">Breakfast 01</div>
-          <h3>Peanut Butter Banana Oatmeal Bowl</h3>
-          <p>A cozy oatmeal bowl with banana, blueberries, chia, and peanut butter for a breakfast that feels sweet but stays satisfying.</p>
-          <div class="stats">
-            <span class="pill">10 minutes</span>
-            <span class="pill">High fiber</span>
-            <span class="pill">Keeps you full</span>
-          </div>
+          <div class="recipe-number">Recipe 01</div>
+          <h3>Banana Blueberry Peanut Butter Oatmeal</h3>
+          <p>Creamy oats topped with banana, blueberries, chia, and peanut butter — just like the oatmeal bowl shown in the pin.</p>
+          <div class="stats"><span class="pill">10 minutes</span><span class="pill">Warm breakfast</span><span class="pill">Keeps you full</span></div>
           <div class="recipe-columns">
             <div>
               <h4>Ingredients</h4>
@@ -353,27 +346,27 @@
             <div>
               <h4>Instructions</h4>
               <ol>
-                <li>Simmer oats, milk, cinnamon, and salt until creamy.</li>
+                <li>Cook oats with milk, cinnamon, and salt until creamy.</li>
                 <li>Spoon into a bowl while warm.</li>
-                <li>Top with banana, blueberries, chia, and peanut butter.</li>
-                <li>Add a splash of milk if you like it softer.</li>
+                <li>Top with banana slices, blueberries, chia, and peanut butter.</li>
+                <li>Add a splash of milk if you want a softer texture.</li>
               </ol>
             </div>
           </div>
-          <div class="chef-note"><h4>Chef note</h4><p>Stir a spoonful of Greek yogurt into the cooked oats for extra creaminess and protein.</p></div>
+          <div class="chef-note"><h4>Chef note</h4><p>For more protein, stir in Greek yogurt after cooking, once the oats are slightly cooled.</p></div>
         </div>
       </article>
 
       <article class="recipe-card">
         <div class="recipe-image">
-          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1100&q=85" alt="Avocado toast topped with scrambled eggs and spinach" />
-          <span class="tag">Savory</span>
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1100&q=85" alt="Scrambled eggs on avocado toast with spinach" />
+          <span class="tag">Egg toast</span>
         </div>
         <div class="recipe-body">
-          <div class="recipe-number">Breakfast 02</div>
-          <h3>Scrambled Egg Avocado Toast</h3>
-          <p>Soft scrambled eggs, avocado, and greens layered on toast for a simple breakfast that looks like café food.</p>
-          <div class="stats"><span class="pill">12 minutes</span><span class="pill">Protein rich</span><span class="pill">One-pan</span></div>
+          <div class="recipe-number">Recipe 02</div>
+          <h3>Scrambled Egg Avocado Spinach Toast</h3>
+          <p>A savory breakfast toast with scrambled eggs, avocado, and spinach to match the egg-and-avocado toast in the pin.</p>
+          <div class="stats"><span class="pill">12 minutes</span><span class="pill">Savory</span><span class="pill">Protein rich</span></div>
           <div class="recipe-columns">
             <div>
               <h4>Ingredients</h4>
@@ -383,7 +376,7 @@
                 <li>1/3 avocado, sliced</li>
                 <li>1 handful baby spinach</li>
                 <li>1 teaspoon olive oil</li>
-                <li>Salt, pepper, red pepper flakes</li>
+                <li>Salt, pepper, and red pepper flakes</li>
               </ul>
             </div>
             <div>
@@ -391,25 +384,25 @@
               <ol>
                 <li>Sauté spinach in olive oil until just wilted.</li>
                 <li>Add eggs and scramble until fully cooked.</li>
-                <li>Toast the bread and layer with avocado.</li>
-                <li>Top with eggs, spinach, and seasoning.</li>
+                <li>Toast the bread and layer with avocado slices.</li>
+                <li>Top with the scrambled eggs and spinach.</li>
               </ol>
             </div>
           </div>
-          <div class="chef-note"><h4>Chef note</h4><p>For pregnancy, cook eggs until the whites and yolks are firm, not runny.</p></div>
+          <div class="chef-note"><h4>Chef note</h4><p>Keep the eggs soft but fully cooked. For pregnancy, avoid runny egg centers unless your doctor says otherwise.</p></div>
         </div>
       </article>
 
       <article class="recipe-card">
         <div class="recipe-image">
           <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=1100&q=85" alt="Pink strawberry banana smoothie with granola topping" />
-          <span class="tag">Drinkable</span>
+          <span class="tag">Smoothie</span>
         </div>
         <div class="recipe-body">
-          <div class="recipe-number">Breakfast 03</div>
+          <div class="recipe-number">Recipe 03</div>
           <h3>Strawberry Banana Breakfast Smoothie</h3>
-          <p>A creamy pink smoothie for mornings when you need something fast, cold, and easy to sip.</p>
-          <div class="stats"><span class="pill">6 minutes</span><span class="pill">No-cook</span><span class="pill">Gentle option</span></div>
+          <p>A creamy pink smoothie like the one in the pin, made with fruit, yogurt, milk, and a little nut butter.</p>
+          <div class="stats"><span class="pill">6 minutes</span><span class="pill">No-cook</span><span class="pill">Easy to sip</span></div>
           <div class="recipe-columns">
             <div>
               <h4>Ingredients</h4>
@@ -418,40 +411,42 @@
                 <li>1 cup strawberries</li>
                 <li>3/4 cup Greek yogurt</li>
                 <li>1 cup milk</li>
-                <li>1 tablespoon almond or peanut butter</li>
-                <li>1 tablespoon ground flax or chia</li>
+                <li>1 tablespoon peanut or almond butter</li>
+                <li>1 tablespoon chia or ground flax</li>
+                <li>Optional: granola for topping</li>
               </ul>
             </div>
             <div>
               <h4>Instructions</h4>
               <ol>
                 <li>Add all ingredients to a blender.</li>
-                <li>Blend until completely smooth.</li>
-                <li>Add more milk if needed.</li>
+                <li>Blend until smooth and creamy.</li>
+                <li>Add more milk if the smoothie is too thick.</li>
                 <li>Pour into a glass and top with granola if desired.</li>
               </ol>
             </div>
           </div>
-          <div class="chef-note"><h4>Chef note</h4><p>Use frozen strawberries for a thicker smoothie that tastes more like a milkshake.</p></div>
+          <div class="chef-note"><h4>Chef note</h4><p>Frozen strawberries make the smoothie thicker and more refreshing.</p></div>
         </div>
       </article>
 
       <article class="recipe-card">
         <div class="recipe-image">
-          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1100&q=85" alt="Greek yogurt parfait with berries and granola in a glass jar" />
-          <span class="tag">No-cook</span>
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1100&q=85" alt="Greek yogurt parfait with strawberries, blueberries, and granola" />
+          <span class="tag">Parfait</span>
         </div>
         <div class="recipe-body">
-          <div class="recipe-number">Breakfast 04</div>
-          <h3>Greek Yogurt Berry Parfait</h3>
-          <p>A layered yogurt parfait with berries and granola that feels pretty enough for brunch but takes only minutes.</p>
-          <div class="stats"><span class="pill">5 minutes</span><span class="pill">Meal prep</span><span class="pill">High protein</span></div>
+          <div class="recipe-number">Recipe 04</div>
+          <h3>Greek Yogurt Berry Granola Parfait</h3>
+          <p>A pretty layered parfait with yogurt, berries, and granola to match the parfait cup in the pin.</p>
+          <div class="stats"><span class="pill">5 minutes</span><span class="pill">No-cook</span><span class="pill">Prep-ahead</span></div>
           <div class="recipe-columns">
             <div>
               <h4>Ingredients</h4>
               <ul>
                 <li>1 cup plain Greek yogurt</li>
-                <li>1/2 cup strawberries and blueberries</li>
+                <li>1/2 cup strawberries, sliced</li>
+                <li>1/4 cup blueberries</li>
                 <li>2 tablespoons granola</li>
                 <li>1 teaspoon chia seeds</li>
                 <li>Honey or cinnamon, optional</li>
@@ -460,36 +455,36 @@
             <div>
               <h4>Instructions</h4>
               <ol>
-                <li>Add half the yogurt to a glass or jar.</li>
-                <li>Layer with berries and granola.</li>
-                <li>Repeat with remaining yogurt and fruit.</li>
-                <li>Finish with chia and cinnamon.</li>
+                <li>Add half the yogurt to a jar or glass.</li>
+                <li>Layer with berries and a little granola.</li>
+                <li>Repeat the layers.</li>
+                <li>Finish with chia seeds and cinnamon.</li>
               </ol>
             </div>
           </div>
-          <div class="chef-note"><h4>Chef note</h4><p>Add granola right before eating if you want it crunchy.</p></div>
+          <div class="chef-note"><h4>Chef note</h4><p>Add the granola right before eating if you want it crunchy.</p></div>
         </div>
       </article>
 
       <article class="recipe-card">
         <div class="recipe-image">
           <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=1100&q=85" alt="Mini egg muffins with spinach, tomato, and cheese" />
-          <span class="tag">Batch cook</span>
+          <span class="tag">Egg muffins</span>
         </div>
         <div class="recipe-body">
-          <div class="recipe-number">Breakfast 05</div>
+          <div class="recipe-number">Recipe 05</div>
           <h3>Spinach Tomato Egg Muffins</h3>
-          <p>Mini baked egg cups with vegetables and cheese that you can reheat on busy mornings.</p>
-          <div class="stats"><span class="pill">25 minutes</span><span class="pill">Freezer friendly</span><span class="pill">Grab-and-go</span></div>
+          <p>Mini baked egg cups with spinach, tomato, and cheese to match the egg muffin photo from the pin.</p>
+          <div class="stats"><span class="pill">25 minutes</span><span class="pill">Batch cook</span><span class="pill">Freezer friendly</span></div>
           <div class="recipe-columns">
             <div>
               <h4>Ingredients</h4>
               <ul>
                 <li>8 eggs</li>
                 <li>1 cup chopped spinach</li>
-                <li>1/2 cup diced tomatoes</li>
+                <li>1/2 cup diced tomato or red bell pepper</li>
                 <li>1/3 cup shredded cheese</li>
-                <li>Salt, pepper, garlic powder</li>
+                <li>Salt, pepper, and garlic powder</li>
               </ul>
             </div>
             <div>
@@ -497,96 +492,24 @@
               <ol>
                 <li>Heat oven to 350°F.</li>
                 <li>Whisk eggs with seasoning.</li>
-                <li>Stir in spinach, tomatoes, and cheese.</li>
-                <li>Bake in a greased muffin tin for 18–22 minutes.</li>
+                <li>Stir in spinach, tomato, and cheese.</li>
+                <li>Pour into a greased muffin tin and bake 18–22 minutes.</li>
               </ol>
             </div>
           </div>
-          <div class="chef-note"><h4>Chef note</h4><p>Let the muffins cool completely before storing so they do not get watery.</p></div>
+          <div class="chef-note"><h4>Chef note</h4><p>Cool completely before storing so the egg muffins stay firm instead of watery.</p></div>
         </div>
       </article>
 
       <article class="recipe-card">
         <div class="recipe-image">
-          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1100&q=85" alt="Stack of protein pancakes topped with banana slices, blueberries, and peanut butter" />
-          <span class="tag">Weekend easy</span>
+          <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=1100&q=85" alt="Cottage cheese bowl with blueberries, almonds, and honey" />
+          <span class="tag">Cottage cheese</span>
         </div>
         <div class="recipe-body">
-          <div class="recipe-number">Breakfast 06</div>
-          <h3>Banana Protein Pancakes</h3>
-          <p>Soft blender pancakes topped with banana, blueberries, and peanut butter for a cozy breakfast that still feels balanced.</p>
-          <div class="stats"><span class="pill">18 minutes</span><span class="pill">Blender batter</span><span class="pill">Family friendly</span></div>
-          <div class="recipe-columns">
-            <div>
-              <h4>Ingredients</h4>
-              <ul>
-                <li>1/2 cup oats</li>
-                <li>1/2 cup cottage cheese</li>
-                <li>2 eggs</li>
-                <li>1/2 banana</li>
-                <li>1/2 teaspoon baking powder</li>
-                <li>Vanilla and cinnamon</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Instructions</h4>
-              <ol>
-                <li>Blend all ingredients until mostly smooth.</li>
-                <li>Cook small pancakes on a lightly greased skillet.</li>
-                <li>Flip once the edges look set.</li>
-                <li>Serve with fruit and a spoonful of nut butter.</li>
-              </ol>
-            </div>
-          </div>
-          <div class="chef-note"><h4>Chef note</h4><p>Small pancakes cook more evenly and are easier to flip.</p></div>
-        </div>
-      </article>
-
-      <article class="recipe-card">
-        <div class="recipe-image">
-          <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a4?auto=format&fit=crop&w=1100&q=85" alt="Mediterranean breakfast bowl with egg, grains, beans, avocado, and vegetables" />
-          <span class="tag">Savory bowl</span>
-        </div>
-        <div class="recipe-body">
-          <div class="recipe-number">Breakfast 07</div>
-          <h3>Mediterranean Egg Breakfast Bowl</h3>
-          <p>A colorful bowl with eggs, grains, beans, avocado, and vegetables for a breakfast that feels fresh and filling.</p>
-          <div class="stats"><span class="pill">15 minutes</span><span class="pill">Balanced</span><span class="pill">Meal prep base</span></div>
-          <div class="recipe-columns">
-            <div>
-              <h4>Ingredients</h4>
-              <ul>
-                <li>1/2 cup cooked quinoa or brown rice</li>
-                <li>1 fully cooked egg</li>
-                <li>1/3 cup black beans or chickpeas</li>
-                <li>Avocado slices</li>
-                <li>Tomatoes or salsa</li>
-                <li>Greek yogurt or feta, optional</li>
-              </ul>
-            </div>
-            <div>
-              <h4>Instructions</h4>
-              <ol>
-                <li>Add warm grains to a bowl.</li>
-                <li>Top with beans, tomato, and avocado.</li>
-                <li>Add a fully cooked egg.</li>
-                <li>Finish with yogurt, feta, or herbs.</li>
-              </ol>
-            </div>
-          </div>
-          <div class="chef-note"><h4>Chef note</h4><p>Cook a batch of grains once, then use them for breakfast bowls all week.</p></div>
-        </div>
-      </article>
-
-      <article class="recipe-card">
-        <div class="recipe-image">
-          <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=1100&q=85" alt="Cottage cheese breakfast bowl with blueberries, almonds, and honey" />
-          <span class="tag">5 minutes</span>
-        </div>
-        <div class="recipe-body">
-          <div class="recipe-number">Breakfast 08</div>
-          <h3>Cottage Cheese Blueberry Bowl</h3>
-          <p>A creamy, no-cook breakfast bowl with cottage cheese, blueberries, almonds, and honey.</p>
+          <div class="recipe-number">Recipe 06</div>
+          <h3>Cottage Cheese Blueberry Almond Bowl</h3>
+          <p>A creamy cottage cheese bowl with blueberries, almonds, and a drizzle of honey like the bowl shown in the pin.</p>
           <div class="stats"><span class="pill">5 minutes</span><span class="pill">No-cook</span><span class="pill">Creamy</span></div>
           <div class="recipe-columns">
             <div>
@@ -597,15 +520,15 @@
                 <li>2 tablespoons almonds</li>
                 <li>1 teaspoon honey</li>
                 <li>Cinnamon</li>
-                <li>Optional: sliced banana</li>
+                <li>Optional: banana slices</li>
               </ul>
             </div>
             <div>
               <h4>Instructions</h4>
               <ol>
                 <li>Spoon cottage cheese into a bowl.</li>
-                <li>Add blueberries and almonds.</li>
-                <li>Drizzle with honey.</li>
+                <li>Top with blueberries and almonds.</li>
+                <li>Drizzle lightly with honey.</li>
                 <li>Finish with cinnamon and banana if using.</li>
               </ol>
             </div>
@@ -613,15 +536,159 @@
           <div class="chef-note"><h4>Chef note</h4><p>Use pasteurized cottage cheese and keep it chilled until serving.</p></div>
         </div>
       </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1100&q=85" alt="Fried egg avocado toast on whole grain bread" />
+          <span class="tag">Toast</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Recipe 07</div>
+          <h3>Avocado Toast with Fully Cooked Egg</h3>
+          <p>A simple avocado toast topped with a fully cooked egg, inspired by the egg toast photo in the pin.</p>
+          <div class="stats"><span class="pill">10 minutes</span><span class="pill">Simple</span><span class="pill">Filling</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 slice whole grain toast</li>
+                <li>1 egg</li>
+                <li>1/3 avocado, mashed</li>
+                <li>Lemon juice</li>
+                <li>Salt and pepper</li>
+                <li>Optional: chili flakes</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Toast the bread until crisp.</li>
+                <li>Mash avocado with lemon, salt, and pepper.</li>
+                <li>Cook the egg until the yolk and white are firm.</li>
+                <li>Spread avocado on toast and top with the egg.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>A squeeze of lemon keeps the avocado bright and fresh-looking.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a4?auto=format&fit=crop&w=1100&q=85" alt="Savory breakfast bowl with egg, beans, avocado, and grains" />
+          <span class="tag">Breakfast bowl</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Recipe 08</div>
+          <h3>Egg, Bean & Avocado Breakfast Bowl</h3>
+          <p>A colorful savory bowl with egg, beans, avocado, and grains to match the hearty breakfast bowl in the pin.</p>
+          <div class="stats"><span class="pill">15 minutes</span><span class="pill">Savory</span><span class="pill">Balanced</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1/2 cup cooked quinoa or brown rice</li>
+                <li>1 fully cooked egg</li>
+                <li>1/3 cup black beans</li>
+                <li>1/3 avocado, sliced</li>
+                <li>Tomatoes or salsa</li>
+                <li>Greek yogurt or feta, optional</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Add warm grains to a bowl.</li>
+                <li>Top with beans, tomatoes, and avocado.</li>
+                <li>Add a fully cooked egg.</li>
+                <li>Finish with Greek yogurt, feta, or herbs.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Cook extra grains once and keep them in the fridge for quick breakfast bowls.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1100&q=85" alt="Pancake stack with banana, blueberries, and peanut butter drizzle" />
+          <span class="tag">Pancakes</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Recipe 09</div>
+          <h3>Banana Blueberry Protein Pancakes</h3>
+          <p>A soft pancake stack with banana, blueberries, and peanut butter to match the pancake photo in the pin.</p>
+          <div class="stats"><span class="pill">18 minutes</span><span class="pill">Weekend easy</span><span class="pill">Family friendly</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1/2 cup rolled oats</li>
+                <li>1/2 cup cottage cheese</li>
+                <li>2 eggs</li>
+                <li>1/2 banana</li>
+                <li>1/2 teaspoon baking powder</li>
+                <li>Blueberries and peanut butter for topping</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Blend oats, cottage cheese, eggs, banana, and baking powder.</li>
+                <li>Cook small pancakes on a lightly greased skillet.</li>
+                <li>Flip when the edges look set.</li>
+                <li>Top with blueberries, banana slices, and peanut butter.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Keep the pancakes small so they cook evenly and flip without breaking.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1100&q=85" alt="Apple cinnamon oatmeal bowl with diced apples" />
+          <span class="tag">Apple oats</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Recipe 10</div>
+          <h3>Apple Cinnamon Oatmeal Bowl</h3>
+          <p>A warm apple oatmeal bowl with cinnamon and diced apples, inspired by the apple oat bowl in the bottom corner of the pin.</p>
+          <div class="stats"><span class="pill">12 minutes</span><span class="pill">Cozy</span><span class="pill">Fiber rich</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1/2 cup rolled oats</li>
+                <li>1 cup milk</li>
+                <li>1/2 apple, diced</li>
+                <li>1 teaspoon chia seeds</li>
+                <li>1/2 teaspoon cinnamon</li>
+                <li>1 tablespoon almond butter, optional</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Cook oats, milk, diced apple, and cinnamon together.</li>
+                <li>Simmer until the apple softens and oats are creamy.</li>
+                <li>Stir in chia seeds.</li>
+                <li>Top with almond butter if desired.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Dice the apple small so it softens quickly and spreads sweetness through the bowl.</p></div>
+        </div>
+      </article>
     </section>
 
     <section class="note-box">
-      <h2>Make mornings easier</h2>
-      <p>Choose one warm breakfast, one no-cook breakfast, and one batch-cooked breakfast each week so you always have something ready.</p>
+      <h2>Make these realistic for busy mornings</h2>
+      <p>Prep two things ahead: wash fruit and batch-cook one breakfast. Then keep one no-cook option ready for mornings when you are rushing.</p>
       <div class="note-grid">
-        <div class="note-item"><strong>Best for the car</strong><p>Smoothie, parfait jar, egg muffins, or cottage cheese bowl in a sealed container.</p></div>
-        <div class="note-item"><strong>Best for fullness</strong><p>Oatmeal bowl, egg avocado toast, protein pancakes, and Mediterranean bowl.</p></div>
-        <div class="note-item"><strong>Best to prep ahead</strong><p>Egg muffins, parfait jars, cooked grains, washed berries, and pancake batter.</p></div>
+        <div class="note-item"><strong>Best no-cook options</strong><p>Greek yogurt parfait, cottage cheese bowl, and strawberry banana smoothie.</p></div>
+        <div class="note-item"><strong>Best batch-cook options</strong><p>Spinach tomato egg muffins, pancake batter, and cooked grains for breakfast bowls.</p></div>
+        <div class="note-item"><strong>Best warm options</strong><p>Banana oatmeal, apple cinnamon oatmeal, avocado egg toast, and savory breakfast bowls.</p></div>
       </div>
     </section>
 
