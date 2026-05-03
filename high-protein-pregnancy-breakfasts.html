@@ -4,17 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Iron Rich Pregnancy Meals</title>
+
   <style>
     :root {
       --rust: #b7410e;
       --deep-rust: #8b2e1a;
       --cream: #fff7ed;
-      --soft-cream: #f8eadc;
-      --warm-white: #fffaf5;
-      --brown: #4b2e24;
-      --olive: #68724a;
-      --shadow: 0 18px 45px rgba(75, 46, 36, 0.16);
-      --radius: 24px;
+      --warm-cream: #f6e2ce;
+      --soft-white: #fffaf5;
+      --brown: #3f241b;
+      --olive: #586442;
+      --gold: #d9a441;
+      --shadow: 0 18px 45px rgba(63, 36, 27, 0.16);
+      --radius: 26px;
     }
 
     * {
@@ -31,14 +33,19 @@
       font-family: Georgia, "Times New Roman", serif;
       background: var(--cream);
       color: var(--brown);
-      line-height: 1.65;
+      line-height: 1.7;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
     }
 
     .hero {
-      min-height: 88vh;
+      min-height: 92vh;
       background:
-        linear-gradient(rgba(50, 28, 20, 0.58), rgba(50, 28, 20, 0.58)),
-        url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
+        linear-gradient(rgba(48, 25, 18, 0.62), rgba(48, 25, 18, 0.62)),
+        url("https://source.unsplash.com/1800x1200/?rustic-food-table,healthy-meal") center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -47,44 +54,47 @@
       color: white;
     }
 
-    .hero-content {
+    .hero-inner {
       max-width: 980px;
     }
 
     .eyebrow {
       display: inline-block;
-      background: rgba(255, 250, 245, 0.18);
-      border: 1px solid rgba(255, 255, 255, 0.4);
+      font-family: Arial, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.82rem;
+      font-weight: 700;
       padding: 10px 18px;
       border-radius: 999px;
-      font-size: 0.9rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+      background: rgba(255,255,255,0.16);
+      border: 1px solid rgba(255,255,255,0.36);
       margin-bottom: 22px;
     }
 
-    .hero h1 {
-      font-size: clamp(3rem, 8vw, 6.8rem);
+    h1 {
+      font-size: clamp(3.4rem, 8vw, 7rem);
       line-height: 0.92;
       margin-bottom: 22px;
-      text-shadow: 0 8px 28px rgba(0,0,0,0.35);
+      text-shadow: 0 12px 34px rgba(0,0,0,0.35);
     }
 
-    .hero p {
+    .hero-subtitle {
       font-family: Arial, sans-serif;
-      font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
       max-width: 720px;
       margin: 0 auto 34px;
+      color: #fff4ea;
     }
 
-    .nav-buttons {
+    .nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 14px;
     }
 
-    .nav-buttons a,
+    .nav a,
     .print-btn {
       font-family: Arial, sans-serif;
       text-decoration: none;
@@ -94,238 +104,255 @@
       color: white;
       padding: 13px 22px;
       border-radius: 999px;
-      font-weight: 700;
-      box-shadow: 0 10px 24px rgba(183, 65, 14, 0.25);
+      font-weight: 800;
+      box-shadow: 0 12px 26px rgba(183, 65, 14, 0.32);
       transition: transform 0.25s ease, background 0.25s ease;
     }
 
-    .nav-buttons a:hover,
+    .nav a:hover,
     .print-btn:hover {
-      transform: translateY(-3px);
       background: var(--deep-rust);
+      transform: translateY(-3px);
     }
 
-    .section {
+    .wrap {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 70px 20px;
+      padding: 74px 20px;
     }
 
     .intro {
       text-align: center;
-      max-width: 780px;
-      margin: 0 auto 46px;
+      max-width: 800px;
+      margin: 0 auto 54px;
     }
 
     .intro h2 {
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      color: var(--deep-rust);
+      font-size: clamp(2.4rem, 5vw, 4.2rem);
       line-height: 1;
+      color: var(--deep-rust);
       margin-bottom: 18px;
     }
 
     .intro p {
       font-family: Arial, sans-serif;
+      color: #70483a;
       font-size: 1.08rem;
-      color: #6a4a3d;
     }
 
-    .pin-concept {
-      background: var(--warm-white);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
+    .pin-preview {
+      background: var(--soft-white);
+      border-radius: 34px;
       overflow: hidden;
-      margin-bottom: 58px;
-      border: 1px solid rgba(139, 46, 26, 0.12);
+      box-shadow: var(--shadow);
+      margin-bottom: 70px;
+      border: 1px solid rgba(139,46,26,0.14);
     }
 
-    .pin-header {
+    .pin-top {
       text-align: center;
-      padding: 36px 24px 24px;
-      background: linear-gradient(135deg, #fff2e3, #f6d9c5);
+      padding: 38px 22px 28px;
+      background: linear-gradient(135deg, #fff3e6, #efd0b8);
     }
 
-    .pin-header h2 {
+    .pin-top h2 {
+      font-size: clamp(2.3rem, 5vw, 4.8rem);
+      line-height: 0.95;
       color: var(--deep-rust);
-      font-size: clamp(2.1rem, 4vw, 4rem);
-      line-height: 1;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
-    .pin-header p {
+    .pin-top p {
       font-family: Arial, sans-serif;
-      font-weight: 700;
-      color: var(--brown);
+      font-weight: 900;
       letter-spacing: 0.04em;
+      color: var(--brown);
     }
 
     .pin-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 0;
     }
 
-    .pin-block {
-      min-height: 340px;
+    .pin-item {
       position: relative;
+      min-height: 360px;
       overflow: hidden;
+      background: #ddd;
     }
 
-    .pin-block img {
+    .pin-item img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
       transition: transform 0.5s ease;
     }
 
-    .pin-block:hover img {
+    .pin-item:hover img {
       transform: scale(1.06);
     }
 
     .pin-label {
       position: absolute;
       left: 18px;
+      right: 18px;
       bottom: 18px;
-      background: rgba(255, 250, 245, 0.92);
-      padding: 12px 15px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+      background: rgba(255, 250, 245, 0.94);
+      border-radius: 18px;
+      padding: 13px 15px;
+      box-shadow: 0 12px 26px rgba(0,0,0,0.2);
     }
 
     .pin-label strong {
       display: block;
       color: var(--deep-rust);
-      font-size: 1rem;
+      font-size: 1.08rem;
+      line-height: 1.2;
     }
 
     .pin-label span {
       font-family: Arial, sans-serif;
-      font-size: 0.86rem;
-      color: var(--brown);
+      color: #5c3a2f;
+      font-size: 0.9rem;
     }
 
-    .pin-footer {
+    .pin-bottom {
       text-align: center;
-      padding: 28px 20px 34px;
+      padding: 30px 20px 36px;
       background: #fffaf5;
     }
 
-    .pin-footer .callout {
-      font-size: 1.5rem;
+    .pin-bottom .callout {
+      font-size: 1.55rem;
       color: var(--rust);
-      font-weight: 700;
-      margin-bottom: 8px;
+      font-weight: 900;
+      margin-bottom: 6px;
     }
 
-    .pin-footer .cta {
+    .pin-bottom .cta {
       font-family: Arial, sans-serif;
-      font-weight: 800;
       color: var(--deep-rust);
+      font-weight: 900;
     }
 
-    .recipes-grid {
+    .recipes {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 34px;
     }
 
-    .recipe-card {
-      background: var(--warm-white);
+    .card {
+      background: var(--soft-white);
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
-      border: 1px solid rgba(139, 46, 26, 0.12);
+      border: 1px solid rgba(139,46,26,0.12);
       transition: transform 0.28s ease, box-shadow 0.28s ease;
     }
 
-    .recipe-card:hover {
+    .card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 28px 65px rgba(75, 46, 36, 0.22);
+      box-shadow: 0 28px 65px rgba(63, 36, 27, 0.24);
     }
 
-    .recipe-card img {
-      width: 100%;
+    .card-image {
       height: 330px;
-      object-fit: cover;
-      display: block;
+      overflow: hidden;
+      background: #ead3bd;
     }
 
-    .recipe-content {
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-body {
       padding: 32px;
     }
 
-    .category {
+    .tag {
       display: inline-block;
       font-family: Arial, sans-serif;
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: white;
       background: var(--rust);
-      padding: 7px 12px;
+      color: white;
+      padding: 7px 13px;
       border-radius: 999px;
-      margin-bottom: 15px;
-      font-weight: 700;
-    }
-
-    .recipe-content h3 {
-      font-size: 2rem;
-      color: var(--deep-rust);
-      line-height: 1.08;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.75rem;
+      font-weight: 900;
       margin-bottom: 16px;
     }
 
-    .recipe-content h4 {
-      font-family: Arial, sans-serif;
-      color: var(--olive);
-      font-size: 1rem;
-      margin: 22px 0 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
+    .card h3 {
+      font-size: 2.05rem;
+      line-height: 1.08;
+      color: var(--deep-rust);
+      margin-bottom: 16px;
     }
 
-    ul, ol {
+    .meta {
+      font-family: Arial, sans-serif;
+      color: #765244;
+      font-size: 0.96rem;
+      margin-bottom: 20px;
+    }
+
+    .card h4 {
+      font-family: Arial, sans-serif;
+      color: var(--olive);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.92rem;
+      margin: 24px 0 10px;
+    }
+
+    ul,
+    ol {
       padding-left: 22px;
       font-family: Arial, sans-serif;
-      color: #5d4036;
+      color: #55382f;
       font-size: 0.98rem;
     }
 
+    li {
+      margin-bottom: 7px;
+    }
+
     .note {
-      background: var(--soft-cream);
+      background: var(--warm-cream);
       border-left: 5px solid var(--rust);
-      padding: 16px 18px;
       border-radius: 16px;
+      padding: 16px 18px;
       margin: 24px 0;
       font-family: Arial, sans-serif;
-      color: #55372d;
+      color: #503126;
     }
 
-    .print-btn {
-      margin-top: 4px;
-      display: inline-block;
+    .note strong {
+      color: var(--deep-rust);
     }
 
-    @media (max-width: 900px) {
+    @media (max-width: 950px) {
       .pin-grid,
-      .recipes-grid {
+      .recipes {
         grid-template-columns: 1fr;
       }
 
-      .pin-block {
-        min-height: 300px;
+      .pin-item {
+        min-height: 320px;
       }
 
-      .recipe-card img {
+      .card-image {
         height: 280px;
       }
     }
 
     @media print {
       .hero,
-      .nav-buttons,
-      .pin-concept,
+      .pin-preview,
+      .nav,
       .print-btn {
         display: none !important;
       }
@@ -334,13 +361,18 @@
         background: white;
       }
 
-      .section {
+      .wrap {
         padding: 20px;
       }
 
-      .recipe-card {
+      .recipes {
+        display: block;
+      }
+
+      .card {
         box-shadow: none;
         border: 1px solid #ddd;
+        margin-bottom: 28px;
         break-inside: avoid;
       }
     }
@@ -348,59 +380,66 @@
 </head>
 
 <body>
+
   <header class="hero">
-    <div class="hero-content">
+    <div class="hero-inner">
       <span class="eyebrow">Pregnancy Meal Guide</span>
       <h1>Iron Rich Pregnancy Meals</h1>
-      <p>Easy Breakfast • Lunch • Dinner • Snacks — nourishing, cozy meals designed to help fuel you and baby with iron-rich ingredients.</p>
-      <div class="nav-buttons">
+      <p class="hero-subtitle">
+        Easy Breakfast • Lunch • Dinner • Snacks — cozy, iron-focused meals for pregnancy days when you need something filling, beautiful, and realistic.
+      </p>
+
+      <nav class="nav">
         <a href="#breakfast">Breakfast</a>
         <a href="#lunch">Lunch</a>
         <a href="#dinner">Dinner</a>
         <a href="#snacks">Snacks</a>
-      </div>
+      </nav>
     </div>
   </header>
 
-  <main class="section">
+  <main class="wrap">
+
     <section class="intro">
       <h2>Fueling You & Baby ❤️</h2>
-      <p>A premium Pinterest-style recipe collection with warm, rustic food styling, earthy colors, and simple iron-focused meals for busy pregnancy days.</p>
+      <p>
+        A warm, rustic Pinterest-style recipe page built around iron-rich pregnancy meals: tender steak, spinach, eggs, hummus, nuts, dried fruit, and comforting sides.
+      </p>
     </section>
 
-    <section class="pin-concept">
-      <div class="pin-header">
+    <section class="pin-preview">
+      <div class="pin-top">
         <h2>Iron Rich Pregnancy Meals</h2>
         <p>Easy Breakfast • Lunch • Dinner • Snacks</p>
       </div>
 
       <div class="pin-grid">
-        <div class="pin-block">
-          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85" alt="Spinach omelette breakfast" />
+        <div class="pin-item">
+          <img src="https://source.unsplash.com/900x1200/?spinach-omelette,feta-omelette" alt="Spinach omelette with feta" />
           <div class="pin-label">
             <strong>Breakfast Ideas</strong>
             <span>Spinach Omelette</span>
           </div>
         </div>
 
-        <div class="pin-block">
-          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=85" alt="Steak power bowl lunch" />
+        <div class="pin-item">
+          <img src="https://source.unsplash.com/900x1200/?steak-bowl,grain-bowl" alt="Steak power bowl with grains and greens" />
           <div class="pin-label">
             <strong>Lunch Bowls</strong>
             <span>Steak Power Bowl</span>
           </div>
         </div>
 
-        <div class="pin-block">
-          <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=85" alt="Steak dinner with vegetables" />
+        <div class="pin-item">
+          <img src="https://source.unsplash.com/900x1200/?steak-mashed-potatoes,spinach" alt="Steak with mashed potatoes and greens" />
           <div class="pin-label">
             <strong>Healthy Dinners</strong>
             <span>Steak with Spinach & Mash</span>
           </div>
         </div>
 
-        <div class="pin-block">
-          <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=900&q=85" alt="Healthy snack plate with hummus and vegetables" />
+        <div class="pin-item">
+          <img src="https://source.unsplash.com/900x1200/?hummus-snack-plate,boiled-egg" alt="Iron snack plate with hummus egg nuts vegetables and dried fruit" />
           <div class="pin-label">
             <strong>Iron Snacks</strong>
             <span>Nuts, Egg, Hummus & Fruit</span>
@@ -408,147 +447,183 @@
         </div>
       </div>
 
-      <div class="pin-footer">
+      <div class="pin-bottom">
         <div class="callout">Fueling You & Baby ❤️</div>
         <div class="cta">Save for Later & Get the Recipes!</div>
       </div>
     </section>
 
-    <section class="recipes-grid">
-      <article class="recipe-card" id="breakfast">
-        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=85" alt="Spinach and feta omelette" />
-        <div class="recipe-content">
-          <span class="category">Breakfast Ideas</span>
+    <section class="recipes">
+
+      <article class="card" id="breakfast">
+        <div class="card-image">
+          <img src="https://source.unsplash.com/1200x900/?spinach-omelette,feta-omelette" alt="Spinach and feta omelette" />
+        </div>
+
+        <div class="card-body">
+          <span class="tag">Breakfast Ideas</span>
           <h3>Spinach & Feta Omelette</h3>
+          <p class="meta">Prep: 5 minutes • Cook: 8 minutes • Serves: 1</p>
 
           <h4>Ingredients</h4>
           <ul>
-            <li>2 eggs</li>
-            <li>1 cup fresh spinach</li>
-            <li>2 tablespoons feta cheese</li>
-            <li>1 teaspoon olive oil</li>
-            <li>Salt and pepper to taste</li>
-            <li>Optional: whole grain toast or avocado</li>
+            <li>2 large eggs</li>
+            <li>1 cup fresh baby spinach, roughly chopped</li>
+            <li>2 tablespoons pasteurized feta cheese, crumbled</li>
+            <li>1 teaspoon olive oil or butter</li>
+            <li>1 tablespoon milk or water for fluffier eggs</li>
+            <li>Pinch of salt and black pepper</li>
+            <li>Optional: sliced avocado, whole grain toast, or orange slices</li>
           </ul>
 
           <h4>Instructions</h4>
           <ol>
-            <li>Warm olive oil in a nonstick skillet over medium heat.</li>
-            <li>Add spinach and cook for 1 to 2 minutes until wilted.</li>
-            <li>Whisk eggs with salt and pepper, then pour over the spinach.</li>
-            <li>Cook gently until the eggs begin to set.</li>
-            <li>Sprinkle feta on top, fold the omelette, and cook for another minute.</li>
-            <li>Serve warm with toast or avocado.</li>
+            <li>Whisk the eggs with milk or water, salt, and pepper until smooth.</li>
+            <li>Warm olive oil in a nonstick skillet over medium-low heat.</li>
+            <li>Add spinach and cook for 1 to 2 minutes until just wilted.</li>
+            <li>Pour the eggs over the spinach and gently tilt the pan so the eggs spread evenly.</li>
+            <li>Cook slowly until the edges set, then sprinkle feta over one side.</li>
+            <li>Fold the omelette in half and cook for another 30 to 60 seconds.</li>
+            <li>Serve warm with toast and vitamin C-rich fruit to help support iron absorption.</li>
           </ol>
 
           <div class="note">
-            <strong>Chef Tip:</strong> Pair with vitamin C-rich fruit like orange slices or strawberries to support iron absorption.
+            <strong>Chef Tip:</strong> Keep the heat low. A soft omelette tastes more luxurious and keeps the feta creamy instead of dry.
           </div>
 
           <button class="print-btn" onclick="window.print()">Print Recipe</button>
         </div>
       </article>
 
-      <article class="recipe-card" id="lunch">
-        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=85" alt="Grilled steak power bowl" />
-        <div class="recipe-content">
-          <span class="category">Lunch Bowls</span>
+      <article class="card" id="lunch">
+        <div class="card-image">
+          <img src="https://source.unsplash.com/1200x900/?steak-bowl,healthy-grain-bowl" alt="Grilled steak power bowl with grains and vegetables" />
+        </div>
+
+        <div class="card-body">
+          <span class="tag">Lunch Bowls</span>
           <h3>Grilled Steak Power Bowl</h3>
+          <p class="meta">Prep: 15 minutes • Cook: 12 minutes • Serves: 2</p>
 
           <h4>Ingredients</h4>
           <ul>
-            <li>4 ounces grilled steak, sliced</li>
-            <li>1 cup cooked quinoa or brown rice</li>
-            <li>1 cup spinach or mixed greens</li>
-            <li>1/2 cup roasted sweet potatoes</li>
-            <li>1/4 avocado</li>
-            <li>1 tablespoon lemon olive oil dressing</li>
+            <li>8 ounces steak, cooked to pregnancy-safe doneness and sliced</li>
+            <li>2 cups cooked quinoa, brown rice, or farro</li>
+            <li>2 cups baby spinach or mixed greens</li>
+            <li>1 cup roasted sweet potatoes</li>
+            <li>1/2 avocado, sliced</li>
+            <li>1/2 cup cherry tomatoes</li>
+            <li>2 tablespoons pumpkin seeds</li>
+            <li>2 tablespoons olive oil</li>
+            <li>1 tablespoon lemon juice</li>
+            <li>1 teaspoon Dijon mustard</li>
+            <li>Salt, pepper, and garlic powder</li>
           </ul>
 
           <h4>Instructions</h4>
           <ol>
-            <li>Cook quinoa or brown rice according to package directions.</li>
-            <li>Grill steak to a safe internal temperature and let it rest before slicing.</li>
-            <li>Layer greens, grains, sweet potatoes, avocado, and steak in a bowl.</li>
-            <li>Drizzle with lemon olive oil dressing.</li>
-            <li>Serve immediately or pack for lunch.</li>
+            <li>Season steak with salt, pepper, and garlic powder.</li>
+            <li>Grill or pan-sear until fully cooked to a pregnancy-safe temperature.</li>
+            <li>Let the steak rest for 5 minutes, then slice thinly across the grain.</li>
+            <li>Whisk olive oil, lemon juice, Dijon mustard, salt, and pepper to make the dressing.</li>
+            <li>Add grains to each bowl, then layer spinach, sweet potatoes, tomatoes, avocado, and steak.</li>
+            <li>Sprinkle with pumpkin seeds and drizzle with dressing.</li>
+            <li>Serve warm or meal prep in containers with dressing on the side.</li>
           </ol>
 
           <div class="note">
-            <strong>Nutrition Note:</strong> Steak provides heme iron, which is easier for the body to absorb than plant-based iron.
+            <strong>Nutrition Note:</strong> Steak provides heme iron, while pumpkin seeds, spinach, and grains add plant-based iron and minerals.
           </div>
 
           <button class="print-btn" onclick="window.print()">Print Recipe</button>
         </div>
       </article>
 
-      <article class="recipe-card" id="dinner">
-        <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=85" alt="Steak with spinach and mashed potatoes" />
-        <div class="recipe-content">
-          <span class="category">Healthy Dinners</span>
+      <article class="card" id="dinner">
+        <div class="card-image">
+          <img src="https://source.unsplash.com/1200x900/?steak-mashed-potatoes,spinach" alt="Steak dinner with spinach and mashed potatoes" />
+        </div>
+
+        <div class="card-body">
+          <span class="tag">Healthy Dinners</span>
           <h3>Steak with Spinach & Mashed Potatoes</h3>
+          <p class="meta">Prep: 15 minutes • Cook: 25 minutes • Serves: 2</p>
 
           <h4>Ingredients</h4>
           <ul>
-            <li>5 ounces steak</li>
-            <li>2 cups fresh spinach</li>
-            <li>1 cup mashed potatoes</li>
-            <li>1 teaspoon butter or olive oil</li>
+            <li>10 ounces steak, divided into two portions</li>
+            <li>3 cups fresh spinach</li>
+            <li>2 medium potatoes, peeled and cubed</li>
+            <li>2 tablespoons milk</li>
+            <li>1 tablespoon butter or olive oil</li>
             <li>1 garlic clove, minced</li>
-            <li>Salt, pepper, and lemon juice</li>
+            <li>1 tablespoon lemon juice</li>
+            <li>Salt and black pepper</li>
+            <li>Optional: parsley or chives for garnish</li>
           </ul>
 
           <h4>Instructions</h4>
           <ol>
+            <li>Boil potatoes in salted water until fork-tender, about 12 to 15 minutes.</li>
+            <li>Drain potatoes, then mash with milk, butter, salt, and pepper until creamy.</li>
             <li>Season steak with salt and pepper.</li>
-            <li>Grill or pan-sear steak until cooked to a safe pregnancy-friendly temperature.</li>
-            <li>Let steak rest for 5 minutes before slicing.</li>
-            <li>Sauté spinach with olive oil, garlic, and a squeeze of lemon.</li>
-            <li>Warm mashed potatoes and plate with steak and spinach.</li>
-            <li>Serve with extra lemon for brightness.</li>
+            <li>Cook steak in a hot skillet until browned and fully cooked to pregnancy-safe doneness.</li>
+            <li>Rest steak for 5 minutes before slicing.</li>
+            <li>In the same skillet, add garlic and spinach. Cook until wilted, about 2 minutes.</li>
+            <li>Finish spinach with lemon juice for brightness.</li>
+            <li>Plate mashed potatoes, spinach, and sliced steak. Garnish if desired.</li>
           </ol>
 
           <div class="note">
-            <strong>Chef Tip:</strong> Keep the plate simple and balanced: protein, greens, and a comforting carb.
+            <strong>Chef Tip:</strong> Resting the steak keeps it juicy. The lemon on spinach adds brightness and helps the whole plate feel lighter.
           </div>
 
           <button class="print-btn" onclick="window.print()">Print Recipe</button>
         </div>
       </article>
 
-      <article class="recipe-card" id="snacks">
-        <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=1000&q=85" alt="Iron snack plate with hummus, egg, nuts, vegetables, and dried fruit" />
-        <div class="recipe-content">
-          <span class="category">Iron Snacks</span>
+      <article class="card" id="snacks">
+        <div class="card-image">
+          <img src="https://source.unsplash.com/1200x900/?hummus-snack-plate,boiled-egg,nuts" alt="Iron snack plate with hummus boiled egg nuts vegetables and dried fruit" />
+        </div>
+
+        <div class="card-body">
+          <span class="tag">Iron Snacks</span>
           <h3>Iron Snack Plate</h3>
+          <p class="meta">Prep: 10 minutes • Cook: 0 minutes • Serves: 1</p>
 
           <h4>Ingredients</h4>
           <ul>
             <li>1 hard-boiled egg</li>
             <li>1/4 cup hummus</li>
-            <li>Carrot sticks and cucumber slices</li>
-            <li>Small handful of almonds or cashews</li>
+            <li>1/4 cup almonds, cashews, or pistachios</li>
             <li>2 tablespoons dried apricots or raisins</li>
-            <li>Optional: whole grain crackers</li>
+            <li>Carrot sticks</li>
+            <li>Cucumber slices</li>
+            <li>Bell pepper strips</li>
+            <li>Whole grain crackers or pita wedges</li>
+            <li>Optional: sprinkle of paprika or everything seasoning</li>
           </ul>
 
           <h4>Instructions</h4>
           <ol>
-            <li>Slice the hard-boiled egg in half.</li>
-            <li>Spoon hummus into a small bowl.</li>
-            <li>Arrange vegetables, nuts, dried fruit, crackers, and egg on a plate.</li>
-            <li>Add a pinch of salt, pepper, or paprika to the egg if desired.</li>
-            <li>Serve as a balanced snack plate between meals.</li>
+            <li>Slice the hard-boiled egg in half and season lightly.</li>
+            <li>Spoon hummus into a small bowl and place it on a plate or board.</li>
+            <li>Arrange carrots, cucumbers, bell peppers, and crackers around the hummus.</li>
+            <li>Add nuts and dried fruit in small clusters for a styled snack-board look.</li>
+            <li>Serve immediately or pack in a divided container for an easy pregnancy snack.</li>
           </ol>
 
           <div class="note">
-            <strong>Nutrition Note:</strong> This snack plate combines iron, protein, healthy fats, and fiber for steady energy.
+            <strong>Nutrition Note:</strong> This snack plate combines protein, fiber, plant-based iron, healthy fats, and slow-digesting carbs.
           </div>
 
           <button class="print-btn" onclick="window.print()">Print Recipe</button>
         </div>
       </article>
+
     </section>
   </main>
+
 </body>
 </html>
