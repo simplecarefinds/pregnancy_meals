@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Pregnancy Breakfast Ideas for Busy Moms</title>
+  <style>
+    :root {
+      --cream: #fff7ef;
+      --warm-cream: #f8eadc;
+      --latte: #d8b99a;
+      --cocoa: #5a3828;
+      --terracotta: #b66a4a;
+      --rose: #d9907c;
+      --sage: #8c9b78;
+      --olive: #69745c;
+      --navy: #13283f;
+      --ink: #33231c;
+      --muted: #7b6254;
+      --white: #ffffff;
+      --shadow: 0 24px 60px rgba(70, 42, 28, 0.13);
+      --soft-shadow: 0 14px 35px rgba(70, 42, 28, 0.10);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(180deg, var(--cream) 0%, #fffdf9 45%, var(--warm-cream) 100%);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    img { width: 100%; display: block; }
+
+    .page-wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 18px 72px;
+    }
+
+    .hero {
+      min-height: 600px;
+      border-radius: 36px;
+      overflow: hidden;
+      position: relative;
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(135deg, rgba(19, 40, 63, 0.74), rgba(182, 106, 74, 0.36)),
+        url("https://images.unsplash.com/photo-1494597564530-871f2b93ac55?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
+      display: flex;
+      align-items: flex-end;
+      padding: 58px;
+      margin-bottom: 46px;
+    }
+
+    .hero-content { max-width: 760px; color: var(--white); }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 247, 239, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(12px);
+      padding: 9px 15px;
+      border-radius: 999px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(42px, 6vw, 76px);
+      line-height: 0.95;
+      letter-spacing: -0.045em;
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      font-family: Arial, sans-serif;
+      max-width: 650px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.7fr;
+      gap: 24px;
+      margin-bottom: 38px;
+    }
+
+    .intro-card, .quick-box, .note-box, .recipe-card {
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(182, 106, 74, 0.16);
+      box-shadow: var(--soft-shadow);
+      border-radius: var(--radius-xl);
+    }
+
+    .intro-card { padding: 34px; }
+
+    .intro-card h2, .section-heading h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+      letter-spacing: -0.035em;
+      margin-bottom: 16px;
+      color: var(--cocoa);
+    }
+
+    .intro-card p, .quick-box p, .note-box p, .recipe-card p, li {
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 15.5px;
+    }
+
+    .quick-box {
+      padding: 28px;
+      background: linear-gradient(145deg, #fffaf4, #f5dfcf);
+    }
+
+    .quick-box h3 {
+      font-size: 26px;
+      line-height: 1.1;
+      color: var(--cocoa);
+      margin-bottom: 16px;
+    }
+
+    .mini-list { display: grid; gap: 11px; margin-top: 18px; font-family: Arial, sans-serif; }
+
+    .mini-list span {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: var(--terracotta); flex: 0 0 auto; }
+
+    .section-heading {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 34px;
+    }
+
+    .section-heading p { font-family: Arial, sans-serif; color: var(--muted); font-size: 16px; }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .recipe-card { overflow: hidden; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .recipe-card:hover { transform: translateY(-4px); box-shadow: 0 28px 65px rgba(70, 42, 28, 0.16); }
+
+    .recipe-image { position: relative; height: 310px; overflow: hidden; background: var(--warm-cream); }
+    .recipe-image img { height: 100%; object-fit: cover; transition: transform 0.45s ease; }
+    .recipe-card:hover .recipe-image img { transform: scale(1.045); }
+
+    .tag {
+      position: absolute;
+      top: 18px;
+      left: 18px;
+      background: rgba(255, 255, 255, 0.9);
+      color: var(--navy);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .recipe-body { padding: 28px; }
+
+    .recipe-number {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: var(--terracotta);
+      letter-spacing: 0.16em;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .recipe-card h3 {
+      font-size: 30px;
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+      color: var(--cocoa);
+      margin-bottom: 12px;
+    }
+
+    .stats { display: flex; flex-wrap: wrap; gap: 9px; margin: 18px 0; }
+
+    .pill {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      background: #f7eadf;
+      color: var(--cocoa);
+      border: 1px solid rgba(90, 56, 40, 0.08);
+      padding: 7px 10px;
+      border-radius: 999px;
+    }
+
+    .recipe-columns {
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: 18px;
+      margin-top: 18px;
+    }
+
+    .recipe-columns h4, .chef-note h4 {
+      font-family: Arial, sans-serif;
+      color: var(--cocoa);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 9px;
+    }
+
+    ul, ol { padding-left: 18px; }
+    li { margin-bottom: 7px; }
+
+    .chef-note {
+      margin-top: 18px;
+      background: #fff8f1;
+      border-left: 4px solid var(--rose);
+      padding: 16px 18px;
+      border-radius: 16px;
+    }
+
+    .note-box {
+      margin-top: 36px;
+      padding: 32px;
+      background: linear-gradient(135deg, #fffaf4, #eef1e7);
+    }
+
+    .note-box h2 { font-size: 34px; line-height: 1.1; color: var(--cocoa); margin-bottom: 12px; }
+
+    .note-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .note-item {
+      background: rgba(255, 255, 255, 0.74);
+      border-radius: 18px;
+      padding: 18px;
+      border: 1px solid rgba(105, 116, 92, 0.15);
+    }
+
+    .note-item strong {
+      display: block;
+      color: var(--olive);
+      margin-bottom: 5px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .footer-note {
+      text-align: center;
+      max-width: 760px;
+      margin: 34px auto 0;
+      font-family: Arial, sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .hero { padding: 34px; min-height: 520px; }
+      .intro-grid, .recipe-grid, .recipe-columns, .note-grid { grid-template-columns: 1fr; }
+      .recipe-image { height: 270px; }
+    }
+
+    @media (max-width: 560px) {
+      .page-wrap { padding: 18px 12px 48px; }
+      .hero { border-radius: 24px; padding: 26px; }
+      .intro-card, .quick-box, .recipe-body, .note-box { padding: 22px; }
+      .recipe-card h3 { font-size: 25px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page-wrap">
+    <section class="hero">
+      <div class="hero-content">
+        <div class="eyebrow">Cozy Family Kitchen • Pregnancy Breakfast</div>
+        <h1>Easy Pregnancy Breakfast Ideas for Busy Moms</h1>
+        <p>Simple, satisfying breakfast recipes made with protein, fiber, and nourishing ingredients for pregnancy and postpartum mornings.</p>
+      </div>
+    </section>
+
+    <section class="intro-grid">
+      <div class="intro-card">
+        <h2>Breakfasts you can actually make on a busy morning.</h2>
+        <p>These recipes are built for real life: quick prep, simple ingredients, and enough protein to help keep you full. They are gentle, colorful, and easy to repeat during pregnancy or postpartum when mornings feel rushed.</p>
+      </div>
+      <aside class="quick-box">
+        <h3>The busy-mom breakfast formula</h3>
+        <p>Start with protein, add fiber, then finish with something creamy or satisfying so breakfast keeps you going longer.</p>
+        <div class="mini-list">
+          <span><i class="dot"></i> Protein: eggs, Greek yogurt, cottage cheese, beans, tofu, salmon</span>
+          <span><i class="dot"></i> Fiber: oats, berries, chia, whole grain toast, vegetables</span>
+          <span><i class="dot"></i> Healthy fats: avocado, nut butter, olive oil, seeds</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-heading">
+      <h2>Easy Breakfast Recipes</h2>
+      <p>Each recipe below matches the food image shown, with simple ingredients, quick instructions, and chef notes to make the recipe easier and prettier.</p>
+    </section>
+
+    <section class="recipe-grid">
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1517673132405-a56a62b18caf?auto=format&fit=crop&w=1100&q=85" alt="Creamy oatmeal bowl with banana slices, blueberries, chia seeds, and peanut butter" />
+          <span class="tag">Warm & filling</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 01</div>
+          <h3>Peanut Butter Banana Oatmeal Bowl</h3>
+          <p>A cozy oatmeal bowl with banana, blueberries, chia, and peanut butter for a breakfast that feels sweet but stays satisfying.</p>
+          <div class="stats">
+            <span class="pill">10 minutes</span>
+            <span class="pill">High fiber</span>
+            <span class="pill">Keeps you full</span>
+          </div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1/2 cup rolled oats</li>
+                <li>1 cup milk</li>
+                <li>1/2 banana, sliced</li>
+                <li>1/3 cup blueberries</li>
+                <li>1 tablespoon peanut butter</li>
+                <li>1 teaspoon chia seeds</li>
+                <li>Cinnamon and pinch of salt</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Simmer oats, milk, cinnamon, and salt until creamy.</li>
+                <li>Spoon into a bowl while warm.</li>
+                <li>Top with banana, blueberries, chia, and peanut butter.</li>
+                <li>Add a splash of milk if you like it softer.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Stir a spoonful of Greek yogurt into the cooked oats for extra creaminess and protein.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1100&q=85" alt="Avocado toast topped with scrambled eggs and spinach" />
+          <span class="tag">Savory</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 02</div>
+          <h3>Scrambled Egg Avocado Toast</h3>
+          <p>Soft scrambled eggs, avocado, and greens layered on toast for a simple breakfast that looks like café food.</p>
+          <div class="stats"><span class="pill">12 minutes</span><span class="pill">Protein rich</span><span class="pill">One-pan</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 slice whole grain toast</li>
+                <li>2 eggs</li>
+                <li>1/3 avocado, sliced</li>
+                <li>1 handful baby spinach</li>
+                <li>1 teaspoon olive oil</li>
+                <li>Salt, pepper, red pepper flakes</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Sauté spinach in olive oil until just wilted.</li>
+                <li>Add eggs and scramble until fully cooked.</li>
+                <li>Toast the bread and layer with avocado.</li>
+                <li>Top with eggs, spinach, and seasoning.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>For pregnancy, cook eggs until the whites and yolks are firm, not runny.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=1100&q=85" alt="Pink strawberry banana smoothie with granola topping" />
+          <span class="tag">Drinkable</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 03</div>
+          <h3>Strawberry Banana Breakfast Smoothie</h3>
+          <p>A creamy pink smoothie for mornings when you need something fast, cold, and easy to sip.</p>
+          <div class="stats"><span class="pill">6 minutes</span><span class="pill">No-cook</span><span class="pill">Gentle option</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 banana</li>
+                <li>1 cup strawberries</li>
+                <li>3/4 cup Greek yogurt</li>
+                <li>1 cup milk</li>
+                <li>1 tablespoon almond or peanut butter</li>
+                <li>1 tablespoon ground flax or chia</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Add all ingredients to a blender.</li>
+                <li>Blend until completely smooth.</li>
+                <li>Add more milk if needed.</li>
+                <li>Pour into a glass and top with granola if desired.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Use frozen strawberries for a thicker smoothie that tastes more like a milkshake.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1100&q=85" alt="Greek yogurt parfait with berries and granola in a glass jar" />
+          <span class="tag">No-cook</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 04</div>
+          <h3>Greek Yogurt Berry Parfait</h3>
+          <p>A layered yogurt parfait with berries and granola that feels pretty enough for brunch but takes only minutes.</p>
+          <div class="stats"><span class="pill">5 minutes</span><span class="pill">Meal prep</span><span class="pill">High protein</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 cup plain Greek yogurt</li>
+                <li>1/2 cup strawberries and blueberries</li>
+                <li>2 tablespoons granola</li>
+                <li>1 teaspoon chia seeds</li>
+                <li>Honey or cinnamon, optional</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Add half the yogurt to a glass or jar.</li>
+                <li>Layer with berries and granola.</li>
+                <li>Repeat with remaining yogurt and fruit.</li>
+                <li>Finish with chia and cinnamon.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Add granola right before eating if you want it crunchy.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=1100&q=85" alt="Mini egg muffins with spinach, tomato, and cheese" />
+          <span class="tag">Batch cook</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 05</div>
+          <h3>Spinach Tomato Egg Muffins</h3>
+          <p>Mini baked egg cups with vegetables and cheese that you can reheat on busy mornings.</p>
+          <div class="stats"><span class="pill">25 minutes</span><span class="pill">Freezer friendly</span><span class="pill">Grab-and-go</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>8 eggs</li>
+                <li>1 cup chopped spinach</li>
+                <li>1/2 cup diced tomatoes</li>
+                <li>1/3 cup shredded cheese</li>
+                <li>Salt, pepper, garlic powder</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Heat oven to 350°F.</li>
+                <li>Whisk eggs with seasoning.</li>
+                <li>Stir in spinach, tomatoes, and cheese.</li>
+                <li>Bake in a greased muffin tin for 18–22 minutes.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Let the muffins cool completely before storing so they do not get watery.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=1100&q=85" alt="Stack of protein pancakes topped with banana slices, blueberries, and peanut butter" />
+          <span class="tag">Weekend easy</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 06</div>
+          <h3>Banana Protein Pancakes</h3>
+          <p>Soft blender pancakes topped with banana, blueberries, and peanut butter for a cozy breakfast that still feels balanced.</p>
+          <div class="stats"><span class="pill">18 minutes</span><span class="pill">Blender batter</span><span class="pill">Family friendly</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1/2 cup oats</li>
+                <li>1/2 cup cottage cheese</li>
+                <li>2 eggs</li>
+                <li>1/2 banana</li>
+                <li>1/2 teaspoon baking powder</li>
+                <li>Vanilla and cinnamon</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Blend all ingredients until mostly smooth.</li>
+                <li>Cook small pancakes on a lightly greased skillet.</li>
+                <li>Flip once the edges look set.</li>
+                <li>Serve with fruit and a spoonful of nut butter.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Small pancakes cook more evenly and are easier to flip.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1543339308-43e59d6b73a4?auto=format&fit=crop&w=1100&q=85" alt="Mediterranean breakfast bowl with egg, grains, beans, avocado, and vegetables" />
+          <span class="tag">Savory bowl</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 07</div>
+          <h3>Mediterranean Egg Breakfast Bowl</h3>
+          <p>A colorful bowl with eggs, grains, beans, avocado, and vegetables for a breakfast that feels fresh and filling.</p>
+          <div class="stats"><span class="pill">15 minutes</span><span class="pill">Balanced</span><span class="pill">Meal prep base</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1/2 cup cooked quinoa or brown rice</li>
+                <li>1 fully cooked egg</li>
+                <li>1/3 cup black beans or chickpeas</li>
+                <li>Avocado slices</li>
+                <li>Tomatoes or salsa</li>
+                <li>Greek yogurt or feta, optional</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Add warm grains to a bowl.</li>
+                <li>Top with beans, tomato, and avocado.</li>
+                <li>Add a fully cooked egg.</li>
+                <li>Finish with yogurt, feta, or herbs.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Cook a batch of grains once, then use them for breakfast bowls all week.</p></div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-image">
+          <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&w=1100&q=85" alt="Cottage cheese breakfast bowl with blueberries, almonds, and honey" />
+          <span class="tag">5 minutes</span>
+        </div>
+        <div class="recipe-body">
+          <div class="recipe-number">Breakfast 08</div>
+          <h3>Cottage Cheese Blueberry Bowl</h3>
+          <p>A creamy, no-cook breakfast bowl with cottage cheese, blueberries, almonds, and honey.</p>
+          <div class="stats"><span class="pill">5 minutes</span><span class="pill">No-cook</span><span class="pill">Creamy</span></div>
+          <div class="recipe-columns">
+            <div>
+              <h4>Ingredients</h4>
+              <ul>
+                <li>1 cup cottage cheese</li>
+                <li>1/2 cup blueberries</li>
+                <li>2 tablespoons almonds</li>
+                <li>1 teaspoon honey</li>
+                <li>Cinnamon</li>
+                <li>Optional: sliced banana</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Instructions</h4>
+              <ol>
+                <li>Spoon cottage cheese into a bowl.</li>
+                <li>Add blueberries and almonds.</li>
+                <li>Drizzle with honey.</li>
+                <li>Finish with cinnamon and banana if using.</li>
+              </ol>
+            </div>
+          </div>
+          <div class="chef-note"><h4>Chef note</h4><p>Use pasteurized cottage cheese and keep it chilled until serving.</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="note-box">
+      <h2>Make mornings easier</h2>
+      <p>Choose one warm breakfast, one no-cook breakfast, and one batch-cooked breakfast each week so you always have something ready.</p>
+      <div class="note-grid">
+        <div class="note-item"><strong>Best for the car</strong><p>Smoothie, parfait jar, egg muffins, or cottage cheese bowl in a sealed container.</p></div>
+        <div class="note-item"><strong>Best for fullness</strong><p>Oatmeal bowl, egg avocado toast, protein pancakes, and Mediterranean bowl.</p></div>
+        <div class="note-item"><strong>Best to prep ahead</strong><p>Egg muffins, parfait jars, cooked grains, washed berries, and pancake batter.</p></div>
+      </div>
+    </section>
+
+    <p class="footer-note">Pregnancy food safety note: use pasteurized dairy, wash produce well, reheat leftovers until steaming hot, and cook eggs thoroughly.</p>
+  </main>
+</body>
+</html>
