@@ -3,273 +3,552 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>12 High Protein Pregnancy Breakfasts That Keep You Full</title>
-  <meta name="description" content="Healthy high protein pregnancy breakfast ideas designed to keep busy moms full, nourished, and energized." />
-
+  <title>Iron Rich Pregnancy Meals</title>
   <style>
-    body {
+    :root {
+      --rust: #b7410e;
+      --deep-rust: #8b2e1a;
+      --cream: #fff7ed;
+      --soft-cream: #f8eadc;
+      --warm-white: #fffaf5;
+      --brown: #4b2e24;
+      --olive: #68724a;
+      --shadow: 0 18px 45px rgba(75, 46, 36, 0.16);
+      --radius: 24px;
+    }
+
+    * {
+      box-sizing: border-box;
       margin: 0;
-      font-family: Georgia, serif;
-      background: #fff8f2;
-      color: #3b2f2f;
-      line-height: 1.7;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--cream);
+      color: var(--brown);
+      line-height: 1.65;
     }
 
     .hero {
-      min-height: 70vh;
+      min-height: 88vh;
       background:
-        linear-gradient(rgba(60, 38, 30, 0.45), rgba(60, 38, 30, 0.45)),
-        url("https://drive.google.com/uc?id=1SpQWCMR5XmRfG5l9eQw6Hq1ZcAltOfku") center/cover no-repeat;
+        linear-gradient(rgba(50, 28, 20, 0.58), rgba(50, 28, 20, 0.58)),
+        url("https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 40px 20px;
+      padding: 48px 20px;
       color: white;
     }
 
     .hero-content {
-      max-width: 850px;
+      max-width: 980px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(255, 250, 245, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      padding: 10px 18px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
     }
 
     .hero h1 {
-      font-size: clamp(2.4rem, 6vw, 5rem);
-      line-height: 1.05;
-      margin-bottom: 20px;
+      font-size: clamp(3rem, 8vw, 6.8rem);
+      line-height: 0.92;
+      margin-bottom: 22px;
+      text-shadow: 0 8px 28px rgba(0,0,0,0.35);
     }
 
     .hero p {
-      font-size: 1.25rem;
-      max-width: 650px;
-      margin: auto;
+      font-family: Arial, sans-serif;
+      font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+      max-width: 720px;
+      margin: 0 auto 34px;
     }
 
-    .container {
-      max-width: 1050px;
-      margin: auto;
-      padding: 50px 22px;
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 14px;
+    }
+
+    .nav-buttons a,
+    .print-btn {
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      background: var(--rust);
+      color: white;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      box-shadow: 0 10px 24px rgba(183, 65, 14, 0.25);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .nav-buttons a:hover,
+    .print-btn:hover {
+      transform: translateY(-3px);
+      background: var(--deep-rust);
+    }
+
+    .section {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 70px 20px;
     }
 
     .intro {
-      background: #ffffff;
-      padding: 35px;
-      border-radius: 24px;
-      box-shadow: 0 12px 30px rgba(80, 50, 30, 0.08);
-      margin-bottom: 45px;
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 46px;
     }
 
     .intro h2 {
-      font-size: 2rem;
-      margin-top: 0;
-      color: #7a4b35;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      color: var(--deep-rust);
+      line-height: 1;
+      margin-bottom: 18px;
     }
 
-    .recipe-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
+    .intro p {
+      font-family: Arial, sans-serif;
+      font-size: 1.08rem;
+      color: #6a4a3d;
     }
 
-    .card {
-      background: #fff;
-      border-radius: 24px;
+    .pin-concept {
+      background: var(--warm-white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
       overflow: hidden;
-      box-shadow: 0 12px 28px rgba(80, 50, 30, 0.1);
+      margin-bottom: 58px;
+      border: 1px solid rgba(139, 46, 26, 0.12);
     }
 
-    .card img {
+    .pin-header {
+      text-align: center;
+      padding: 36px 24px 24px;
+      background: linear-gradient(135deg, #fff2e3, #f6d9c5);
+    }
+
+    .pin-header h2 {
+      color: var(--deep-rust);
+      font-size: clamp(2.1rem, 4vw, 4rem);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+
+    .pin-header p {
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      color: var(--brown);
+      letter-spacing: 0.04em;
+    }
+
+    .pin-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+
+    .pin-block {
+      min-height: 340px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pin-block img {
       width: 100%;
-      height: 220px;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .pin-block:hover img {
+      transform: scale(1.06);
+    }
+
+    .pin-label {
+      position: absolute;
+      left: 18px;
+      bottom: 18px;
+      background: rgba(255, 250, 245, 0.92);
+      padding: 12px 15px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.16);
+    }
+
+    .pin-label strong {
+      display: block;
+      color: var(--deep-rust);
+      font-size: 1rem;
+    }
+
+    .pin-label span {
+      font-family: Arial, sans-serif;
+      font-size: 0.86rem;
+      color: var(--brown);
+    }
+
+    .pin-footer {
+      text-align: center;
+      padding: 28px 20px 34px;
+      background: #fffaf5;
+    }
+
+    .pin-footer .callout {
+      font-size: 1.5rem;
+      color: var(--rust);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .pin-footer .cta {
+      font-family: Arial, sans-serif;
+      font-weight: 800;
+      color: var(--deep-rust);
+    }
+
+    .recipes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 34px;
+    }
+
+    .recipe-card {
+      background: var(--warm-white);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(139, 46, 26, 0.12);
+      transition: transform 0.28s ease, box-shadow 0.28s ease;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 28px 65px rgba(75, 46, 36, 0.22);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 330px;
       object-fit: cover;
       display: block;
     }
 
-    .card-content {
-      padding: 24px;
+    .recipe-content {
+      padding: 32px;
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: #6f3f2c;
-      font-size: 1.35rem;
-    }
-
-    .tag {
+    .category {
       display: inline-block;
-      background: #f3d8c8;
-      color: #704330;
-      padding: 6px 12px;
+      font-family: Arial, sans-serif;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: white;
+      background: var(--rust);
+      padding: 7px 12px;
       border-radius: 999px;
-      font-size: 0.85rem;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .recipe-content h3 {
+      font-size: 2rem;
+      color: var(--deep-rust);
+      line-height: 1.08;
+      margin-bottom: 16px;
+    }
+
+    .recipe-content h4 {
+      font-family: Arial, sans-serif;
+      color: var(--olive);
+      font-size: 1rem;
+      margin: 22px 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      font-family: Arial, sans-serif;
+      color: #5d4036;
+      font-size: 0.98rem;
     }
 
     .note {
-      background: #f9eadf;
-      border-left: 5px solid #b87452;
-      padding: 25px;
+      background: var(--soft-cream);
+      border-left: 5px solid var(--rust);
+      padding: 16px 18px;
       border-radius: 16px;
-      margin-top: 45px;
+      margin: 24px 0;
+      font-family: Arial, sans-serif;
+      color: #55372d;
     }
 
-    footer {
-      text-align: center;
-      padding: 35px 20px;
-      color: #7b6258;
-      font-size: 0.95rem;
+    .print-btn {
+      margin-top: 4px;
+      display: inline-block;
+    }
+
+    @media (max-width: 900px) {
+      .pin-grid,
+      .recipes-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .pin-block {
+        min-height: 300px;
+      }
+
+      .recipe-card img {
+        height: 280px;
+      }
+    }
+
+    @media print {
+      .hero,
+      .nav-buttons,
+      .pin-concept,
+      .print-btn {
+        display: none !important;
+      }
+
+      body {
+        background: white;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      .recipe-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+      }
     }
   </style>
 </head>
 
 <body>
-
-  <section class="hero">
+  <header class="hero">
     <div class="hero-content">
-      <h1>12 High Protein Pregnancy Breakfasts That Keep You Full</h1>
-      <p>Nourishing, realistic breakfast ideas for busy mornings, steady energy, and a fuller start to the day.</p>
+      <span class="eyebrow">Pregnancy Meal Guide</span>
+      <h1>Iron Rich Pregnancy Meals</h1>
+      <p>Easy Breakfast • Lunch • Dinner • Snacks — nourishing, cozy meals designed to help fuel you and baby with iron-rich ingredients.</p>
+      <div class="nav-buttons">
+        <a href="#breakfast">Breakfast</a>
+        <a href="#lunch">Lunch</a>
+        <a href="#dinner">Dinner</a>
+        <a href="#snacks">Snacks</a>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <main class="container">
-
+  <main class="section">
     <section class="intro">
-      <h2>Breakfasts That Actually Keep You Satisfied</h2>
-      <p>
-        Pregnancy mornings can be unpredictable. Some days you wake up starving, some days nothing sounds good,
-        and some days you need something quick before running out the door. These high-protein breakfast ideas
-        are designed to feel cozy, practical, and filling without requiring complicated cooking.
-      </p>
-      <p>
-        Each idea includes a protein source, gentle carbohydrates, and healthy fats to help support fullness,
-        energy, and balanced meals during pregnancy.
-      </p>
+      <h2>Fueling You & Baby ❤️</h2>
+      <p>A premium Pinterest-style recipe collection with warm, rustic food styling, earthy colors, and simple iron-focused meals for busy pregnancy days.</p>
     </section>
 
-    <section class="recipe-grid">
+    <section class="pin-concept">
+      <div class="pin-header">
+        <h2>Iron Rich Pregnancy Meals</h2>
+        <p>Easy Breakfast • Lunch • Dinner • Snacks</p>
+      </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?auto=format&fit=crop&w=900&q=80" alt="Greek yogurt breakfast bowl">
-        <div class="card-content">
-          <span class="tag">Quick Bowl</span>
-          <h3>1. Greek Yogurt Berry Protein Bowl</h3>
-          <p>Use plain Greek yogurt, berries, chia seeds, and granola. Add a drizzle of honey if needed. This is cold, creamy, and easy for busy mornings.</p>
+      <div class="pin-grid">
+        <div class="pin-block">
+          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85" alt="Spinach omelette breakfast" />
+          <div class="pin-label">
+            <strong>Breakfast Ideas</strong>
+            <span>Spinach Omelette</span>
+          </div>
+        </div>
+
+        <div class="pin-block">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=85" alt="Steak power bowl lunch" />
+          <div class="pin-label">
+            <strong>Lunch Bowls</strong>
+            <span>Steak Power Bowl</span>
+          </div>
+        </div>
+
+        <div class="pin-block">
+          <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=85" alt="Steak dinner with vegetables" />
+          <div class="pin-label">
+            <strong>Healthy Dinners</strong>
+            <span>Steak with Spinach & Mash</span>
+          </div>
+        </div>
+
+        <div class="pin-block">
+          <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=900&q=85" alt="Healthy snack plate with hummus and vegetables" />
+          <div class="pin-label">
+            <strong>Iron Snacks</strong>
+            <span>Nuts, Egg, Hummus & Fruit</span>
+          </div>
         </div>
       </div>
 
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=80" alt="Egg avocado toast">
-        <div class="card-content">
-          <span class="tag">Savory</span>
-          <h3>2. Egg & Avocado Toast</h3>
-          <p>Top whole-grain toast with mashed avocado and fully cooked eggs. Add a little salt, pepper, and lemon for a simple filling breakfast.</p>
-        </div>
+      <div class="pin-footer">
+        <div class="callout">Fueling You & Baby ❤️</div>
+        <div class="cta">Save for Later & Get the Recipes!</div>
       </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1604908177522-402c3f0c5411?auto=format&fit=crop&w=900&q=80" alt="Protein oatmeal">
-        <div class="card-content">
-          <span class="tag">Warm Breakfast</span>
-          <h3>3. Protein Oatmeal</h3>
-          <p>Cook oats with milk, then stir in nut butter, chia seeds, and Greek yogurt after cooking. Top with banana or berries.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1494597564530-871f2b93ac55?auto=format&fit=crop&w=900&q=80" alt="Smoothie">
-        <div class="card-content">
-          <span class="tag">On-the-Go</span>
-          <h3>4. Peanut Butter Banana Smoothie</h3>
-          <p>Blend banana, milk, Greek yogurt, peanut butter, and oats. This works well when chewing food feels hard in the morning.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=80" alt="Egg breakfast plate">
-        <div class="card-content">
-          <span class="tag">Classic</span>
-          <h3>5. Scrambled Eggs with Cottage Cheese</h3>
-          <p>Whisk cottage cheese into eggs before cooking for extra protein and creaminess. Serve with toast or roasted potatoes.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=900&q=80" alt="Chia pudding">
-        <div class="card-content">
-          <span class="tag">Make Ahead</span>
-          <h3>6. Chia Seed Pudding</h3>
-          <p>Mix chia seeds with milk and yogurt, then refrigerate overnight. Add fruit in the morning for a soft, spoonable breakfast.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=80" alt="Breakfast wrap">
-        <div class="card-content">
-          <span class="tag">Meal Prep</span>
-          <h3>7. Egg Breakfast Wrap</h3>
-          <p>Fill a tortilla with cooked eggs, cheese, spinach, and avocado. Wrap tightly for an easy breakfast you can take with you.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1568209865332-a15790aed756?auto=format&fit=crop&w=900&q=80" alt="Cottage cheese bowl">
-        <div class="card-content">
-          <span class="tag">No Cook</span>
-          <h3>8. Cottage Cheese Fruit Bowl</h3>
-          <p>Pair cottage cheese with peaches, berries, cinnamon, and crushed walnuts. It is simple, high protein, and takes minutes.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1546554137-f86b9593a222?auto=format&fit=crop&w=900&q=80" alt="Breakfast muffins">
-        <div class="card-content">
-          <span class="tag">Freezer Friendly</span>
-          <h3>9. Egg Muffin Cups</h3>
-          <p>Bake eggs with cheese, spinach, peppers, and turkey sausage in a muffin tin. Store in the fridge for quick reheating.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Breakfast bowl">
-        <div class="card-content">
-          <span class="tag">Filling Bowl</span>
-          <h3>10. Sweet Potato Egg Bowl</h3>
-          <p>Use roasted sweet potatoes, fully cooked eggs, avocado, and a sprinkle of cheese for a balanced savory breakfast.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=900&q=80" alt="Healthy breakfast plate">
-        <div class="card-content">
-          <span class="tag">Balanced</span>
-          <h3>11. Turkey Sausage Breakfast Plate</h3>
-          <p>Pair turkey sausage with eggs, fruit, and whole-grain toast. This is a good option when you want something hearty.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80" alt="Toast breakfast">
-        <div class="card-content">
-          <span class="tag">Simple</span>
-          <h3>12. Almond Butter Protein Toast</h3>
-          <p>Spread almond butter on whole-grain toast and top with banana slices, chia seeds, and a side of Greek yogurt.</p>
-        </div>
-      </div>
-
     </section>
 
-    <section class="note">
-      <h2>Chef’s Notes</h2>
-      <p>
-        For pregnancy, choose fully cooked eggs, pasteurized dairy, and properly stored ingredients.
-        If mornings are hard, prep two or three options ahead of time so breakfast feels automatic instead of overwhelming.
-      </p>
-    </section>
+    <section class="recipes-grid">
+      <article class="recipe-card" id="breakfast">
+        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1000&q=85" alt="Spinach and feta omelette" />
+        <div class="recipe-content">
+          <span class="category">Breakfast Ideas</span>
+          <h3>Spinach & Feta Omelette</h3>
 
+          <h4>Ingredients</h4>
+          <ul>
+            <li>2 eggs</li>
+            <li>1 cup fresh spinach</li>
+            <li>2 tablespoons feta cheese</li>
+            <li>1 teaspoon olive oil</li>
+            <li>Salt and pepper to taste</li>
+            <li>Optional: whole grain toast or avocado</li>
+          </ul>
+
+          <h4>Instructions</h4>
+          <ol>
+            <li>Warm olive oil in a nonstick skillet over medium heat.</li>
+            <li>Add spinach and cook for 1 to 2 minutes until wilted.</li>
+            <li>Whisk eggs with salt and pepper, then pour over the spinach.</li>
+            <li>Cook gently until the eggs begin to set.</li>
+            <li>Sprinkle feta on top, fold the omelette, and cook for another minute.</li>
+            <li>Serve warm with toast or avocado.</li>
+          </ol>
+
+          <div class="note">
+            <strong>Chef Tip:</strong> Pair with vitamin C-rich fruit like orange slices or strawberries to support iron absorption.
+          </div>
+
+          <button class="print-btn" onclick="window.print()">Print Recipe</button>
+        </div>
+      </article>
+
+      <article class="recipe-card" id="lunch">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=85" alt="Grilled steak power bowl" />
+        <div class="recipe-content">
+          <span class="category">Lunch Bowls</span>
+          <h3>Grilled Steak Power Bowl</h3>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>4 ounces grilled steak, sliced</li>
+            <li>1 cup cooked quinoa or brown rice</li>
+            <li>1 cup spinach or mixed greens</li>
+            <li>1/2 cup roasted sweet potatoes</li>
+            <li>1/4 avocado</li>
+            <li>1 tablespoon lemon olive oil dressing</li>
+          </ul>
+
+          <h4>Instructions</h4>
+          <ol>
+            <li>Cook quinoa or brown rice according to package directions.</li>
+            <li>Grill steak to a safe internal temperature and let it rest before slicing.</li>
+            <li>Layer greens, grains, sweet potatoes, avocado, and steak in a bowl.</li>
+            <li>Drizzle with lemon olive oil dressing.</li>
+            <li>Serve immediately or pack for lunch.</li>
+          </ol>
+
+          <div class="note">
+            <strong>Nutrition Note:</strong> Steak provides heme iron, which is easier for the body to absorb than plant-based iron.
+          </div>
+
+          <button class="print-btn" onclick="window.print()">Print Recipe</button>
+        </div>
+      </article>
+
+      <article class="recipe-card" id="dinner">
+        <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=85" alt="Steak with spinach and mashed potatoes" />
+        <div class="recipe-content">
+          <span class="category">Healthy Dinners</span>
+          <h3>Steak with Spinach & Mashed Potatoes</h3>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>5 ounces steak</li>
+            <li>2 cups fresh spinach</li>
+            <li>1 cup mashed potatoes</li>
+            <li>1 teaspoon butter or olive oil</li>
+            <li>1 garlic clove, minced</li>
+            <li>Salt, pepper, and lemon juice</li>
+          </ul>
+
+          <h4>Instructions</h4>
+          <ol>
+            <li>Season steak with salt and pepper.</li>
+            <li>Grill or pan-sear steak until cooked to a safe pregnancy-friendly temperature.</li>
+            <li>Let steak rest for 5 minutes before slicing.</li>
+            <li>Sauté spinach with olive oil, garlic, and a squeeze of lemon.</li>
+            <li>Warm mashed potatoes and plate with steak and spinach.</li>
+            <li>Serve with extra lemon for brightness.</li>
+          </ol>
+
+          <div class="note">
+            <strong>Chef Tip:</strong> Keep the plate simple and balanced: protein, greens, and a comforting carb.
+          </div>
+
+          <button class="print-btn" onclick="window.print()">Print Recipe</button>
+        </div>
+      </article>
+
+      <article class="recipe-card" id="snacks">
+        <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?auto=format&fit=crop&w=1000&q=85" alt="Iron snack plate with hummus, egg, nuts, vegetables, and dried fruit" />
+        <div class="recipe-content">
+          <span class="category">Iron Snacks</span>
+          <h3>Iron Snack Plate</h3>
+
+          <h4>Ingredients</h4>
+          <ul>
+            <li>1 hard-boiled egg</li>
+            <li>1/4 cup hummus</li>
+            <li>Carrot sticks and cucumber slices</li>
+            <li>Small handful of almonds or cashews</li>
+            <li>2 tablespoons dried apricots or raisins</li>
+            <li>Optional: whole grain crackers</li>
+          </ul>
+
+          <h4>Instructions</h4>
+          <ol>
+            <li>Slice the hard-boiled egg in half.</li>
+            <li>Spoon hummus into a small bowl.</li>
+            <li>Arrange vegetables, nuts, dried fruit, crackers, and egg on a plate.</li>
+            <li>Add a pinch of salt, pepper, or paprika to the egg if desired.</li>
+            <li>Serve as a balanced snack plate between meals.</li>
+          </ol>
+
+          <div class="note">
+            <strong>Nutrition Note:</strong> This snack plate combines iron, protein, healthy fats, and fiber for steady energy.
+          </div>
+
+          <button class="print-btn" onclick="window.print()">Print Recipe</button>
+        </div>
+      </article>
+    </section>
   </main>
-
-  <footer>
-    The Cozy Family Kitchen · Pregnancy Breakfast Ideas
-  </footer>
-
 </body>
 </html>
